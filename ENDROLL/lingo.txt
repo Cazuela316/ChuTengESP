@@ -1,0 +1,49 @@
+=== miembro 4    (cast 8) ===
+on startMovie
+  set the exitLock to true
+  when keydown then shortCutLocal
+  
+  saveDisable
+end
+
+on shortCutLocal
+  global beforeColorDepth
+  -- ÉRÉ}ÉìÉhQÇ≈ÉÅÉjÉÖÅ[Ç©ÇÁèIóπÇëIÇÒÇæÇÃÇ∆ìØÇ∂
+  if commandDown () and "Qq." contains key() then 
+    if machineType()>=256 then
+      cursoroff
+      closeXLib "fileio"
+    else
+      --      set the colorDepth = beforeColorDepth
+    end if
+    goFMov "xe","chutnban:credit.dir"
+  end if
+end
+
+=== miembro 7    (cast 14) ===
+on exitFrame
+  goFMov "endloop2","chutnban:credit.dir"
+end
+
+=== miembro 9    (cast 18) ===
+on exitFrame
+  goFMov "endloop2","chutnban:credit.dir"
+end
+
+=== miembro 3    (cast 23) ===
+on exitFrame
+  sound fadeOut 180
+  wait 180
+end
+
+=== miembro 8    (cast 28) ===
+on exitFrame
+  unload
+  preloadCast "endroll.pict"
+end
+
+=== miembro 6    (cast 32) ===
+on exitFrame
+  cursor 200
+end
+

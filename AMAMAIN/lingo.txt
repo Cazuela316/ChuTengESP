@@ -1,0 +1,1028 @@
+=== miembro 85    (cast 8) ===
+on mouseUp
+  goR "b1"
+end
+
+=== miembro 114    (cast 13) ===
+on mouseUp
+  goR "e4"
+end
+
+=== miembro 84    (cast 16) ===
+on mouseUp
+  
+end
+
+=== miembro 81    (cast 17) ===
+on mouseUp
+  goF "c3"
+end
+
+=== miembro 63    (cast 19) ===
+on exitFrame
+  go to the frame+1
+end
+
+=== miembro 257    (cast 129) ===
+on startMovie
+  global gscene
+  set gscene="amanogawa"
+  --Å@ÉNÉCÉbÉNÉ^ÉCÉÄÉÄÅ[ÉrÅ[ÉLÉÉÉXÉgÇÃê›íËÇÇ∑ÇÈ  
+  repeat with i=the number of cast "ab.mov" to the number of cast "lk.mov"
+    set the directToStage of cast i to 1 
+    set the frameRate of cast i to -2
+  end repeat
+  initMovie
+  
+  saveEnable
+end
+
+=== miembro 246    (cast 182) ===
+on exitFrame
+  initScene "AmaB"
+  go to the frame
+end
+
+=== miembro 191    (cast 183) ===
+on exitFrame
+  endThenGo "b3"
+end
+
+=== miembro 190    (cast 184) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 122    (cast 185) ===
+on mouseUp
+  goR "f3"
+end
+
+=== miembro 192    (cast 186) ===
+on exitFrame
+  endThenGo "b3"
+end
+
+=== miembro 193    (cast 187) ===
+on exitFrame
+  endThenGo "a1"
+end
+
+=== miembro 123    (cast 188) ===
+on mouseUp
+  goR "f4"
+end
+
+=== miembro 64    (cast 189) ===
+on exitFrame
+  initScene "AmaA"
+  go to the frame
+end
+
+=== miembro 65    (cast 190) ===
+on mouseUp
+  clrMsg
+  goL "a4"
+end
+
+=== miembro 66    (cast 191) ===
+on mouseUp
+  clrMsg
+  goR "a2"
+end
+
+=== miembro 67    (cast 192) ===
+on mouseUp
+  goL "a1"
+end
+
+=== miembro 68    (cast 193) ===
+on mouseUp
+  goR "a3"
+end
+
+=== miembro 69    (cast 194) ===
+on mouseUp
+  goL "a2"
+end
+
+=== miembro 247    (cast 195) ===
+on exitFrame
+  initScene "AmaC"
+  go to the frame
+end
+
+=== miembro 70    (cast 196) ===
+on mouseUp
+  goR "a4"
+end
+
+=== miembro 71    (cast 197) ===
+on mouseUp
+  goL "a3"
+end
+
+=== miembro 72    (cast 198) ===
+on mouseUp
+  goR "a1"
+end
+
+=== miembro 194    (cast 199) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 195    (cast 200) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 196    (cast 201) ===
+on exitFrame
+  endThenGo "c3"
+end
+
+=== miembro 73    (cast 203) ===
+on exitFrame
+  go to "a3x"
+end
+
+=== miembro 74    (cast 204) ===
+on mouseUp
+  goL "b4"
+end
+
+=== miembro 75    (cast 205) ===
+on mouseUp
+  goF "a1"
+end
+
+=== miembro 76    (cast 206) ===
+on mouseUp
+  goR "b2"
+end
+
+=== miembro 77    (cast 207) ===
+on mouseUp
+  goL "b1"
+end
+
+=== miembro 78    (cast 208) ===
+on mouseUp
+  goF "g3"
+end
+
+=== miembro 79    (cast 209) ===
+on mouseUp
+  goR "b3"
+end
+
+=== miembro 127    (cast 210) ===
+on mouseUp
+  goL "g4"
+end
+
+=== miembro 128    (cast 211) ===
+on mouseUp
+  goL "g1"
+end
+
+=== miembro 126    (cast 212) ===
+on mouseUp
+  goF "h3"
+end
+
+=== miembro 197    (cast 213) ===
+on exitFrame
+  endThenGo "g3"
+end
+
+=== miembro 198    (cast 214) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 199    (cast 215) ===
+on exitFrame
+  endThenGo "b1"
+end
+
+=== miembro 107    (cast 216) ===
+on mouseUp
+  goL "e4"
+end
+
+=== miembro 108    (cast 217) ===
+on mouseUp
+  goF "d2"
+end
+
+=== miembro 109    (cast 218) ===
+on mouseUp
+  goR "e2"
+end
+
+=== miembro 110    (cast 219) ===
+on mouseUp
+  goL "e1"
+end
+
+=== miembro 111    (cast 220) ===
+on mouseUp
+  goR "e3"
+end
+
+=== miembro 112    (cast 221) ===
+on mouseUp
+  goL "e2"
+end
+
+=== miembro 113    (cast 222) ===
+on mouseUp
+  goF "h2"
+end
+
+=== miembro 248    (cast 223) ===
+on exitFrame
+  initScene "AmaD"
+  go to the frame
+end
+
+=== miembro 83    (cast 224) ===
+on mouseUp
+  goL "b3"
+end
+
+=== miembro 249    (cast 225) ===
+on exitFrame
+  initScene "AmaE"
+  go to the frame
+end
+
+=== miembro 86    (cast 226) ===
+on mouseUp
+  goL "c4"
+end
+
+=== miembro 87    (cast 227) ===
+on mouseUp
+  goF "b3"
+end
+
+=== miembro 88    (cast 228) ===
+on mouseUp
+  goR "c2"
+end
+
+=== miembro 89    (cast 229) ===
+on mouseUp
+  goL "c1"
+end
+
+=== miembro 90    (cast 230) ===
+on mouseUp
+  goR "c3"
+end
+
+=== miembro 91    (cast 231) ===
+on mouseUp
+  goL "c2"
+end
+
+=== miembro 92    (cast 232) ===
+on mouseUp
+  goF "d3"
+end
+
+=== miembro 93    (cast 233) ===
+on mouseUp
+  goR "c4"
+end
+
+=== miembro 94    (cast 234) ===
+on mouseUp
+  goL "c3"
+end
+
+=== miembro 95    (cast 235) ===
+on mouseUp
+  goR "c1"
+end
+
+=== miembro 96    (cast 236) ===
+on mouseUp
+  goL "d4"
+end
+
+=== miembro 97    (cast 237) ===
+on mouseUp
+  goF "c1"
+end
+
+=== miembro 98    (cast 238) ===
+on mouseUp
+  goR "d2"
+end
+
+=== miembro 99    (cast 239) ===
+on mouseUp
+  goL "d1"
+end
+
+=== miembro 100    (cast 240) ===
+on mouseUp
+  goR "d3"
+end
+
+=== miembro 101    (cast 241) ===
+on mouseUp
+  goL "d2"
+end
+
+=== miembro 102    (cast 242) ===
+on mouseUp
+  goF "f3"
+end
+
+=== miembro 103    (cast 243) ===
+on mouseUp
+  goR "d4"
+end
+
+=== miembro 104    (cast 244) ===
+on mouseUp
+  goL "d3"
+end
+
+=== miembro 105    (cast 245) ===
+on mouseUp
+  goF "e3"
+end
+
+=== miembro 106    (cast 246) ===
+on mouseUp
+  goR "d1"
+end
+
+=== miembro 200    (cast 247) ===
+on exitFrame
+  endThenGo "d3"
+end
+
+=== miembro 201    (cast 248) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 202    (cast 249) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 203    (cast 250) ===
+on exitFrame
+  endThenGo "c1"
+end
+
+=== miembro 204    (cast 251) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 205    (cast 252) ===
+on exitFrame
+  endThenGo "f3"
+end
+
+=== miembro 250    (cast 256) ===
+on exitFrame
+  initScene "AmaF"
+  go to the frame
+end
+
+=== miembro 206    (cast 257) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 207    (cast 258) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 208    (cast 259) ===
+on exitFrame
+  endThenGo "d1"
+end
+
+=== miembro 209    (cast 260) ===
+on exitFrame
+  endThenGo "h3"
+end
+
+=== miembro 210    (cast 261) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 211    (cast 262) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 251    (cast 263) ===
+on exitFrame
+  initScene "AmaG"
+  go to the frame
+end
+
+=== miembro 252    (cast 264) ===
+on exitFrame
+  initScene "AmaH"
+  go to the frame
+end
+
+=== miembro 253    (cast 265) ===
+on exitFrame
+  initScene "AmaI"
+  go to the frame
+end
+
+=== miembro 254    (cast 266) ===
+on exitFrame
+  initScene "AmaJ"
+  go to the frame
+end
+
+=== miembro 255    (cast 267) ===
+on exitFrame
+  initScene "AmaK"
+  go to the frame
+end
+
+=== miembro 256    (cast 268) ===
+on exitFrame
+  initScene "AmaL"
+  go to the frame
+end
+
+=== miembro 82    (cast 281) ===
+on mouseUp
+  goR "b4"
+end
+
+=== miembro 115    (cast 287) ===
+on mouseUp
+  goL "e3"
+end
+
+=== miembro 116    (cast 288) ===
+on mouseUp
+  goR "e1"
+end
+
+=== miembro 117    (cast 289) ===
+on mouseUp
+  goL "f4"
+end
+
+=== miembro 118    (cast 290) ===
+on mouseUp
+  goL "f1"
+end
+
+=== miembro 119    (cast 291) ===
+on mouseUp
+  goL "f2"
+end
+
+=== miembro 120    (cast 292) ===
+on mouseUp
+  goL "f3"
+end
+
+=== miembro 80    (cast 293) ===
+on mouseUp
+  goL "b2"
+end
+
+=== miembro 121    (cast 294) ===
+on mouseUp
+  goR "f2"
+end
+
+=== miembro 124    (cast 295) ===
+on mouseUp
+  goR "f1"
+end
+
+=== miembro 125    (cast 296) ===
+on mouseUp
+  goF "d1"
+end
+
+=== miembro 129    (cast 297) ===
+on mouseUp
+  goL "g2"
+end
+
+=== miembro 130    (cast 298) ===
+on mouseUp
+  goL "g3"
+end
+
+=== miembro 131    (cast 299) ===
+on mouseUp
+  goR "g2"
+end
+
+=== miembro 132    (cast 300) ===
+on mouseUp
+  goR "g3"
+end
+
+=== miembro 133    (cast 301) ===
+on mouseUp
+  goR "g4"
+end
+
+=== miembro 134    (cast 302) ===
+on mouseUp
+  goR "g1"
+end
+
+=== miembro 135    (cast 303) ===
+on mouseUp
+  goF "b4"
+end
+
+=== miembro 136    (cast 304) ===
+on mouseUp
+  goF "j3"
+end
+
+=== miembro 137    (cast 305) ===
+on mouseUp
+  goL "h4"
+end
+
+=== miembro 138    (cast 306) ===
+on mouseUp
+  goL "h1"
+end
+
+=== miembro 139    (cast 307) ===
+on mouseUp
+  goL "h2"
+end
+
+=== miembro 140    (cast 308) ===
+on mouseUp
+  goL "h3"
+end
+
+=== miembro 141    (cast 309) ===
+on mouseUp
+  goR "h2"
+end
+
+=== miembro 142    (cast 310) ===
+on mouseUp
+  goR "h3"
+end
+
+=== miembro 143    (cast 311) ===
+on mouseUp
+  goR "h4"
+end
+
+=== miembro 144    (cast 312) ===
+on mouseUp
+  goR "h1"
+end
+
+=== miembro 145    (cast 313) ===
+on mouseUp
+  goF "d1"
+end
+
+=== miembro 146    (cast 314) ===
+on mouseUp
+  goF "i3"
+end
+
+=== miembro 147    (cast 315) ===
+on mouseUp
+  goF "e1"
+end
+
+=== miembro 148    (cast 316) ===
+on mouseUp
+  goL "i4"
+end
+
+=== miembro 149    (cast 317) ===
+on mouseUp
+  goL "i1"
+end
+
+=== miembro 150    (cast 318) ===
+on mouseUp
+  goL "i2"
+end
+
+=== miembro 151    (cast 319) ===
+on mouseUp
+  goL "i3"
+end
+
+=== miembro 152    (cast 320) ===
+on mouseUp
+  goR "i2"
+end
+
+=== miembro 153    (cast 321) ===
+on mouseUp
+  goR "i3"
+end
+
+=== miembro 154    (cast 322) ===
+on mouseUp
+  goR "i4"
+end
+
+=== miembro 155    (cast 323) ===
+on mouseUp
+  goR "i1"
+end
+
+=== miembro 156    (cast 324) ===
+on mouseUp
+  goF "h1"
+end
+
+=== miembro 157    (cast 325) ===
+on mouseUp
+  goF "j2"
+end
+
+=== miembro 158    (cast 326) ===
+on mouseUp
+  goL"j4"
+end
+
+=== miembro 159    (cast 327) ===
+on mouseUp
+  goL "j1"
+end
+
+=== miembro 160    (cast 328) ===
+on mouseUp
+  goL "j2"
+end
+
+=== miembro 161    (cast 329) ===
+on mouseUp
+  goL "j3"
+end
+
+=== miembro 162    (cast 330) ===
+on mouseUp
+  goR "j2"
+end
+
+=== miembro 163    (cast 331) ===
+on mouseUp
+  goR "j3"
+end
+
+=== miembro 164    (cast 332) ===
+on mouseUp
+  goR "j4"
+end
+
+=== miembro 165    (cast 333) ===
+on mouseUp
+  goR "j1"
+end
+
+=== miembro 166    (cast 334) ===
+on mouseUp
+  goF "g1"
+end
+
+=== miembro 167    (cast 335) ===
+on mouseUp
+  goF "k3"
+end
+
+=== miembro 168    (cast 336) ===
+on mouseUp
+  goF "l3"
+end
+
+=== miembro 169    (cast 337) ===
+on mouseUp
+  goF "i1"
+end
+
+=== miembro 170    (cast 338) ===
+on mouseUp
+  goL "k4"
+end
+
+=== miembro 171    (cast 339) ===
+on mouseUp
+  goL "k1"
+end
+
+=== miembro 172    (cast 340) ===
+on mouseUp
+  goL "k2"
+end
+
+=== miembro 173    (cast 341) ===
+on mouseUp
+  goL "k3"
+end
+
+=== miembro 174    (cast 342) ===
+on mouseUp
+  goR "k2"
+end
+
+=== miembro 175    (cast 343) ===
+on mouseUp
+  goR "k3"
+end
+
+=== miembro 176    (cast 344) ===
+on mouseUp
+  goR "k4"
+end
+
+=== miembro 177    (cast 345) ===
+on mouseUp
+  goR "k1"
+end
+
+=== miembro 178    (cast 346) ===
+on mouseUp
+  goF "j4"
+end
+
+=== miembro 179    (cast 347) ===
+on mouseUp
+  goF "l2"
+end
+
+=== miembro 180    (cast 348) ===
+on mouseUp
+  goL "l4"
+end
+
+=== miembro 181    (cast 349) ===
+on mouseUp
+  goL "l1"
+end
+
+=== miembro 182    (cast 350) ===
+on mouseUp
+  goL "l2"
+end
+
+=== miembro 183    (cast 351) ===
+on mouseUp
+  goL "l3"
+end
+
+=== miembro 184    (cast 352) ===
+on mouseUp
+  goR "l2"
+end
+
+=== miembro 185    (cast 353) ===
+on mouseUp
+  goR "l3"
+end
+
+=== miembro 186    (cast 354) ===
+on mouseUp
+  goR "l4"
+end
+
+=== miembro 187    (cast 355) ===
+on mouseUp
+  goR "l1"
+end
+
+=== miembro 188    (cast 356) ===
+on mouseUp
+  goF "j1"
+end
+
+=== miembro 189    (cast 357) ===
+on mouseUp
+  goF "k1"
+end
+
+=== miembro 212    (cast 360) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 213    (cast 361) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 214    (cast 369) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 224    (cast 382) ===
+on exitFrame
+  endThenGo "b4"
+end
+
+=== miembro 225    (cast 383) ===
+on exitFrame
+  endThenGo "j3"
+end
+
+=== miembro 226    (cast 384) ===
+on exitFrame
+  endThenGo "f1"
+end
+
+=== miembro 227    (cast 385) ===
+on exitFrame
+  endThenGo "i3"
+end
+
+=== miembro 228    (cast 386) ===
+on exitFrame
+  endThenGo "h1"
+end
+
+=== miembro 229    (cast 387) ===
+on exitFrame
+  endThenGo "j2"
+end
+
+=== miembro 230    (cast 388) ===
+on exitFrame
+  endThenGo "g1"
+end
+
+=== miembro 231    (cast 389) ===
+on exitFrame
+  endThenGo "k3"
+end
+
+=== miembro 232    (cast 390) ===
+on exitFrame
+  endThenGo "l3"
+end
+
+=== miembro 233    (cast 391) ===
+on exitFrame
+  endThenGo "i1"
+end
+
+=== miembro 234    (cast 392) ===
+on exitFrame
+  endThenGo "j4"
+end
+
+=== miembro 235    (cast 393) ===
+on exitFrame
+  endThenGo "l2"
+end
+
+=== miembro 236    (cast 394) ===
+on exitFrame
+  endThenGo "j1"
+end
+
+=== miembro 237    (cast 396) ===
+on exitFrame
+  endThenGo "k1"
+end
+
+=== miembro 238    (cast 397) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 215    (cast 401) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 239    (cast 422) ===
+on exitFrame
+  initScene "AmaB"
+  goFMov "b3event","b3ev.dir"
+end
+
+=== miembro 240    (cast 433) ===
+on exitFrame
+  initScene "AmaG"
+  goFMov "g1event","g1ev.dir"
+end
+
+=== miembro 242    (cast 438) ===
+on exitFrame
+  initScene "AmaI"
+  goFMov "i1event","i1ev.dir"  
+end
+
+=== miembro 216    (cast 486) ===
+on mouseUp
+  go to  the frame+1
+end
+
+=== miembro 217    (cast 487) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 218    (cast 488) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 219    (cast 489) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 220    (cast 490) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 221    (cast 491) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 222    (cast 492) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 223    (cast 493) ===
+on mouseUp
+  go to the frame+1
+end
+
+=== miembro 241    (cast 501) ===
+on exitFrame
+  initScene "AmaF"
+  if not existCondition("amasuirai")  then goFMov "f1event","f1ev.dir"
+end
+
+=== miembro 243    (cast 507) ===
+on exitFrame
+  initScene "AmaC"
+  goFMov "c3event","c3ev.dir"
+end
+
+=== miembro 244    (cast 511) ===
+on exitFrame
+  initScene "AmaK"
+  if not existItem("êØÇÃäÑÇËïÑ") then
+    goFMov "k1event","k1ev.dir"
+  else
+    go to "k1n"
+  end if
+end
+
+=== miembro 245    (cast 516) ===
+on exitFrame
+  initScene "AmaL"
+  goFMov "l3event","l3ev.dir"
+end
+
+=== miembro 263    (cast 576) ===
+on exitFrame
+  pmsg 0
+  go to the frame
+end
+
+=== miembro 264    (cast 578) ===
+on exitFrame
+  initScene "AmaA"
+end
+
+=== miembro 260    (cast 660) ===
+on exitFrame
+  putGrp "tìVÇÃêÏ.dif",0
+  wait 180
+  clrmsg
+  go "a3"
+end
+

@@ -1,0 +1,368 @@
+=== miembro 69    (cast 8) ===
+--Å@êØã{ÇæÇØÇÉeÉXÉgÇ∑ÇÈÇΩÇﬂÇ…
+-- forward,backwardÇ»Ç«ÇÕégópÇ≥ÇÍÇ»Ç¢ÇÕÇ∏
+on exitFrame
+  global pictCast
+  global nowFrame
+  
+  initlist
+  set the movieRate of sprite 35 to 0
+  
+  set nowFrame=0
+  
+  setMovieTime 1
+  set pictCast="F0240.dif"
+  revPictCast
+  set the castNum of sprite 2 to the number of cast pictCast
+  updateStage
+  
+  set the visibility of sprite 35 to false
+  updateStage
+end
+
+=== miembro 66    (cast 87) ===
+--Å@ÇÆÇÈÇÆÇÈÅ[Ç’Å@ê≥ï˚å¸
+on exitFrame
+  global pictCast
+  global nowFrame
+  global pcv
+  
+  setMovieTime nowFrame
+  
+  set mfl=0
+  
+  repeat while (the mouseDown and rollover(4))
+    set mfl=1
+    set the visibility of sprite 35 to true
+    set the movieRate of sprite 35 to 1
+    updateStage
+  end repeat
+  
+  if mfl then
+    nextPoint
+    extinguish
+  end if
+  
+  set the movieRate of sprite 35 to 0
+  set the castNum of sprite 2 to the number of cast pictCast
+  set the visibility of sprite 35 to false
+  updateStage
+  
+  set nowFrame to the movieTime of sprite 35
+  
+  set pcv=the number of cast pictCast
+  go to the frame
+end
+
+=== miembro 67    (cast 88) ===
+on startMovie
+  global moveFlag
+  
+  initMovie
+  initScene "rmz"
+  
+  set moveFlag=0
+  
+  set the puppet of sprite 2 to true
+  set the type of sprite 2 to 1
+  
+  set the ink of sprite 2 to 0
+  set the backColor of sprite 2 to 0
+  set the foreColor of sprite 2 to 255
+  
+  set the locH of sprite 2 to 320
+  set the locV of sprite 2 to 200
+  set the visibility of sprite 2 to true
+  
+  saveEnable
+end
+
+on xxRestore
+  repeat with i=29 to 56
+    --    set aa=integer((char 2 to 5 of the name of cast (i-28)))
+    set aa=integer(241-(char 2 to 5 of the name of cast (28-(i-29))))
+    if aa=1 then set aa=240
+    if aa<10 then
+      set bb to "000"&string(aa)
+    else if aa<100 then
+      set bb to "00"&string(aa)
+    else
+      set bb to "0"&string(aa)
+    end if
+    
+    set the name of cast i to "B" & bb & ".dif"
+  end repeat
+end
+
+
+on revPictCast
+  global pictCast
+  global pictCastB
+  set aa=241-integer(char 2 to 5 of pictCast)
+  if aa=1 then set aa=240
+  if aa<10 then
+    set bb to "000"&string(aa)
+  else if aa<100 then
+    set bb to "00"&string(aa)
+  else
+    set bb to "0"&string(aa)
+  end if
+  set pictCastB="B" & bb & ".dif"
+end
+
+on revPictCastB
+  global pictCast
+  global pictCastB
+  set aa=241-integer(char 2 to 5 of pictCastB)
+  if aa=1 then set aa=240
+  if aa<10 then
+    set bb to "000"&string(aa)
+  else if aa<100 then
+    set bb to "00"&string(aa)
+  else
+    set bb to "0"&string(aa)
+  end if
+  set pictCast="F" & bb & ".dif"
+end
+
+=== miembro 70    (cast 95) ===
+--Å@ÇÆÇÈÇÆÇÈÅ[Ç’Å@ãtï˚å¸
+on exitFrame
+  global pictCast
+  global pictCastB
+  global nowFrame
+  global pcv
+  
+  setMovieTime nowFrame
+  
+  set mfl=0
+  
+  repeat while (the mouseDown and rollover(4))
+    set mfl=1
+    set the visibility of sprite 35 to true
+    set the movieRate of sprite 35 to 1
+    updateStage
+  end repeat
+  
+  if mfl then
+    nextPointB
+    extinguish
+  end if
+  
+  set the movieRate of sprite 35 to 0
+  set the castNum of sprite 2 to the number of cast pictCastB
+  set the visibility of sprite 35 to false
+  updateStage
+  
+  set nowFrame to the movieTime of sprite 35
+  
+  set pcv=the number of cast pictCast
+  go to the frame
+end
+
+=== miembro 75    (cast 131) ===
+--Å@ÉÄÅ[ÉrÅ[É^ÉCÉÄÇê›íËÇµÇƒÇ‡Ç«ÇÈ
+on exitFrame
+  global rtMovie
+  global nowFrame
+  global pictCast
+  
+  set nowFrame to integer(char 2 to 5 of pictCast)*5
+  setMovieTime nowFrame
+  set the castNum of sprite 2 to the number of cast pictCast
+  go "f2"
+end
+
+on enterFrame
+  set the visibility of sprite 35 to false
+  set the movieRate of sprite 35 to 0
+  updateStage
+end
+
+=== miembro 68    (cast 136) ===
+on nextPoint
+  global pictCast
+  set the movieRate of sprite 35 to 0
+  
+  set xflag=true
+  repeat with i=the number of cast "f0015.dif" to the number of cast "f0240.dif"
+    set dummy=(char 2 to 5 of the name of cast i) *5
+    if dummy>=the duration of cast "starf.mov" then set dummy=the duration of cast "starf.mov"-5
+    
+    if the movieTime of sprite 35<dummy then
+      set the movieRate of sprite 35 to 1
+      set xflag=false
+      
+      repeat while  (the movieTime of sprite 35)<dummy
+        updateStage
+      end repeat
+      set the movieRate of sprite 35 to 0
+      exit repeat
+    end if
+  end repeat
+  
+  if xflag then
+    set the movieTime of sprite 35 to 0
+    if the movieTime of sprite 35<15*5 then
+      set the movieRate of sprite 35 to 1
+      repeat while the movieTime of sprite 35<15*5
+        updateStage
+      end repeat
+    end if
+    set the movieRate of sprite 35 to 0
+    set i=the number of cast "F0015.dif"
+  end if
+  
+  set pictCast=the name of cast i
+  revPictCast
+end
+
+on nextPointB
+  global pictCastB
+  set the movieRate of sprite 35 to 0
+  
+  set xflag=true
+  repeat with i=the number of cast "B0015.dif" to the number of cast "B0240.dif"
+    set dummy=(char 2 to 5 of the name of cast i) *5
+    if the movieTime of sprite 35<dummy then
+      set the movieRate of sprite 35 to 1
+      set xflag=false
+      
+      repeat while  (the movieTime of sprite 35)<dummy
+        updateStage
+      end repeat
+      set the movieRate of sprite 35 to 0
+      exit repeat
+    end if
+  end repeat
+  
+  if xflag then
+    set the movieTime of sprite 35 to 0
+    if the movieTime of sprite 35<15*5 then
+      set the movieRate of sprite 35 to 1
+      repeat while the movieTime of sprite 35<15*5
+        updateStage
+      end repeat
+    end if
+    set the movieRate of sprite 35 to 0
+    set i=the number of cast "B0015.dif"
+  end if
+  
+  set pictCastB=the name of cast i
+  revPictCastB
+end
+
+
+--Å@êØÇÃÇ†Ç©ÇËâŒÇèôÅXÇ…è¡Ç∑
+on extinguish
+  if existItem("êØÇÃÇ†Ç©ÇËâŒÅEéÜ") then
+    deleteItem("êØÇÃÇ†Ç©ÇËâŒÅEéÜ")
+    putMsg "êØÇÃÇ†Ç©ÇËâŒè¡Ç¶ÇÈmsg",2   
+    drawBag
+    exit
+  else if existItem("êØÇÃÇ†Ç©ÇËâŒÅEÇR") then
+    deleteItem("êØÇÃÇ†Ç©ÇËâŒÅEÇR")
+    appendItem("êØÇÃÇ†Ç©ÇËâŒÅEÇQ")
+    putMsg "êØÇÃÇ†Ç©ÇËâŒè¡Ç¶ÇÈmsg",0   
+    drawBag
+    exit
+  else if existItem("êØÇÃÇ†Ç©ÇËâŒÅEÇQ") then
+    deleteItem("êØÇÃÇ†Ç©ÇËâŒÅEÇQ")
+    appendItem("êØÇÃÇ†Ç©ÇËâŒÅEÇP")
+    putMsg "êØÇÃÇ†Ç©ÇËâŒè¡Ç¶ÇÈmsg",1   
+    drawBag
+    exit
+  else if existItem("êØÇÃÇ†Ç©ÇËâŒÅEÇP") then
+    deleteItem("êØÇÃÇ†Ç©ÇËâŒÅEÇP")
+    appenditem "ñÿï–"
+    putMsg "êØÇÃÇ†Ç©ÇËâŒè¡Ç¶ÇÈmsg",3   
+    drawBag
+    exit
+  else
+    clrmsg
+  end if
+end
+
+=== miembro 77    (cast 236) ===
+--Å@ÉÄÅ[ÉrÅ[Ç©ÇÁãAÇ¡ÇƒÇ´ÇΩÇ∆Ç´Ç…ÅAÉÄÅ[ÉrÅ[É^ÉCÉÄÇ»Ç«Çê›íËÇ∑ÇÈ
+on exitFrame
+  global nowFrame
+  setMovieTime nowFrame
+  set the movieRate of sprite 35 to 0
+  set the cursor of sprite 3 to [702,703]
+  set the cursor of sprite 4 to [704,705]
+  set the cursor of sprite 5 to [700,701]
+  cursor -1
+end
+
+=== miembro 76    (cast 240) ===
+--Å@ÉÄÅ[ÉrÅ[É^ÉCÉÄÇê›íËÇµÇƒÇ‡Ç«ÇÈ
+on exitFrame
+  global rtMovie
+  global nowFrame
+  global pictCastB
+  
+  set nowFrame to integer(char 2 to 5 of pictCastB)*5
+  setMovieTime nowFrame
+  set the castNum of sprite 2 to the number of cast pictCastB
+  go "b2"
+end
+
+on enterFrame
+  set the visibility of sprite 35 to false
+  set the movieRate of sprite 35 to 0
+  updateStage
+end
+
+=== miembro 71    (cast 241) ===
+--Å@â°Çå¸Ç≠
+on mouseUp
+  global pictCast,pictCastB
+  global pcv,pcvb
+  set pcv=the number of cast pictCast
+  set pcvb=the number of cast pictCastB
+  goFMov "out","rm"&char 2 to 5 of pictCast
+end
+
+=== miembro 72    (cast 242) ===
+--Å@â°Çå¸Ç≠
+on mouseUp
+  global pictCast,pictCastB
+  global pcv,pcvb
+  set pcv=the number of cast pictCast
+  set pcvb=the number of cast pictCastB
+  goFMov "in","rm"&char 2 to 5 of pictCast
+end
+
+=== miembro 73    (cast 243) ===
+--Å@â°Çå¸Ç≠
+on mouseUp
+  global pictCast,pictCastB
+  global pcv,pcvb
+  set pcv=the number of cast pictCast
+  set pcvb=the number of cast pictCastB
+  goFMov "in","rm"&char 2 to 5 of the name of cast pictCast
+end
+
+=== miembro 74    (cast 244) ===
+--Å@â°Çå¸Ç≠
+on mouseUp
+  global pictCast,pictCastB
+  global pcv,pcvb
+  set pcv=the number of cast pictCast
+  set pcvb=the number of cast pictCastB
+  goFMov "out","rm"&char 2 to 5 of the name of cast pictCast
+end
+
+=== miembro 78    (cast 339) ===
+--Å@pictÇï\é¶ÇµÇƒéûä‘â“Ç¨
+on exitFrame
+  cursor 4
+  set the cursor of sprite 3 to 4
+  set the cursor of sprite 4 to 4
+  set the cursor of sprite 5 to 4
+  set the visibility of sprite 35 to false
+  updateStage
+  go to the frame+100
+end
+

@@ -1,0 +1,27 @@
+{
+ "source": "HOSIMIYA.DIR",
+ "sounds": [
+  {
+   "file": "s0076_OS-20.wav",
+   "member": 76,
+   "name": "OS-20",
+   "cast_id": 258,
+   "snd_id": 259,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 163286
+  },
+  {
+   "file": "s0081_OS-20.wav",
+   "member": 81,
+   "name": "OS-20",
+   "cast_id": 267,
+   "snd_id": 276,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 163286
+  }
+ ]
+}

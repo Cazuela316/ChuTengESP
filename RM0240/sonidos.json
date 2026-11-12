@@ -1,0 +1,27 @@
+{
+ "source": "RM0240.DIR",
+ "sounds": [
+  {
+   "file": "s0015_FX-52.wav",
+   "member": 15,
+   "name": "FX-52",
+   "cast_id": 114,
+   "snd_id": 115,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 32508
+  },
+  {
+   "file": "s0014_M24.09.wav",
+   "member": 14,
+   "name": "M24.09",
+   "cast_id": 120,
+   "snd_id": 138,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176879
+  }
+ ]
+}

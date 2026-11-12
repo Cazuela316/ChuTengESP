@@ -1,0 +1,135 @@
+=== miembro 15    (cast 6) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 17    (cast 7) ===
+on exitFrame
+  initScene "rm0160"
+  go to the frame
+end
+
+=== miembro 18    (cast 13) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 19    (cast 16) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 16    (cast 17) ===
+on exitFrame
+  initScene "rm0160"
+  appendCanUse "êØñúî\åÆ"
+  appendCanUse "èëå…åÆ"
+  appendCanUse "çáåÆâÆåÆ"
+  appendCanUse "êØñúî\åÆï°êª"
+  appendCanUse "èëå…åÆï°êª"
+  appendCanUse "çáåÆâÆåÆï°êª"
+  set the visibility of sprite 6 to not existItem("çáåÆâÆåÆ")
+  set the visibility of sprite 7 to not existItem("êØñúî\åÆ")
+  set the visibility of sprite 8 to not existItem("èëå…åÆ")
+end
+
+=== miembro 20    (cast 19) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 21    (cast 20) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 22    (cast 21) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 23    (cast 25) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 12    (cast 36) ===
+on mouseUp
+  if doubleClick() then
+    if existItem("êØñúî\åÆ") or existItem("èëå…åÆ") or existItem("çáåÆâÆåÆ") then
+      nothing
+    else
+      deleteItem("êØñúî\åÆ")
+      deleteItem("èëå…åÆ")
+      deleteItem("çáåÆâÆåÆ")
+      
+      getItem("çáåÆâÆåÆ")
+    end if
+  end if
+end
+
+=== miembro 11    (cast 38) ===
+on exitFrame
+  putMsg("text",0)
+  set the visibility of sprite 6 to not existItem("çáåÆâÆåÆ")
+  set the visibility of sprite 7 to not existItem("êØñúî\åÆ")
+  set the visibility of sprite 8 to not existItem("èëå…åÆ")
+  updateStage
+  
+  if IsUsingItem("çáåÆâÆåÆ") then
+    putWaitMsg "text",1
+    deleteItem "çáåÆâÆåÆ"
+    drawBag
+  else if IsUsingItem("êØñúî\åÆ") then
+    putWaitMsg "text",1
+    deleteItem "êØñúî\åÆ"
+    drawBag
+  else if IsUsingItem("èëå…åÆ") then 
+    putWaitMsg "text",1
+    deleteItem "èëå…åÆ"
+    drawBag
+  else if IsUsingItem("çáåÆâÆåÆï°êª") then
+    putWaitMsg "text",2
+    drawBag
+  else if IsUsingItem("êØñúî\åÆï°êª") then
+    putWaitMsg "text",2
+    drawBag
+  else if IsUsingItem("èëå…åÆï°êª") then 
+    putWaitMsg "text",2
+    drawBag
+  end if
+  
+  clrUsingItem
+  go to the frame
+end
+
+=== miembro 13    (cast 48) ===
+on mouseUp
+  if doubleClick() then
+    if existItem("êØñúî\åÆ") or existItem("èëå…åÆ") or existItem("çáåÆâÆåÆ") then
+      nothing
+    else
+      deleteItem("êØñúî\åÆ")
+      deleteItem("èëå…åÆ")
+      deleteItem("çáåÆâÆåÆ")
+      
+      getItem("êØñúî\åÆ")
+    end if
+  end if
+end
+
+=== miembro 14    (cast 52) ===
+on mouseUp
+  if doubleClick() then
+    if existItem("êØñúî\åÆ") or existItem("èëå…åÆ") or existItem("çáåÆâÆåÆ") then
+      nothing
+    else
+      deleteItem("êØñúî\åÆ")
+      deleteItem("èëå…åÆ")
+      deleteItem("çáåÆâÆåÆ")
+      
+      getItem("èëå…åÆ")
+    end if
+  end if
+end
+

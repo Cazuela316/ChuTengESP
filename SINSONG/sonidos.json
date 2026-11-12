@@ -1,0 +1,27 @@
+{
+ "source": "SINSONG.DIR",
+ "sounds": [
+  {
+   "file": "s0038_M18.05.wav",
+   "member": 38,
+   "name": "M18.05",
+   "cast_id": 141,
+   "snd_id": 149,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 92101
+  },
+  {
+   "file": "s0039_l.wav",
+   "member": 39,
+   "name": "\u2030\u00cc\u201a\u00a4\ufffdl",
+   "cast_id": 144,
+   "snd_id": 66,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 467965
+  }
+ ]
+}

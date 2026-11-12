@@ -1,0 +1,128 @@
+=== miembro 51    (cast 79) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 63    (cast 133) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 52    (cast 139) ===
+on exitFrame
+  
+end
+
+=== miembro 60    (cast 147) ===
+on mouseUp
+  go to the frame
+  
+end
+
+=== miembro 66    (cast 148) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 65    (cast 150) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 64    (cast 151) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 62    (cast 154) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 53    (cast 165) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 54    (cast 176) ===
+on exitFrame
+  initScene "rm0022"
+  if existCondition("rm0022ev") then
+    go to "noEvent"
+  end if
+end
+
+=== miembro 55    (cast 177) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 56    (cast 178) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>3 then
+    go to "msg4567"
+  end if
+  
+end
+
+=== miembro 57    (cast 180) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>7 then
+    go to "crash"
+  end if
+  
+end
+
+=== miembro 58    (cast 181) ===
+on exitFrame
+  putWaitMsg "text",8
+  appendCondition("rm0022ev")
+end
+
+=== miembro 59    (cast 182) ===
+on exitFrame
+  go to "noEvent"
+end
+
+=== miembro 68    (cast 183) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 61    (cast 184) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 67    (cast 187) ===
+on exitFrame
+  initScene "rm0022"
+  go to the frame
+end
+
+=== miembro 69    (cast 188) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 70    (cast 203) ===
+on exitFrame
+  clrMsg
+  go to the frame
+end
+
+=== miembro 71    (cast 204) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 72    (cast 205) ===
+on startMovie
+  initMovie
+end
+

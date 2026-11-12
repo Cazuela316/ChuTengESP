@@ -1,0 +1,203 @@
+{
+ "source": "GOJYU.DIR",
+ "sounds": [
+  {
+   "file": "s0496_FX-50.wav",
+   "member": 496,
+   "name": "FX-50",
+   "cast_id": 150,
+   "snd_id": 353,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 8284
+  },
+  {
+   "file": "s0493_72.wav",
+   "member": 493,
+   "name": "72",
+   "cast_id": 168,
+   "snd_id": 172,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 33327
+  },
+  {
+   "file": "s0494_82.wav",
+   "member": 494,
+   "name": "82",
+   "cast_id": 177,
+   "snd_id": 204,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 42496
+  },
+  {
+   "file": "s0495_Null_Sound.wav",
+   "member": 495,
+   "name": "Null Sound",
+   "cast_id": 249,
+   "snd_id": 254,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0303_M11.01.wav",
+   "member": 303,
+   "name": "M11.01",
+   "cast_id": 1387,
+   "snd_id": 1420,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 173539
+  },
+  {
+   "file": "s0305_M11.02.wav",
+   "member": 305,
+   "name": "M11.02",
+   "cast_id": 1410,
+   "snd_id": 1371,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176185
+  },
+  {
+   "file": "s0308_OS-16.wav",
+   "member": 308,
+   "name": "OS-16*",
+   "cast_id": 1423,
+   "snd_id": 1382,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 65877
+  },
+  {
+   "file": "s0304_S01.06.wav",
+   "member": 304,
+   "name": "S01.06",
+   "cast_id": 1425,
+   "snd_id": 1301,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 135680
+  },
+  {
+   "file": "s0312_EF-03.wav",
+   "member": 312,
+   "name": "EF-03",
+   "cast_id": 1440,
+   "snd_id": 1487,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 4771
+  },
+  {
+   "file": "s0306_M11.03.wav",
+   "member": 306,
+   "name": "M11.03",
+   "cast_id": 1445,
+   "snd_id": 1464,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 88199
+  },
+  {
+   "file": "s0314_SE01.02.wav",
+   "member": 314,
+   "name": "SE01.02",
+   "cast_id": 1468,
+   "snd_id": 1496,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12032
+  },
+  {
+   "file": "s0310_EF-01.wav",
+   "member": 310,
+   "name": "EF-01",
+   "cast_id": 1478,
+   "snd_id": 1477,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 2388
+  },
+  {
+   "file": "s0313_EF-04.wav",
+   "member": 313,
+   "name": "EF-04",
+   "cast_id": 1479,
+   "snd_id": 1466,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 17080
+  },
+  {
+   "file": "s0307_M11.12.wav",
+   "member": 307,
+   "name": "M11.12",
+   "cast_id": 1488,
+   "snd_id": 1443,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 87953
+  },
+  {
+   "file": "s0309_SM-35.wav",
+   "member": 309,
+   "name": "SM-35",
+   "cast_id": 1504,
+   "snd_id": 1446,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 211103
+  },
+  {
+   "file": "s0315_FX-26.wav",
+   "member": 315,
+   "name": "FX-26",
+   "cast_id": 1534,
+   "snd_id": 1515,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12732
+  },
+  {
+   "file": "s0302_M05.06.wav",
+   "member": 302,
+   "name": "M05.06",
+   "cast_id": 1681,
+   "snd_id": 1439,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 97132
+  },
+  {
+   "file": "s0311_EF-02.wav",
+   "member": 311,
+   "name": "EF-02",
+   "cast_id": 1688,
+   "snd_id": 1448,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 17956
+  }
+ ]
+}

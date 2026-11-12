@@ -1,0 +1,122 @@
+=== miembro 69    (cast 51) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 74    (cast 137) ===
+on mouseUp
+  go "byeJyokan"
+end
+
+=== miembro 84    (cast 146) ===
+on mouseUp
+  nothing
+end
+
+=== miembro 80    (cast 147) ===
+on exitFrame
+  clrCanUse
+  appendCanUse "èóäØåÆ"
+  appendCanUse "åéñúî\åÆ"
+  appendCanUse "ì˙ñúî\åÆ"
+  appendCanUse "êØñúî\åÆ"
+  
+  appendCanUse "èóäØåÆï°êª"
+  appendCanUse "åéñúî\åÆï°êª"
+  appendCanUse "ì˙ñúî\åÆï°êª"
+  appendCanUse "êØñúî\åÆï°êª"
+end
+
+=== miembro 73    (cast 148) ===
+on mouseUp
+  go "joSPK2"
+end
+
+=== miembro 81    (cast 149) ===
+on exitFrame
+  global usingItem
+  if existCanUse(usingItem) then
+    deleteThisItem
+    drawBag
+    clrUsingItem
+    go "kaiOpen"
+  end if
+  clrUsingItem
+end
+
+=== miembro 75    (cast 150) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 72    (cast 178) ===
+on exitFrame
+  goFMov "af","topcastl.dir"
+end
+
+=== miembro 78    (cast 190) ===
+on exitFrame
+  set the puppet of sprite 6 to true
+  set the type of sprite 6 to 1
+  set the ink of sprite 6 to 36
+  set the castNum of sprite 6 to the number of cast "kaiCast"
+  set the locH of sprite 6 to the mouseH
+  set the locV of sprite 6 to the mouseV
+end
+
+=== miembro 85    (cast 220) ===
+on exitFrame
+  initScene "jokan"
+end
+
+=== miembro 70    (cast 245) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 71    (cast 246) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 76    (cast 247) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 77    (cast 251) ===
+on mouseUp
+  go "kaiOpen"
+end
+
+=== miembro 79    (cast 252) ===
+on exitFrame
+  set the locH of sprite 6 to the mouseH
+  set the locV of sprite 6 to the mouseV
+  
+  go to the frame
+end
+
+=== miembro 82    (cast 253) ===
+on mouseUp
+  if doubleClick() then
+    getItem "éµÇ¬ã ÅiíÉÅj"
+    goFMov "af","topcastl.dir"
+  end if
+end
+
+=== miembro 83    (cast 265) ===
+on mouseUp
+  goFMov "af","topcastl.dir"
+end
+
+=== miembro 86    (cast 273) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 87    (cast 283) ===
+on exitFrame
+  clrmsg
+end
+

@@ -1,0 +1,85 @@
+=== miembro 26    (cast 18) ===
+on exitFrame
+  global pictCast,pictCastB,pcv,pcvB,nowFrame,rtmovie
+  set pictCast="F0028.dif"
+  set pictCastB="B0213.dif"
+  set pcv=4
+  set pcvB=53
+  set nowFrame=140
+  set rtmovie="hosiloop.dir"
+  --   go to movie "rm0028.dir"
+  gohb
+end
+
+=== miembro 14    (cast 44) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 15    (cast 54) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 16    (cast 55) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 17    (cast 56) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 18    (cast 57) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 19    (cast 58) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 20    (cast 59) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 25    (cast 62) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>2 then
+    clrMsg
+    go "goNan"
+  end if
+end
+
+=== miembro 22    (cast 63) ===
+on exitFrame
+  initScene "rm0107"
+end
+
+=== miembro 21    (cast 66) ===
+on exitFrame
+  initScene "rm0107"
+  go to the frame
+end
+
+=== miembro 23    (cast 69) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 24    (cast 96) ===
+on exitFrame
+  global dma
+  pmsg dma
+end
+
+=== miembro 27    (cast 107) ===
+on exitFrame
+  endThenGo "goNan2"
+end
+

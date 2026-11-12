@@ -1,0 +1,27 @@
+{
+ "source": "C3EV.DIR",
+ "sounds": [
+  {
+   "file": "s0097_M04.06.wav",
+   "member": 97,
+   "name": "M04.06",
+   "cast_id": 182,
+   "snd_id": 186,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 50378
+  },
+  {
+   "file": "s0098_SE01.02.wav",
+   "member": 98,
+   "name": "SE01.02",
+   "cast_id": 241,
+   "snd_id": 242,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12032
+  }
+ ]
+}

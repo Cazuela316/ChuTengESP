@@ -1,0 +1,108 @@
+=== miembro 30    (cast 53) ===
+on exitFrame
+  go to marker(0)
+end
+
+=== miembro 39    (cast 63) ===
+on exitFrame
+  global b3msg1
+  global b3msg2
+  
+  putMsg "text",b3msg1*2+b3msg2
+  
+  go to marker(0)
+end
+
+=== miembro 43    (cast 95) ===
+on exitFrame
+  initScene "AmaB"
+end
+
+=== miembro 32    (cast 99) ===
+on exitFrame
+  startTimer
+end
+
+=== miembro 31    (cast 102) ===
+on mouseUp
+  play done
+end
+
+=== miembro 42    (cast 103) ===
+on mouseUp
+  retRMov "b4"
+end
+
+=== miembro 33    (cast 104) ===
+on exitFrame
+  global msga
+  putMsg the number of cast "tex1"+msga
+  
+  if the timer>3*60 then
+    startTimer
+    set msga=msga+1
+    if msga>=2 then set msga=0
+  end if
+  
+end
+
+=== miembro 34    (cast 105) ===
+on exitFrame
+  global msga
+  putMsg the number of cast "tex1"+msga
+end
+
+=== miembro 35    (cast 106) ===
+on exitFrame
+  global msga
+  putMsg 5,the number of cast "tex1"+msga
+  go to marker(-1)
+end
+
+=== miembro 37    (cast 132) ===
+on mouseUp
+  global b3msg1,b3msg2
+  
+  set b3msg2=b3msg2+1
+  if b3msg2>1 then
+    set b3msg2=0
+    set b3msg1=b3msg1+1
+    if b3msg1>2 then set b3msg1=0
+    retMov "b3n"
+  end if
+end
+
+=== miembro 44    (cast 142) ===
+on startMovie
+  global gscene
+  set gscene="amanogawa"
+  initMovie
+end
+
+=== miembro 36    (cast 151) ===
+on exitFrame
+  global b3msg1,b3msg2
+  
+  putMsg "text",b3msg1*2+b3msg2
+end
+
+=== miembro 38    (cast 153) ===
+on exitFrame
+ go to marker(0) 
+end
+
+=== miembro 40    (cast 162) ===
+on mouseUp
+  retLMov "b2"
+end
+
+=== miembro 41    (cast 164) ===
+on mouseUp
+  global b3msg1,b3msg2
+  
+  set b3msg2=0
+  set b3msg1=b3msg1+1
+  if b3msg1>2 then set b3msg1=0
+  retFMov "b3mov"
+end
+

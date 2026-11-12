@@ -1,0 +1,60 @@
+=== miembro 100    (cast 69) ===
+on exitFrame
+  global c3msg1,c3msg2
+  
+  putMsg "text",c3msg1*2+c3msg2
+end
+
+=== miembro 101    (cast 124) ===
+on mouseUp
+  retLMov "c2"
+end
+
+=== miembro 99    (cast 130) ===
+on exitFrame
+  global c3msg1,c3msg2
+  
+  putMsg "text",c3msg1*2+c3msg2
+  go to marker(-1)
+end
+
+=== miembro 102    (cast 139) ===
+on mouseUp
+  global c3msg1,c3msg2
+  
+  set c3msg2=0
+  set c3msg1=c3msg1+1
+  if c3msg1>2 then set c3msg1=0
+  retFMov "c3mov"
+end
+
+=== miembro 103    (cast 142) ===
+on mouseUp
+  retRMov "c4"
+end
+
+=== miembro 104    (cast 152) ===
+on mouseUp
+  global c3msg1,c3msg2
+  
+  set c3msg2=c3msg2+1
+  if c3msg2>1 then
+    set c3msg2=0
+    set c3msg1=c3msg1+1
+    if c3msg1>2 then set c3msg1=0
+    retMov "c3n"
+  end if
+end
+
+=== miembro 105    (cast 205) ===
+on startMovie
+  global gscene
+  set gscene="amanogawa"
+  initMovie
+end
+
+=== miembro 106    (cast 368) ===
+on exitFrame
+  initScene "AmaC"
+end
+

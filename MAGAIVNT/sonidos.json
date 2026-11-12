@@ -1,0 +1,82 @@
+{
+ "source": "MAGAIVNT.DIR",
+ "sounds": [
+  {
+   "file": "s0157_OS-11.wav",
+   "member": 157,
+   "name": "OS-11*",
+   "cast_id": 282,
+   "snd_id": 703,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 140689
+  },
+  {
+   "file": "s0154_M17.16.wav",
+   "member": 154,
+   "name": "M17.16",
+   "cast_id": 611,
+   "snd_id": 683,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 352838
+  },
+  {
+   "file": "s0155_OS-15.wav",
+   "member": 155,
+   "name": "OS-15*",
+   "cast_id": 697,
+   "snd_id": 714,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 105947
+  },
+  {
+   "file": "s0156_M22.02.wav",
+   "member": 156,
+   "name": "M22.02",
+   "cast_id": 702,
+   "snd_id": 700,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117595
+  },
+  {
+   "file": "s0159_OS-12.wav",
+   "member": 159,
+   "name": "OS-12*",
+   "cast_id": 707,
+   "snd_id": 624,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176331
+  },
+  {
+   "file": "s0158_OS-19.wav",
+   "member": 158,
+   "name": "OS-19",
+   "cast_id": 709,
+   "snd_id": 704,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 161917
+  },
+  {
+   "file": "s0160_FX-17.wav",
+   "member": 160,
+   "name": "FX-17",
+   "cast_id": 754,
+   "snd_id": 758,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 38076
+  }
+ ]
+}

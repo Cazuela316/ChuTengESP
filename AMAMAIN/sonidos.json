@@ -1,0 +1,27 @@
+{
+ "source": "AMAMAIN.DIR",
+ "sounds": [
+  {
+   "file": "s0259_S01.01.wav",
+   "member": 259,
+   "name": "S01.01",
+   "cast_id": 711,
+   "snd_id": 718,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 107111
+  },
+  {
+   "file": "s0258_M02.09.wav",
+   "member": 258,
+   "name": "M02.09",
+   "cast_id": 743,
+   "snd_id": 128,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 100919
+  }
+ ]
+}

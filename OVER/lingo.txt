@@ -1,0 +1,21 @@
+=== miembro 9    (cast 38) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 55    (cast 75) ===
+on exitFrame
+  initlist
+end
+
+=== miembro 53    (cast 184) ===
+on startMovie
+  global debugmode
+  if debugmode then
+    set the exitLock to true
+    when keydown then shortcut
+  end if
+  
+  saveDisable
+end
+

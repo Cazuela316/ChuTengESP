@@ -1,0 +1,16 @@
+{
+ "source": "RM0195.DIR",
+ "sounds": [
+  {
+   "file": "s0026_SE01.06.wav",
+   "member": 26,
+   "name": "SE01.06",
+   "cast_id": 76,
+   "snd_id": 107,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 93666
+  }
+ ]
+}

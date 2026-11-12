@@ -1,0 +1,49 @@
+{
+ "source": "GUTSPOSE.DIR",
+ "sounds": [
+  {
+   "file": "s0021_EF-01.wav",
+   "member": 21,
+   "name": "EF-01",
+   "cast_id": 28,
+   "snd_id": 27,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 2388
+  },
+  {
+   "file": "s0027_M24.05.wav",
+   "member": 27,
+   "name": "M24.05",
+   "cast_id": 116,
+   "snd_id": 47,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176448
+  },
+  {
+   "file": "s0028_Null_Sound.wav",
+   "member": 28,
+   "name": "Null Sound",
+   "cast_id": 119,
+   "snd_id": 121,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0022_FX-49.wav",
+   "member": 22,
+   "name": "FX-49",
+   "cast_id": 135,
+   "snd_id": 25,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 5948
+  }
+ ]
+}

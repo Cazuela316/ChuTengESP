@@ -1,0 +1,16 @@
+{
+ "source": "RM0181.DIR",
+ "sounds": [
+  {
+   "file": "s0025_SM.05.wav",
+   "member": 25,
+   "name": "SM.05",
+   "cast_id": 148,
+   "snd_id": 149,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 106141
+  }
+ ]
+}

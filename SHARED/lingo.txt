@@ -1,0 +1,1037 @@
+=== miembro 500    (cast 19) ===
+--Å@ã§óLÉÄÅ[ÉrÅ[ÉXÉNÉäÉvÉg
+
+
+--Å@ÉvÉçÉOÉâÉÄÇÃèâä˙âªÇçsÇ§
+--Å@ëSëÃÇ≈ÅAàÍìxÇæÇØé¿çsÇ≥ÇÍÇÈÇ◊Ç´
+on initProgram
+  global loadx
+  global rootdir
+  
+  clearGlobals
+  set loadx=FALSE
+  initGame
+end
+
+on initGame
+  global loadx
+  
+  clearglobals
+  
+  set loadx=FALSE
+  initList
+  initMovie
+  
+  --Å@ï¬Ç∂ÇΩÉoÉbÉO
+  drawCloseBag
+end  
+
+
+--Å@äeÉÄÅ[ÉrÅ[ÇÕÅAon startMovieÇ≈åƒÇ—èoÇµÅAÉÄÅ[ÉrÅ[ÇÃç≈èâÇ…ïKÇ∏é¿çsÇ∑ÇÈÇ±Ç∆
+--Å@Ç‡ÇµÇ≠ÇÕÅAÇ±ÇÍÇ∆ìØÇ∂ÇÊÇ§Ç»èàóùÇçsÇ§Ç±Ç∆
+on initMovie
+  global bagFlag
+  global canSave
+  global sndBusy
+  set sndBusy=FALSE
+  
+  set the exitLock to true
+  when keydown then shortcut
+  
+  saveDisable
+  
+  --Å@É}ÉEÉXÉJÅ[É\ÉãÇÃê›íËÇÇ∑ÇÈ  
+  set the cursor of sprite 3 to [702,703]
+  set the cursor of sprite 4 to [704,705]
+  set the cursor of sprite 5 to [700,701]
+  
+  repeat with i=1 to 24
+    set the visibility of sprite i to TRUE
+  end repeat
+  
+  
+  --Å@ÉoÉbÉOÇÃï\é¶à íuÇÃê›íË
+  repeat with i=39 to 45
+    set the puppet of sprite i to true
+    set the ink of sprite i to 36
+    set the type of sprite i to 1
+    -- 639-48*7=303
+    set the locH of sprite i to 303+(i-39)*48
+    set the locV of sprite i to 448
+  end repeat
+  
+  initScene
+  setGScene
+end
+
+on shortCut
+  global canSave
+  
+  set kx=key()
+  if commandDown () then
+    if "Qq." contains kx then 
+      quitChuTeng
+    else if "Nn" contains kx then 
+      newGame
+    else if "Oo" contains kx then 
+      loadGame
+    else if "Ss" contains kx and canSave=TRUE then 
+      saveGame
+    end if
+  end if
+end
+
+on quitChuTeng
+  global rootdir
+  setloadx
+  pushPuppet
+  cursoroff
+  playFMov "","chutnban:credit.dir"
+end
+
+on setloadx
+  global loadx
+  set loadx=TRUE
+end
+
+--Å@ÇªÇÃÉVÅ[ÉìÇ≈ÇÃÇ›óLå¯Ç»ïœêîÇèâä˙âªÇ∑ÇÈ
+on initTempVariable
+  global dma,dmb,dmc,dmd,dme,dmf
+  set dma=0
+  set dmb=0
+  set dmc=0
+  set dmd=0
+  set dme=0
+  set dmf=0
+end
+
+--Å@ÉVÅ[ÉìÇÃç≈èâÇ…ïKÇ∏é¿çsÇ∑ÇÈÇ±Ç∆
+--Å@initScene ÉVÅ[ÉìÇÃñºëO
+on initScene sname
+  global loadx
+  if loadx=TRUE then
+    popPuppet
+  else
+    --Å@égópâ¬î\ÉAÉCÉeÉÄÉäÉXÉgÇÉNÉäÉAÅ[  
+    clrCanUse
+    
+    --Å@ÉVÅ[ÉìñºÇ∆ÅAégópíÜÉAÉCÉeÉÄÇÉNÉäÉAÅ[  
+    clrSFlag
+    
+    --Å@äeÉVÅ[ÉìÇ™àÍéûìIÇ…égópÇ∑ÇÈïœêîÇèâä˙âªÇ∑ÇÈ
+    initTempVariable
+    
+    --Å@ÉVÅ[ÉìÇÃñºëOÇêÈåæÇ∑ÇÈ
+    ThisSceneIs sname
+    
+    --Å@âÊñ Ç…ï\é¶ÇµÇƒÇ¢ÇÈÉÅÉbÉZÅ[ÉWÇè¡ãéÇ∑ÇÈ  
+    clrMsg
+    
+    --Å@ÉoÉbÉOÇï\é¶Ç∑ÇÈ  
+    drawBag
+  end if
+  set loadx=FALSE
+end
+
+
+
+--Å@èåèä÷åWÅ@---------------------------------------------------------------------
+
+--Å@ÇªÇÃÉVÅ[ÉìÇ≈ÇÃÇ›óLå¯Ç»ÅuÉVÅ[ÉìñºÅvÅuégópíÜÉAÉCÉeÉÄñºÅvÇÉNÉäÉAÅ[Ç∑ÇÈ
+on clrSFlag
+  thisSceneIs ""
+  --  usingItemIs ""
+  clrUsingItem
+end
+
+--Å@égópâ¬î\ÉAÉCÉeÉÄÉäÉXÉgÇèâä˙âªÇ∑ÇÈ
+--Å@äeÉVÅ[ÉìÇ≈égópâ¬î\Ç»ÉAÉCÉeÉÄÉäÉXÉgÇ»ÇÃÇ≈ÅAäeÉVÅ[ÉìÇ≈ñàâÒèâä˙âªÇ∑ÇÈ
+on clrCanUse
+  global canUseList
+  set canUseList=[]
+end
+
+
+--Å@ÉVÅ[ÉìÇÃñºëOÇÉZÉbÉgÇ∑ÇÈ
+on ThisSceneIs str
+  global sceneName
+  set sceneName=str
+end
+
+--Å@ÉVÅ[ÉìÇÃÇΩÇ¡ÇΩç°égópÇµÇΩÉAÉCÉeÉÄñºÇÉZÉbÉgÇ∑ÇÈ
+on UsingItemIs str
+  global usingItem
+  set usingItem=str
+end
+
+--Å@ÉAÉCÉeÉÄégópÇÃîªíËÇ™èIÇÌÇ¡ÇΩÇÁÅAÇ±ÇÍÇ≈ÉNÉäÉAÅ[ÇµÇÊÇ§
+--Å@ÉVÅ[ÉìÇ™ïœÇÌÇÍÇŒÅAé©ìÆìIÇ…ÉNÉäÉAÅ[Ç≥ÇÍÇÈÇ™ÅAìØÇ∂ÉVÅ[ÉìÇ≈ÅAgo to the frame
+--Å@ÇégópÇµÇƒÇ¢ÇÈèÍçáÇ»ÇÒÇ©Ç…égÇ®Ç§
+on clrUsingItem
+  UsingItemIs ""
+end
+
+
+--Å@ÉVÅ[ÉìÇÃñºëOÇÉ`ÉFÉbÉNÇ∑ÇÈ
+--Å@ÇªÇÃÉVÅ[ÉìÇ»ÇÁÇŒÇîÇíÇïÇÖÅ@ÇªÇ§Ç≈Ç»ÇØÇÍÇŒÇÜÇÅÇåÇìÇÖ
+on IsThisScene str
+  global sceneName
+  if sceneName=str then
+    return true
+  else
+    return false
+  end if
+end
+
+--Å@égópíÜÇÃÉAÉCÉeÉÄñºÇÇÉ`ÉFÉbÉNÇ∑ÇÈ
+--Å@égÇ¡ÇƒÇ¢ÇÈÇ»ÇÁÇŒÇîÇíÇïÇÖÅ@ÇªÇ§Ç≈Ç»ÇØÇÍÇŒÇÜÇÅÇåÇìÇÖ
+on IsUsingItem str
+  global usingItem
+  if usingItem=str then
+    return true
+  else
+    return false
+  end if
+end
+
+
+
+--Å@ÉAÉCÉeÉÄÉäÉXÉgä÷åWÅ@-----------------------------------------------------------
+
+--Å@ÉAÉCÉeÉÄÉäÉXÉgÇ∆èåèÉäÉXÉgÇèâä˙âªÇ∑ÇÈ
+--Å@égópñ@Å@initList
+--Å@ç≈èâÇ…é¿çsÇµÇ»Ç¢Ç∆ÅAÉGÉâÅ[Ç…Ç»ÇÈ
+on initList
+  global itemList
+  global conditionList
+  global canUseList
+  set canUseList=[]
+  set conditionList=[]
+  set itemList=[]
+  initPuppetList
+end
+
+--Å@ÉAÉCÉeÉÄÇéùÇøï®Ç…í«â¡Ç∑ÇÈ
+--Å@égópñ@Å@appendItem ÉAÉCÉeÉÄÇÃñºëOÅiÉXÉgÉäÉìÉOÅj
+--Å@ÉAÉCÉeÉÄÇÕitemListÇ…í«â¡Ç≥ÇÍÇÈ
+on appendItem itm
+  global itemList
+  
+  if not existItem(itm) then
+    if count(itemList)>100 then
+      --    alert "Ç±ÇÍà»è„Ç‡ÇƒÇ‹ÇπÇÒ"
+      nothing
+    else
+      append itemList,itm
+    end if
+  end if
+end
+
+--Å@ÉAÉCÉeÉÄÇéùÇøï®Ç©ÇÁçÌèúÇ∑ÇÈ
+--Å@égópñ@Å@deleteItem ÉAÉCÉeÉÄÇÃñºëOÅiÉXÉgÉäÉìÉOÅj
+--Å@ÉAÉCÉeÉÄÇÕitemListÇ©ÇÁçÌèúÇ≥ÇÍÇÈ
+on deleteItem itm
+  global itemList
+  
+  repeat with i=1 to count(itemList)
+    if getAt(itemList,i)=itm then
+      deleteAt itemList,i
+      exit
+    end if
+  end repeat
+end
+
+--Å@ÉAÉCÉeÉÄÇ™éùÇøï®Ç…ä‹Ç‹ÇÍÇÈÇ©Çí≤Ç◊ÇÈ
+--Å@égópñ@Å@existItem(ÉAÉCÉeÉÄÇÃñºëOÅiÉXÉgÉäÉìÉO))
+--Å@ópó·Å@Å@existItem("ååÇÃïÛéÏ")
+--Å@ï‘ílÅ@Å@éùÇøï®Ç…Ç†ÇÍÇŒtrueÅ@Ç»ÇØÇÍÇŒfalse
+on existItem itm
+  global itemList
+  
+  repeat with i=1 to count(itemList)
+    if getAt(itemList,i)=itm then
+      return true
+    end if
+  end repeat
+  return false
+end
+
+
+--Å@ÉAÉCÉeÉÄÇégópâ¬î\ÉAÉCÉeÉÄÉäÉXÉgÇ…í«â¡Ç∑ÇÈ
+on appendCanUse itm
+  global canUseList
+  
+  if not existCanUse(itm) then
+    if count(canUseList)>100 then
+      --      alert "égópâ¬î\ÉAÉCÉeÉÄÉäÉXÉgÇ™Ç¢Ç¡ÇœÇ¢Ç≈Ç∑"
+      nothing
+    else
+      append canUseList,itm
+    end if
+  end if
+end
+
+--Å@ÉAÉCÉeÉÄÇÃÇ∑Ç◊ÇƒÇégópâ¬î\ÉäÉXÉgÇ…í«â¡Ç∑ÇÈ
+on appendCanUseAll
+  global itemList
+  
+  repeat with i=1 to count(itemList)
+    appendCanUse(GetAt(itemlist,i))
+  end repeat
+end
+
+
+--Å@égópâ¬î\ÉAÉCÉeÉÄÉäÉXÉgÇ©ÇÁçÌèúÇ∑ÇÈ
+on deleteCanUse itm
+  global canUseList
+  
+  repeat with i=1 to count(canUseList)
+    if getAt(canUseList,i)=itm then
+      deleteAt canUseList,i
+      exit
+    end if
+  end repeat
+end
+
+--Å@ÉAÉCÉeÉÄÇ™égópâ¬î\ÉAÉCÉeÉÄÇ…ä‹Ç‹ÇÍÇÈÇ©Çí≤Ç◊ÇÈ
+--Å@ï‘ílÅ@Å@ä‹Ç‹ÇÍÇÍÇŒtrueÅ@Ç»ÇØÇÍÇŒfalse
+on existCanUse itm
+  global canUseList
+  
+  repeat with i=1 to count(canUseList)
+    if getAt(canUseList,i)=itm then
+      return true
+    end if
+  end repeat
+  return false
+end
+
+--Å@ÉÅÉbÉZÅ[ÉWÇï\é¶ÇµÇƒÅAÉAÉCÉeÉÄÇéËÇ…ì¸ÇÍÇÈ
+--Å@ã§óLÉLÉÉÉXÉgÅAÇ‡ÇµÇ≠ÇÕäeÉÄÅ[ÉrÅ[Ç…Å@"ÉAÉCÉeÉÄñºmes"Çì¸ÇÍÇƒÇ®Ç≠Ç±Ç∆
+on getItem itemName
+  puppetSound "GETTING AN ITEM"
+  putMsg itemName & "mes",0
+  updateStage
+  appendItem itemName
+  repeat while soundBusy(1)
+    nothing
+  end repeat
+  drawBag
+  clrMsg
+  puppetSound 0
+end
+
+--Å@âπÇñ¬ÇÁÇµÇƒÅAÉÅÉbÉZÅ[ÉWÇï\é¶Ç∑ÇÈÇæÇØ
+on getItemx itemName
+  puppetSound "GETTING AN ITEM"
+  putMsg itemName & "mes",0
+  updateStage
+  repeat while soundBusy(1)
+    nothing
+  end repeat
+  clrMsg
+  puppetSound 0
+end
+
+--Å@usingItemÇ™éwÇµÇƒÇ¢ÇÈÉAÉCÉeÉÄÇitemListÇ©ÇÁçÌèúÇ∑ÇÈ
+on deleteThisItem
+  global usingItem
+  deleteItem(usingItem)
+  drawBag
+end
+
+
+
+
+--Å@èåèÇí«â¡Ç∑ÇÈ
+--Å@égópñ@Å@appendCondition èåèÅiÉXÉgÉäÉìÉOÅj
+on appendCondition itm
+  global conditionList
+  
+  if not existCondition(itm) then
+    if count(conditionList)>100 then
+      nothing
+    else
+      append conditionList,itm
+    end if
+  end if
+end
+
+--Å@èåèÇçÌèúÇ∑ÇÈ
+--Å@égópñ@Å@deleteCondition èåèÅiÉXÉgÉäÉìÉOÅj
+on deleteCondition itm
+  global conditionList
+  
+  repeat with i=1 to count(conditionList)
+    if getAt(conditionList,i)=itm then
+      deleteAt conditionList,i
+      exit
+    end if
+  end repeat
+end
+
+--Å@èåèÇ™ê¨óßÇ∑ÇÈÇ©Çí≤Ç◊ÇÈ
+--Å@égópñ@Å@existCondition(èåèÅiÉXÉgÉäÉìÉO))
+--Å@ópó·Å@Å@existCondition("ååÇÃïÛéÏ")
+--Å@ï‘ílÅ@Å@éùÇøï®Ç…Ç†ÇÍÇŒtrueÅ@Ç»ÇØÇÍÇŒfalse
+on existCondition itm
+  global conditionList
+  
+  repeat with i=1 to count(conditionList)
+    if getAt(conditionList,i)=itm then
+      return true
+    end if
+  end repeat
+  return false
+end
+
+
+on pmsg plus
+  putMsg "text",plus
+end
+
+
+on putGrp cn,plus
+  set the puppet of sprite 37 to true
+  set the forecolor of sprite 37 to 255
+  set the backcolor of sprite 37 to 0
+  set the ink of sprite 37 to 0
+  set the type of sprite 37 to 1
+  set the castNum of sprite 37 to the number of cast cn+plus  
+  set the locH of sprite 37 to 320-(the width of sprite 37)/2
+  set the locV of sprite 37 to 400-(the width of sprite 37)/2
+  
+  set the visibility of sprite 37 to true
+  updateStage
+end
+
+
+----
+--Å@ÉÅÉbÉZÅ[ÉWÇï\é¶Ç∑ÇÈ
+--Å@égópñ@Å@putMsgÅ@ÉeÉLÉXÉgÉfÅ[É^ÉLÉÉÉXÉgÇÃénÇ‹ÇËÇÃñºëOÅAÇªÇÍÇ©ÇÁÇ¢Ç≠Ç¬ñ⁄Ç©ÅH
+on putMsg cn,plus
+  set the puppet of sprite 37 to true
+  set the ink of sprite 37 to 36
+  
+  set the type of sprite 37 to 1
+  set the castNum of sprite 37 to the number of cast cn+plus  
+  
+  set the locH of sprite 37 to 320
+  set the locV of sprite 37 to 390
+  set the visibility of sprite 37 to true
+  updateStage
+end
+
+--Å@ÉÅÉbÉZÅ[ÉWÇï\é¶ÇµÇƒÅAàÍíËéûä‘ë“Ç¬
+--Å@égópñ@Å@putWaitMsgÅ@ÉeÉLÉXÉgÉfÅ[É^ÉLÉÉÉXÉgÇÃénÇ‹ÇËÇÃñºëOÅAÇªÇÍÇ©ÇÁÇ¢Ç≠Ç¬ñ⁄Ç©
+on putWaitMsg cn,plus
+  putMsg cn,plus
+  wait 180
+  clrMsg  
+end
+
+on wait xx
+  startTimer
+  repeat while the timer<xx
+    nothing
+  end repeat
+end
+
+
+--Å@ÉÅÉbÉZÅ[ÉWÇÉNÉäÉAÅ[Ç∑ÇÈ
+on clrMsg
+  putMsg "textClear",0  
+end
+
+
+
+--Å@ÉWÉÉÉìÉvä÷åWÉnÉìÉhÉâÅ[Å@--------------------------------------------------
+--Å@ÉJÅ[É\Éãê›íËÅAÉVÅ[ÉìïœêîÉNÉäÉAÅ[ÇÇµÇƒÅAéwíËÇÃïîï™Ç…ÉWÉÉÉìÉvÇ∑ÇÈ
+
+--Å@ìØàÍÉÄÅ[ÉrÅ[ì‡ÇÃÅAÉVÅ[Éìä‘ÉWÉÉÉìÉv
+on goL label
+  go to label
+end
+
+on goF label
+  go to label
+end
+
+--Å@endThenGoÇ≈ÇpÇsÇ™çƒê∂Ç≥ÇÍÇΩÇÁÅAÉJÅ[É\ÉãÇ™å≥Ç…ñﬂÇÈÇÃÇ≈ÅAÇ±ÇÍÇ≈Ç¢Ç¢ÇÃÇæ
+on goFnt
+  go to the frame+1
+end  
+
+on goR label
+  go to label
+end
+
+--Å@ÉNÉCÉbÉNÉ^ÉCÉÄÇ™èIÇÌÇ¡ÇΩÇÁÅAéwíËÇ≥ÇÍÇΩÉVÅ[ÉìÇ…ÉWÉÉÉìÉvÇ∑ÇÈ
+--Å@égópñ@Å@endThenGo îÚÇ—êÊÉâÉxÉã
+--Å@ópó·Å@Å@endThenGo "a3"
+on endThenGo label
+  if the movieTime of sprite 35 < the duration of cast the castNum of sprite 35 then
+    go to the frame
+  else
+    go to label
+  end if
+end
+
+--Å@ÉNÉCÉbÉNÉ^ÉCÉÄÇ™èIÇÌÇ¡ÇΩÇÁÅAéwíËÇ≥ÇÍÇΩï ÉÄÅ[ÉrÅ[Ç…ÉWÉÉÉìÉvÇ∑ÇÈ
+--Å@égópñ@Å@endThenGoFMov îÚÇ—êÊÉâÉxÉã
+--Å@ópó·Å@Å@endThenGoFMov "a3"
+on endThenGoFMov label,lmovie
+  if the movieTime of sprite 35 < the duration of cast the castNum of sprite 35 then
+    go to the frame
+  else
+    goFMov label,lmovie
+  end if
+end
+
+--Å@ï ÉÄÅ[ÉrÅ[ä‘ÉWÉÉÉìÉv
+on goFMov label,lmovie
+  global rtmovie
+  global rootdir
+  global ulflag
+  
+  if ulflag then unload
+  
+  cursoroff
+  
+  set rtmovie=the movie
+  if lmovie contains ":" then
+    if label="" then
+      go to movie rootdir & pathtodos(lmovie)
+    else
+      go to label of movie rootdir & pathtodos(lmovie)
+    end if
+  else
+    if label="" then
+      go to movie lmovie
+    else
+      go to label of movie lmovie
+    end if
+  end if
+end
+
+--Å@ï ÉÄÅ[ÉrÅ[ä‘ÉRÅ[Éã
+on playFMov label,lmovie
+  global rootdir
+  
+  global ulflag
+  
+  if ulflag then unload
+  
+  cursoroff
+  
+  if lmovie contains ":" then
+    if label="" then
+      play movie rootdir & pathtodos(lmovie)
+    else
+      play label of movie rootdir & pathtodos(lmovie)
+    end if
+  else
+    if label="" then
+      play movie lmovie
+    else
+      play label of movie lmovie
+    end if
+  end if
+end
+
+
+--Å@goFMovÇ≈åƒÇ—èoÇ≥ÇÍÇΩÉÄÅ[ÉrÅ[Ç©ÇÁÅAå≥ÇÃÉÄÅ[ÉrÅ[Ç…ñﬂÇÈ
+on retLMov label
+  retMov label
+end
+
+on retFMov label
+  retMov label
+end
+
+on retRMov label
+  retMov label
+end
+
+on retMov label
+  global rtmovie
+  global rootdir
+  
+  goFMov label,rtmovie
+end
+
+on cursoroff
+  --Å@ÉfÉBÉåÉNÉ^Å[égÇ¢ÇÃê_Å@çÇñÿïqåıólÇÃÇ®ímåbÇ…ÇÊÇËÅAÉEÉBÉìÉhÅ[ÉYÇ≈ÇÃGPEÇÕÇ»Ç≠Ç»Ç¡ÇΩ  
+  cursor 0
+  repeat with i=1 to 48
+    set the cursor of sprite i to 0
+  end repeat
+end
+
+=== miembro 512    (cast 150) ===
+-- DOSÇÃÉpÉXÇ…ïœä∑Ç∑ÇÈ
+--Å@go to movie rootdir & pathtodos("battle:end.dir")Å@ÇÃÇÊÇ§Ç…égópÇ∑ÇÈ
+--Å@Ç±ÇÒÇ»Ç±Ç∆ÇÇ‚ÇÈÇÊÇËÅAëäëŒÉpÉXÇégÇ¡ÇΩï˚Ç™Ç¢Ç¢
+--Å@É}ÉbÉNÅAÉEÉBÉìÉhÅ[ÉYÅAÇ«ÇøÇÁÇ≈Ç‡égÇ¶ÇÈÉtÉ@ÉCÉããÊêÿÇËéqÇÕÇ»Ç¢ÇÃÇæÇÎÇ§Ç©ÅEÅEÅE
+on pathtodos src
+  if machineType()<256 then
+    return src
+  else
+    repeat with i=1 to length(src)
+      if char i of src=":" then put  "\" into char i of src
+    end repeat
+    return src
+  end if
+end
+
+=== miembro 508    (cast 225) ===
+on gohf
+  global pcv
+  put pcv+39
+  cursoroff
+  go to frame (pcv+39) of movie "hosiloop.dir"
+end
+
+on gohb
+  global pcvB
+  put pcvB+39
+  cursoroff
+  go to frame (pcvB+39) of movie "hosiloop.dir"
+end
+
+=== miembro 510    (cast 296) ===
+--Å@ÉLÉÉÉXÉgÉXÉNÉäÉvÉgÇ≈ÅAÉoÉbÉOÇÉ_ÉuÉãÉNÉäÉbÉNÇ∑ÇÈÇ∆Ç±Ç±Ç…îÚÇ‘ÇÊÇ§Ç…ê›íËÇµÇƒÇ†ÇÈÅB
+on clickBag
+  global bagFlag
+  if bagFlag then
+    -- ÉoÉbÉOÇï¬Ç∂ÇÈ
+    closeBag
+  else
+    --ÉoÉbÉOÇäJÇ≠
+    openBag
+  end if
+end
+
+--Å@ÉoÉbÉOÇï¬Ç∂ÇÈ
+on closeBag
+  global bagFlag
+  set bagFlag=false
+  
+  drawCloseBag
+  updateStage
+end
+
+--Å@ÉoÉbÉOÇäJÇ≠
+on openBag
+  global bagFlag
+  set bagFlag=true
+  
+  drawOpenBag
+  updateStage
+end
+
+--Å@ï¬Ç∂ÇΩÉoÉbÉOÇâÊñ Ç…ï\é¶Ç∑ÇÈ
+on drawCloseBag
+  set the castNum of sprite 45 to the number of cast "bagClose"
+  repeat with i=39 to 44
+    set the visibility of sprite i to false
+  end repeat
+  updateStage
+end
+
+--Å@ÉoÉbÉOÇâÊñ Ç©ÇÁè¡Ç∑
+on eraseBag
+  repeat with i=39 to 45
+    set the visibility of sprite i to false
+  end repeat
+end
+
+
+
+
+--Å@äJÇ¢ÇΩÉoÉbÉOÇâÊñ Ç…ï\é¶Ç∑ÇÈ
+on drawOpenBag
+  global itemList
+  global iln
+  
+  set ils0=0
+  set ils1=(count(itemList)-1)/4
+  if iln<ils0 then set iln=ils1
+  if iln>ils1 then set iln=ils0
+  
+  if count(itemList)>4 then 
+    set the visibility of sprite 39 to true
+    set the castNum of sprite 39 to the number of cast "lArrow"
+    
+    set the visibility of sprite 44 to true
+    set the castNum of sprite 44 to the number of cast "rArrow"
+  else
+    set the visibility of sprite 39 to FALSE
+    set the visibility of sprite 44 to FALSE
+  end if
+  
+  set the visibility of sprite 45 to true
+  set the castNum of sprite 45 to the number of cast "bagOpen"
+  
+  set ils0=iln*4
+  set ils1=count(itemList)
+  
+  repeat with i=1 to 4
+    if (ils0+i)<=ils1 then  
+      set the visibility of sprite i+39 to true
+      set the castNum of sprite i+39 to the number of cast getAt(itemList,ils0+i)
+    else
+      set the visibility of sprite i+39 to false
+    end if
+  end repeat
+  
+  updateStage
+end
+
+on scroll xx
+  global iln
+  global itemList
+  
+  set ils0=0
+  set ils1=(count(itemList)-1)/4
+  
+  set iln=iln+xx
+  if iln<ils0 then set iln=ils1
+  if iln>ils1 then set iln=ils0
+  
+  drawBag
+end
+
+
+--Å@Ç∑Ç◊ÇƒÇÃÉAÉCÉeÉÄÇéËÇ…ì¸ÇÍÇÈ
+on getAllItem
+  global itemList
+  repeat with i=the number of cast "itemBegin"+1 to the number of cast "itemEnd"-1
+    appendItem(the name of cast i)
+  end repeat
+end
+
+
+--Å@âÊñ â∫ïîÇÃÉAÉCÉeÉÄÇÉ_ÉuÉãÉNÉäÉbÉNÇ∑ÇÈÇ∆Ç±Ç±Ç…îÚÇÒÇ≈Ç≠ÇÈ
+on useItem
+  global usingItem
+  global reent
+  --    UsingItemIs the name of cast (the mouseCast)
+  UsingItemIs the name of cast (the castNum of sprite ClickOn())
+  
+  --Å@ëOÉoÅ[ÉWÉáÉìÇ≈ÇÕäeÉÄÅ[ÉrÅ[Ç≈íËã`Ç≥ÇÍÇÈitemHandlerÇåƒÇ—èoÇµÇƒÇ¢ÇΩÇ™ÅAîpé~ÇµÇΩ
+  
+  if not existCanUse(usingItem) then
+    set reent=TRUE
+    set oldmsg=the castNum of sprite 37
+    putWaitMsg "Ç»Ç…Ç‡Ç®Ç±ÇÁÇ»Ç©Ç¡ÇΩ",0
+    clrUsingItem
+    set the castNum of sprite 37 to oldmsg
+    set reent=FALSE
+  end if
+end
+
+on ucx
+  global reent
+  set reent=FALSE
+  if doubleClick() and reent=FALSE then
+    useItem
+  end if  
+end
+
+--Å@ÉoÉbÉOÇï`âÊÇ∑ÇÈ
+--Å@ÉÄÅ[ÉrÅ[Ç™ïœÇÌÇ¡ÇΩÇ∆Ç´ÅAon startMovieÇ≈é¿çsÇ≥ÇÍÇÈÇ◊Ç´ÉnÉìÉhÉâÅ[
+on drawBag
+  global bagnodraw
+  global bagFlag
+  if bagnodraw=TRUE then
+    set bagnodraw=FALSE
+    return
+  else
+    if bagFlag=true then
+      drawOpenBag
+    else
+      drawCloseBag
+    end if
+    updateStage
+  end if
+end
+
+
+--Å@É`ÉÉÉìÉlÉãÇRÇTÅiíÜìVÇÃÉNÉCÉbÉNÉ^ÉCÉÄÉ`ÉÉÉìÉlÉãÅjÇÃÉÄÅ[ÉrÅ[É^ÉCÉÄÇÉZÉbÉgÇ∑ÇÈ
+--  repeat while the movieTime of sprite 35 <> mtÅ@--Ç±ÇÍÇ™Ç†ÇÈÇ∆WindowsÇ≈ÇÕñ≥å¿ÉãÅ[ÉvÇ…Ç»ÇÈ
+--  end repeat
+on setMovieTime mt
+  set the movieTime of sprite 35 to mt
+end
+
+
+--Å@Ç®â…Ç»ÇÁÇ´ÇƒÇÊÇÀ
+on idle
+  global eMenu,canSave
+  if the mouseV<24 and eMenu=0 then
+    installMenu the number of cast "Menu"
+    checkMarkSoundMenu
+    set the enabled of menuitem "Save Game" of menu "File" to canSave
+    set eMenu=1
+    exit
+  else if the mouseV>=24 and eMenu=1 then
+    installMenu 0
+    set eMenu=0
+    exit
+  end if
+end
+
+--Å@âπÇÃëÂÇ´Ç≥ÉÅÉjÉÖÅ[ÇÃåªç›ÇÃâπÇÃëÂÇ´Ç≥ÇÉ}Å[ÉNÇ∑ÇÈ
+on CheckMarkSoundMenu
+  if the soundLevel>=0 and the soundLevel<=7 then set the checkMark of menuItem (the soundLevel+1) of menu "Sound" to true
+end
+
+on saveGame 
+  global itemList,canUseList,conditionList
+  
+  global rtMovie,usingItem,sceneName
+  global dma,dmb,dmc,dmd,dme,dmf
+  global bagFlag
+  global iln
+  global eMenu,canSave
+  
+  global moveFlag,nowFrame
+  global pictCast,pictCastB,pcv,pcvB
+  
+  global rtval,sunx,suny
+  global xxdir
+  
+  global pptLocH,pptLocV
+  global pptInk,pptType
+  global pptVis,pptCastNum
+  global pptppt
+  
+  global gscene
+  global sndBusy,sndName
+  
+  pushPuppet
+  
+  put "***ChuTeng-SaveData***" into line 1 of str
+  put the text of cast "halert" into line 3 of str  
+  
+  -- 2çsñ⁄=ÉpÉXñºÇ∆ÉtÉ@ÉCÉãñº
+  put pathname() & movie() into line 102 of str
+  
+  -- 3çsñ⁄=ÉtÉåÅ[ÉÄî‘çÜ
+  put frame() into line 103 of str
+  
+  put rtmovie into line 105 of str
+  put usingItem into line 106 of str
+  put sceneName into line 107 of str
+  
+  put dma into line 108 of str
+  put dmb into line 109 of str
+  put dmc into line 110 of str
+  put dmd into line 111 of str
+  put dme into line 112 of str
+  put dmf into line 113 of str
+  
+  put bagFlag into line 114 of str
+  put iln into line 115 of str
+  
+  put moveFlag into line 116 of str
+  put nowFrame into line 117 of str
+  put pictCast into line 118 of str
+  put pictCastB into line 119 of str
+  put pcv into line 120 of str
+  put pcvB into line 121 of str
+  
+  put rtval into line 122 of str
+  put sunx into line 123 of str
+  put suny into line 124 of str
+  put xxdir into line 125 of str
+  
+  put gscene into line 126 of str
+  
+  put sndBusy into line 127 of str
+  put sndName into line 128 of str
+  
+  put count(itemList) into line 200 of str  
+  repeat with i=1 to count(itemList)
+    put getAt(itemList,i) into line 200+i of str
+  end repeat
+  
+  put count(conditionList) into line 300 of str  
+  repeat with i=1 to count(conditionList)
+    put getAt(conditionList,i) into line 300+i of str
+  end repeat
+  
+  put count(canUseList) into line 400 of str  
+  repeat with i=1 to count(canUseList)
+    put getAt(canUseList,i) into line 400+i of str
+  end repeat
+  
+  repeat with i=1 to 48
+    put getAt(pptLocH,i) into line 500+i*8 of str
+    put getAt(pptLocV,i) into line 500+i*8+1 of str
+    put getAt(pptInk,i) into line 500+i*8+2 of str
+    put getAt(pptType,i) into line 500+i*8+3 of str
+    put getAt(pptVis,i) into line 500+i*8+4 of str
+    put getAt(pptCastNum,i) into line 500+i*8+5 of str
+    put getAt(pptppt,i) into line 500+i*8+6 of str
+  end repeat
+  
+  writeFile str
+end
+
+--
+on writeFile str
+  -- strÇèëÇ´èoÇ∑ÉnÉìÉhÉâ
+  put fileIO(mNew,"?write","ChuTeng") into myObj
+  if objectP(myObj) then
+    put myObj(mWriteString, str & RETURN  ) into errorCode
+    if  errorCode <> 0 then
+      alert "Å@ÉfÅ[É^ÇÃÉZÅ[ÉuÇ…é∏îsÇµÇ‹ÇµÇΩÅB:" && myObj(mError,errorCode)
+      myObj(mDelete)
+    else
+      myObj(mDispose)
+      -- cursor -1
+    end if
+    
+  else if myObj <> -43 then
+    alert "Å@ÉfÅ[É^ÇÃÉZÅ[ÉuÇ…é∏îsÇµÇ‹ÇµÇΩÅB:" && fileIO(mError,myObj)
+  end if
+end
+
+--
+on NewGame
+  global canSave
+  global rootdir
+  
+  cursoroff
+  if IsThisScene("sumie") then
+    go to frame "newama" of movie rootdir & "lnx.dir"
+  else
+    go to frame "newgame" of movie rootdir & "lnx.dir"
+  end if
+end
+
+
+on LoadGame
+  global rootdir
+  pushPuppet
+  cursoroff
+  
+  play frame "load" of movie rootdir & "lnx.dir"
+end
+
+--
+on readFile
+  -- ÉtÉ@ÉCÉãÇ©ÇÁì«Ç›ÇæÇµÇΩÉfÅ[É^Çï‘Ç∑ä÷êî
+  if machineType()>=256 then
+    -- Windows
+    put FileIO(mNew,"?read","TXT") into myObj
+  else
+    -- Mac
+    put FileIO(mNew,"?read","TEXT") into myObj
+  end if
+  if objectP(myObj) then
+    put myObj(mReadFile) into output
+    myObj(mDispose)
+    return output
+  else if myObj <> -43 then
+    alert "Å@ÉfÅ[É^ÇÃÉçÅ[ÉhÇ…é∏îsÇµÇ‹ÇµÇΩÅB:" && fileIO(mError,myObj)
+  end if
+  return false
+end
+
+on SaveEnable
+  global canSave
+  set canSave=TRUE
+end
+
+on SaveDisable
+  global canSave
+  set canSave=FALSE
+end
+
+on canUseMasterKey
+  appendCanUse "êØñúî\åÆ"
+  appendCanUse "ì˙ñúî\åÆ"
+  appendCanUse "åéñúî\åÆ"
+  appendCanUse "êØñúî\åÆï°êª"
+  appendCanUse "ì˙ñúî\åÆï°êª"
+  appendCanUse "åéñúî\åÆï°êª"
+end
+
+on playSound sn
+  global sndBusy,sndName
+  set sndBusy=TRUE
+  set sndName=sn
+  puppetSound sndName
+end
+
+on stopSound
+  global sndBusy,sndName
+  set sndBusy=FALSE
+  set sndName=""
+  puppetSound 0
+end
+
+on initPuppetList
+  global pptLocH,pptLocV
+  global pptInk,pptType
+  global pptVis,pptCastNum
+  global pptppt
+  global sndBusy,sndName
+  
+  set sndBusy=FALSE
+  set sndName=""
+  set pptLocH=[]
+  set pptLocV=[]
+  set pptInk=[]
+  set pptType=[]
+  set pptVis=[]
+  set pptCastNum=[]
+  set pptppt=[]
+end
+
+on pushPuppet
+  global pptLocH,pptLocV
+  global pptInk,pptType
+  global pptVis,pptCastNum
+  global pptppt
+  
+  repeat with i=1 to 48
+    setAt pptLocH,i,the locH of sprite i
+    setAt pptLocV,i,the locV of sprite i
+    setAt pptInk,i,the ink of sprite i
+    setAt pptType,i,the type of sprite i
+    setAt pptVis,i,the visibility of sprite i
+    setAt pptCastNum,i,the castNum of sprite i
+    setAt pptppt,i,the puppet of sprite i
+  end repeat
+end
+
+on popPuppet
+  global pptLocH,pptLocV
+  global pptInk,pptType
+  global pptVis,pptCastNum
+  global pptppt
+  global sndBusy,sndName
+  
+  repeat with i=1 to 48
+    set the locH of sprite i = getAt(pptLocH,i)
+    set the locV of sprite i = getAt(pptLocV,i)
+    set the ink of sprite i = getAt(pptInk,i)
+    set the type of sprite i = getAt(pptType,i)
+    set the visibility of sprite i = getAt(pptVis,i)
+    set the castNum of sprite i = getAt(pptCastNum,i)
+    set the puppet of sprite i = getAt(pptppt,i)
+  end repeat
+  
+  if sndBusy=TRUE then puppetSound sndName
+end
+
+=== miembro 511    (cast 478) ===
+on setGScene
+  global gscene
+  set gscene="amanogawa"
+end
+

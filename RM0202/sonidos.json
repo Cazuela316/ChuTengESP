@@ -1,0 +1,16 @@
+{
+ "source": "RM0202.DIR",
+ "sounds": [
+  {
+   "file": "s0036_M02.05.wav",
+   "member": 36,
+   "name": "M02.05",
+   "cast_id": 172,
+   "snd_id": 173,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 100706
+  }
+ ]
+}

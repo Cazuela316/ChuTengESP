@@ -1,0 +1,268 @@
+=== miembro 115    (cast 34) ===
+on exitFrame
+  global usingItem
+  if existCanUse(usingItem) then
+    deleteThisItem
+    drawBag
+    clrUsingItem
+    go to "open"
+  else
+    clrUsingItem
+    go the frame
+  end if
+end
+
+=== miembro 116    (cast 87) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 117    (cast 151) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 140    (cast 165) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 142    (cast 281) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 120    (cast 317) ===
+on exitFrame
+  global CanUseList
+  initScene "rm0100"
+  putMsg "text",0
+  clrCanUse
+  appendCanUse("çáåÆâÆåÆ")
+  appendCanUse("çáåÆâÆåÆï°êª")
+  appendCanUse("ì˙ñúî\åÆ")
+  appendCanUse("ì˙ñúî\åÆï°êª")
+  appendCanUse("åéñúî\åÆ")
+  appendCanUse("åéñúî\åÆï°êª")
+  appendCanUse("êØñúî\åÆ")
+  appendCanUse("êØñúî\åÆï°êª")
+end
+
+=== miembro 118    (cast 321) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 119    (cast 322) ===
+on exitFrame
+  clrUsingItem
+end
+
+=== miembro 121    (cast 323) ===
+on exitFrame
+  global UsingItem
+  putMsg "text",1
+  
+  if UsingItem="ì˙ñúî\åÆ" then
+    clrCanUse
+    go to "hi"
+  else if UsingItem="åéñúî\åÆ" then
+    clrCanUse
+    go to "tuki"
+  else if UsingItem="êØñúî\åÆ" then
+    clrCanUse
+    go to "hosi"
+  else if UsingItem="ã éËî†åÆ" then
+    clrCanUse
+    go to "tama"
+  else if UsingItem="ë†åÆ" then
+    clrCanUse
+    go to "kura"
+  else if UsingItem="å‹èdìÉåÆ" then
+    clrCanUse
+    go to "tou"
+  else if UsingItem="èóäØåÆ" then
+    clrCanUse
+    go to "jyo"
+  else if UsingItem="èëå…åÆ" then
+    clrCanUse
+    go to "syoko"
+  else if UsingItem="çáåÆâÆåÆ" then
+    clrCanUse
+    go to "ai"
+  else if existCanUse(UsingItem) then
+    putMsg "text",4
+  clrCanUse
+    play "spkfunc"
+    go to "out"
+  end if
+  
+end
+
+=== miembro 122    (cast 324) ===
+on exitFrame
+  global CanUseList
+  set CanUseList=[]
+  appendCanUse("ì˙ñúî\åÆ")
+  appendCanUse("åéñúî\åÆ")
+  appendCanUse("êØñúî\åÆ")
+  appendCanUse("ã éËî†åÆ")
+  appendCanUse("ë†åÆ")
+  appendCanUse("å‹èdìÉåÆ")
+  appendCanUse("èóäØåÆ")
+  appendCanUse("èëå…åÆ")
+  appendCanUse("çáåÆâÆåÆ")
+  
+  appendCanUse("ì˙ñúî\åÆï°êª")
+  appendCanUse("åéñúî\åÆï°êª")
+  appendCanUse("êØñúî\åÆï°êª")
+  appendCanUse("ã éËî†åÆï°êª")
+  appendCanUse("ë†åÆï°êª")
+  appendCanUse("å‹èdìÉåÆï°êª")
+  appendCanUse("èóäØåÆï°êª")
+  appendCanUse("èëå…åÆï°êª")
+  appendCanUse("çáåÆâÆåÆï°êª")
+  
+end
+
+=== miembro 133    (cast 325) ===
+on mouseUp
+  if doubleClick() then
+    getItem("èëå…åÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 123    (cast 326) ===
+on mouseUp
+  play done
+end
+
+=== miembro 124    (cast 327) ===
+on exitFrame
+  go to marker(0)
+end
+
+=== miembro 125    (cast 328) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 126    (cast 343) ===
+on mouseUp
+  if doubleClick() then
+    getItem("ì˙ñúî\åÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 127    (cast 344) ===
+on mouseUp
+  if doubleClick() then
+    getItem("ã éËî†åÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 128    (cast 345) ===
+on mouseUp
+  if doubleClick() then
+    getItem("ë†åÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 129    (cast 346) ===
+on mouseUp
+  if doubleClick() then
+    getItem("åéñúî\åÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 130    (cast 348) ===
+on mouseUp
+  if doubleClick() then
+    getItem("å‹èdìÉåÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 131    (cast 349) ===
+on mouseUp
+  if doubleClick() then
+    getItem("èóäØåÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 134    (cast 350) ===
+on mouseUp
+  if doubleClick() then
+    getItem("çáåÆâÆåÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 135    (cast 351) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 132    (cast 355) ===
+on mouseUp
+  if doubleClick() then
+    getItem("êØñúî\åÆï°êª")
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+end
+
+=== miembro 136    (cast 363) ===
+on exitFrame
+  getItem "aaa"
+end
+
+=== miembro 137    (cast 385) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 138    (cast 386) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 139    (cast 387) ===
+on exitFrame
+  initScene "rm0100"
+  go to the frame
+end
+
+=== miembro 141    (cast 388) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 143    (cast 390) ===
+on mouseUp
+  gohf
+end
+

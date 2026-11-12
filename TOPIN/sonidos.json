@@ -1,0 +1,49 @@
+{
+ "source": "TOPIN.DIR",
+ "sounds": [
+  {
+   "file": "s0071_OS-13.wav",
+   "member": 71,
+   "name": "OS-13*",
+   "cast_id": 315,
+   "snd_id": 323,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 105396
+  },
+  {
+   "file": "s0072_OS-16.wav",
+   "member": 72,
+   "name": "OS-16*",
+   "cast_id": 316,
+   "snd_id": 317,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 65877
+  },
+  {
+   "file": "s0073_OS-09.wav",
+   "member": 73,
+   "name": "OS-09*",
+   "cast_id": 318,
+   "snd_id": 319,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 151551
+  },
+  {
+   "file": "s0074_FX-26.wav",
+   "member": 74,
+   "name": "FX-26",
+   "cast_id": 351,
+   "snd_id": 352,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12732
+  }
+ ]
+}

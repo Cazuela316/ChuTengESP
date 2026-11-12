@@ -1,0 +1,429 @@
+=== miembro 158    (cast 45) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 215    (cast 84) ===
+on mouseUp
+  if existCondition("kuraopen") then
+    go "koanRoom"
+  else
+    putWaitMsg "text",40
+  end if
+end
+
+=== miembro 159    (cast 142) ===
+on exitFrame
+  
+end
+
+=== miembro 160    (cast 174) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 176    (cast 277) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>14 then
+    clrMsg
+    go "tai02bye"
+  end if
+end
+
+=== miembro 173    (cast 279) ===
+on exitFrame
+  appendCondition "evsuntai1"
+  if existCondition("evsuntai1") and existCondition("evsuntai2") and existCondition("evsuntai3") and existCondition("evsuntai4") then
+    appendCondition "evboxtai1"
+    putWaitMsg "text",23
+    play "boxApr"
+  end if
+  
+  cursorOff
+  --ï ÉÄÅ[ÉrÅ[
+  play done
+end
+
+=== miembro 167    (cast 305) ===
+on exitFrame
+  putMsg "text",7
+end
+
+=== miembro 165    (cast 350) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 171    (cast 365) ===
+on exitFrame
+  global dma
+  set dma=8
+end
+
+=== miembro 175    (cast 367) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 177    (cast 373) ===
+on exitFrame
+  appendCondition "evsuntai2"
+  if existCondition("evsuntai1") and existCondition("evsuntai2") and existCondition("evsuntai3") and existCondition("evsuntai4") then
+    appendCondition "evboxtai2"
+    putWaitMsg "text",23
+    play "boxApr"
+  end if
+  cursorOff
+  --ï ÉÄÅ[ÉrÅ[
+  play done
+end
+
+=== miembro 168    (cast 418) ===
+on mouseUp
+  clrMsg
+  go "kaerubye"
+end
+
+=== miembro 202    (cast 422) ===
+on exitFrame
+  clrMsg
+  clrCanUse
+  clrUsingItem
+  canUseMasterKey
+  appendCanUse "ë†åÆ"
+  appendCanUse "ë†åÆï°êª"
+end
+
+=== miembro 170    (cast 424) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 172    (cast 428) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>10 then
+    clrMsg
+    go "tai01bye"
+  end if
+end
+
+=== miembro 174    (cast 432) ===
+on exitFrame
+  global dma
+  set dma=11
+end
+
+=== miembro 187    (cast 435) ===
+on exitFrame
+  global usingItem
+  if existCanUse(usingItem) then
+    deleteThisItem
+    drawBag
+    clrUsingItem
+    clrMsg
+    go "boxOpen"
+  end if
+  clrUsingItem
+  go to the frame
+end
+
+=== miembro 162    (cast 452) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 163    (cast 459) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>5 then go "kaeruspk7"
+end
+
+=== miembro 164    (cast 460) ===
+on exitFrame
+  global dma
+  set dma=0
+end
+
+=== miembro 169    (cast 461) ===
+on exitFrame
+  appendCondition "evsunkaeru"
+  cursorOff
+  --ï ÉÄÅ[ÉrÅ[
+  play done
+end
+
+=== miembro 166    (cast 462) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ã éËî†åÆ"
+    go "kaeruspk8"
+  end if
+end
+
+=== miembro 178    (cast 465) ===
+on exitFrame
+  global dma
+  set dma=15
+end
+
+=== miembro 179    (cast 466) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 180    (cast 467) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>18 then
+    clrMsg
+    go "tai03bye"
+  end if
+end
+
+=== miembro 182    (cast 470) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 183    (cast 471) ===
+on exitFrame
+  global dma
+  set dma=19
+end
+
+=== miembro 184    (cast 473) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>22 then
+    clrMsg
+    go "tai04bye"
+  end if
+end
+
+=== miembro 181    (cast 474) ===
+on exitFrame
+  appendCondition "evsuntai3"
+  if existCondition("evsuntai1") and existCondition("evsuntai2") and existCondition("evsuntai3") and existCondition("evsuntai4") then
+    appendCondition "evboxtai3"
+    putWaitMsg "text",23
+    play "boxApr"
+  end if
+  cursorOff
+  --ï ÉÄÅ[ÉrÅ[
+  play done
+end
+
+=== miembro 185    (cast 475) ===
+on exitFrame
+  appendCondition "evsuntai4"
+  if existCondition("evsuntai1") and existCondition("evsuntai2") and existCondition("evsuntai3") and existCondition("evsuntai4") then
+    appendCondition "evboxtai4"
+    putWaitMsg "text",23
+    play "boxApr"
+  end if
+  cursorOff
+  --ï ÉÄÅ[ÉrÅ[
+  play done
+end
+
+=== miembro 186    (cast 476) ===
+on exitFrame
+  clrMsg
+  clrCanUse
+  clrUsingItem
+  appendCanUse "ã éËî†åÆ"
+  appendCanUse "ã éËî†åÆï°êª"
+  canUseMasterKey
+end
+
+=== miembro 188    (cast 477) ===
+on mouseUp
+  if doubleClick() then
+    getItem "éµÇ¬ãæ"
+    --ìØÇ∂ÉÄÅ[ÉrÅ[
+    play done
+  end if
+end
+
+=== miembro 189    (cast 478) ===
+on mouseUp
+  play done
+end
+
+=== miembro 190    (cast 479) ===
+on mouseUp
+  if doubleClick() then
+    appendCondition "evkurakey"
+    getitem "ë†åÆ"
+  cursorOff
+  --ï ÉÄÅ[ÉrÅ[
+    play done
+  end if
+end
+
+=== miembro 191    (cast 480) ===
+on mouseUp
+  if doubleClick() then
+    appendCondition "evhikey"
+    getitem "ì˙ñúî\åÆ"
+    cursorOff
+    --ï ÉÄÅ[ÉrÅ[
+    play done
+  end if
+end
+
+=== miembro 192    (cast 481) ===
+on exitFrame
+  
+end
+
+=== miembro 193    (cast 506) ===
+on exitFrame
+  goFMov "tl","sunload.dir"
+end
+
+=== miembro 194    (cast 507) ===
+on mouseUp
+  goFMov "tb","sunload.dir"
+end
+
+=== miembro 195    (cast 508) ===
+on mouseUp
+  goFMov "tf","sunload.dir"
+end
+
+=== miembro 196    (cast 509) ===
+on mouseUp
+  go "ext02"
+end
+
+=== miembro 197    (cast 510) ===
+on exitFrame
+  global dma
+  set dma=28
+end
+
+=== miembro 198    (cast 511) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 199    (cast 512) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma=31 then play "hizu"
+  if dma>33 then go "babebuUnion"
+end
+
+=== miembro 200    (cast 513) ===
+on exitFrame
+  appendCondition "evsunc3"
+  cursorOff
+  --ï ÉÄÅ[ÉrÅ[
+  play done
+end
+
+=== miembro 201    (cast 514) ===
+on exitFrame
+  putMsg "text",34
+end
+
+=== miembro 203    (cast 518) ===
+on mouseUp
+  goFMov "tf","sunload.dir"
+end
+
+=== miembro 204    (cast 519) ===
+on mouseUp
+  goFMov "tb","sunload.dir"
+end
+
+=== miembro 206    (cast 520) ===
+on mouseUp
+  global dma
+  set dma=24
+  go "koanSpk1"
+end
+
+=== miembro 207    (cast 521) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 208    (cast 522) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>27 then go "kuraKabe"
+end
+
+=== miembro 205    (cast 524) ===
+on exitFrame
+  global usingItem
+  if existCanUse(usingItem) and not existCondition("kuraopen") then
+    deleteThisItem
+    clrUsingItem
+    appendCondition "kuraopen"
+    go "koanRoom"
+  end if
+  clrUsingItem
+  go to the frame
+end
+
+=== miembro 161    (cast 540) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 214    (cast 549) ===
+on exitFrame
+  goFMov "hbShip","corridor:tyuload.dir"
+end
+
+=== miembro 210    (cast 556) ===
+on exitFrame
+  putMsg "text",31
+end
+
+=== miembro 209    (cast 558) ===
+on mouseUp
+  global dma
+  if doubleClick() then
+    getItemx "ì˙ê}î’"
+    appendCondition "ì˙ê}î’"
+    set dma=dma+1
+    play done
+  end if
+end
+
+=== miembro 211    (cast 588) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 212    (cast 596) ===
+on exitFrame
+  endThenGo "goc"
+  if mousedown() then go "goc"
+end
+
+=== miembro 213    (cast 597) ===
+on mouseUp
+  go "goCorridor"
+end
+

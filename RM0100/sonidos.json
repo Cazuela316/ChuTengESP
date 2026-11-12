@@ -1,0 +1,38 @@
+{
+ "source": "RM0100.DIR",
+ "sounds": [
+  {
+   "file": "s0114_FX-02.wav",
+   "member": 114,
+   "name": "FX-02",
+   "cast_id": 19,
+   "snd_id": 31,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 11324
+  },
+  {
+   "file": "s0112_SM.02.wav",
+   "member": 112,
+   "name": "SM.02",
+   "cast_id": 334,
+   "snd_id": 88,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 85592
+  },
+  {
+   "file": "s0113_EF-11.wav",
+   "member": 113,
+   "name": "EF-11",
+   "cast_id": 378,
+   "snd_id": 428,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 76032
+  }
+ ]
+}

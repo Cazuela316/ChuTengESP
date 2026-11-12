@@ -1,0 +1,95 @@
+=== miembro 5    (cast 8) ===
+on exitFrame
+  global ulflag
+  global debugmode
+  
+  set ulflag=TRUE
+  set debugmode=TRUE
+  initList
+  if machineType()>=256 then
+    openXLib "fileio"
+  end if
+end
+
+=== miembro 6    (cast 16) ===
+on exitFrame
+  --Å@ÉfÉBÉXÉvÉåÅ[ä÷åW
+  global beforeColorDepth
+  
+  --Å@ÉEÉBÉìÉhÅ[ÉYÇ≈ÇÕÅAÇQÇTÇUêFÉÇÅ[Éhà»äOÇÕãñâ¬ÇµÇ»Ç¢  
+  if machineType()>=256 then
+    if the colorDepth<>8 then
+      alert the text of cast "dwin"
+      quit
+    end if    
+  else if the colorDepth<>8 then
+    --Å@É}ÉbÉLÉìÉgÉbÉVÉÖÇ≈ÇÕñ≥óùñÓóùÇQÇTÇUêFÉÇÅ[ÉhÇ…íºÇ∑
+    --    set beforColorDepth=the colorDepth
+    --    set the colorDepth=8
+    alert the text of cast "dmac"
+    quit
+  end if    
+end
+
+
+-- colorqd()Ç≈ÇÕÅAåªç›Ç™ÉJÉâÅ[ÉÇÅ[ÉhÇ©Ç«Ç§Ç©ÇîªíËÇ≈Ç´Ç»Ç¢
+on oldexitFrame
+  --Å@ÉfÉBÉXÉvÉåÅ[ä÷åW
+  global beforeColorDepth
+  
+  --Å@ÉEÉBÉìÉhÅ[ÉYÇ≈ÇÕÅAÇQÇTÇUêFÉÇÅ[Éhà»äOÇÕãñâ¬ÇµÇ»Ç¢  
+  if machineType()>=256 then
+    if the colorDepth<>8 or (not colorQD() ) then
+      alert the text of cast "dwin"
+      quit
+    end if    
+  else if the colorDepth<>8 or (not colorQD() ) then
+    --Å@É}ÉbÉLÉìÉgÉbÉVÉÖÇ≈ÇÕñ≥óùñÓóùÇQÇTÇUêFÉÇÅ[ÉhÇ…íºÇ∑
+    --    set beforColorDepth=the colorDepth
+    --    set the colorDepth=8
+    alert the text of cast "dmac"
+    quit
+  end if    
+end
+
+=== miembro 10    (cast 25) ===
+on startMovie
+  global loadx
+  set loadx=FALSE
+  clearGlobals
+  initList
+end
+
+on idle
+  nothing
+end
+
+=== miembro 7    (cast 34) ===
+on exitFrame
+  global rootdir
+  set rootdir=the pathname
+  go to movie rootdir & pathtodos("op:opening.dir")
+end
+
+=== miembro 8    (cast 42) ===
+on exitFrame
+  --Å@ÉNÉCÉbÉNÉ^ÉCÉÄÇ™égópÇ≈Ç´Ç»Ç¢èÍçá
+  if not quickTimePresent() then
+    if machineType()<256 then
+      alert the text of cast "qtmac"
+      quit
+    else
+      alert the text of cast "qtwin"
+      quit
+    end if
+  end if
+end
+
+=== miembro 9    (cast 57) ===
+on exitFrame
+--Å@ÉãÅ[ÉgÉfÉBÉåÉNÉgÉäÅ[Çê›íËÇ∑ÇÈ
+  global rootdir
+  set rootdir=the pathname
+  set rootdir="\ChuTeng\program\"
+end
+

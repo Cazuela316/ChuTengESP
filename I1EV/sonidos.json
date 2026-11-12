@@ -1,0 +1,16 @@
+{
+ "source": "I1EV.DIR",
+ "sounds": [
+  {
+   "file": "s0036_S01.05.wav",
+   "member": 36,
+   "name": "S01.05",
+   "cast_id": 101,
+   "snd_id": 104,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 73468
+  }
+ ]
+}

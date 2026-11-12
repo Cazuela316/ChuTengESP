@@ -1,0 +1,16 @@
+{
+ "source": "CREDIT.DIR",
+ "sounds": [
+  {
+   "file": "s0004_Null_Sound.wav",
+   "member": 4,
+   "name": "Null Sound",
+   "cast_id": 21,
+   "snd_id": 61,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  }
+ ]
+}

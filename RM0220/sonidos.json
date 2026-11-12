@@ -1,0 +1,27 @@
+{
+ "source": "RM0220.DIR",
+ "sounds": [
+  {
+   "file": "s0077_48re.wav",
+   "member": 77,
+   "name": "48re",
+   "cast_id": 181,
+   "snd_id": 259,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 14348
+  },
+  {
+   "file": "s0056_M24.08.wav",
+   "member": 56,
+   "name": "M24.08",
+   "cast_id": 232,
+   "snd_id": 206,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176385
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+=== miembro 79    (cast 101) ===
+on exitFrame
+  if the mouseDown then go "rin"
+end
+
+=== miembro 80    (cast 102) ===
+on exitFrame
+  if the mouseDown then go "rinApr"
+end
+
+=== miembro 81    (cast 104) ===
+on exitFrame
+  if the mouseDown then go "banOpen"
+end
+
+=== miembro 77    (cast 107) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 82    (cast 157) ===
+on mouseUp
+  if doubleClick() then
+    xpmsg 0
+    xgetItem "íÜìVî’"
+    go "getBan"
+  end if
+end
+
+=== miembro 83    (cast 186) ===
+on startMovie
+  global bagnodraw
+  set bagnodraw=TRUE
+  initMovie
+  set the cursor of sprite 4 to [704,705]
+  ThisSceneIs "sumie"
+end
+
+on xpmsg plus
+  set the puppet of sprite 37 to true
+  set the ink of sprite 37 to 36
+  --Å@É^ÉCÉvÇÕÉeÉLÉXÉgÉLÉÉÉXÉg
+  set the type of sprite 37 to 7
+  set the castNum of sprite 37 to the number of cast "text"+plus  
+  --Å@ÉeÉLÉXÉgÉLÉÉÉXÉgÇ≈ÇÕÅAïùÇ™ÇOÇ…Ç»ÇÈÅ@ÉrÉbÉgÉ}ÉbÉvÉLÉÉÉXÉgÇ≈Ç»Ç¢Ç∆ÅAílÇéÊìæÇ≈Ç´Ç»Ç¢
+  --  set the locH of sprite sp to 160-(the width of sprite sp)
+  
+  set the locH of sprite 37 to 320
+  set the locV of sprite 37 to 150
+  set the visibility of sprite 37 to true
+  updateStage
+end
+
+on xgetItem itemName
+  puppetSound "GETTING AN ITEM"
+  appendItem itemName
+  updateStage
+  repeat while soundBusy(1)
+    nothing
+  end repeat
+  clrMsg
+  puppetSound 0
+end
+
+=== miembro 85    (cast 229) ===
+on exitFrame
+  go "eyeShip"
+end
+
+=== miembro 86    (cast 230) ===
+on mouseUp
+  go "inShip"
+end
+
+=== miembro 87    (cast 231) ===
+on exitFrame
+  go "goTri"
+end
+
+=== miembro 88    (cast 241) ===
+on exitFrame
+  if the mouseDown then
+    go to the frame+1
+  else
+    go to the frame
+  end if
+end
+
+=== miembro 90    (cast 246) ===
+on exitFrame
+  endThenGoFMov "a3x","amanog:amamain.dir"
+end
+
+=== miembro 91    (cast 265) ===
+on mouseUp
+  go "goAmanogawa"
+end
+

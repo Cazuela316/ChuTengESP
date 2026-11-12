@@ -1,0 +1,104 @@
+=== miembro 14    (cast 5) ===
+on exitFrame
+  puppetSound 0
+  repeat with i=1 to 48
+    set the puppet of sprite i to false
+  end repeat
+  cursoroff
+  clearglobals
+  unload
+end
+
+=== miembro 8    (cast 7) ===
+on startMovie
+  set the exitLock to true
+  when keydown then shortCutLocal
+  
+  saveDisable
+end
+
+on shortCutLocal
+  global beforeColorDepth
+  -- ÉRÉ}ÉìÉhQÇ≈ÉÅÉjÉÖÅ[Ç©ÇÁèIóπÇëIÇÒÇæÇÃÇ∆ìØÇ∂
+  if commandDown () and "Qq." contains key() then 
+    if machineType()>=256 then
+      cursoroff
+      closeXLib "fileio"
+    else
+      --      set the colorDepth = beforeColorDepth
+    end if
+    go "xe"
+  end if
+end
+
+=== miembro 15    (cast 16) ===
+on exitFrame
+  --Å@Ç±ÇÍÇ≈ñ{ìñÇ…èIóπÇ∑ÇÈ
+  quit
+end
+
+=== miembro 6    (cast 18) ===
+on exitFrame
+  if not mouseDown() then
+    set the ink of sprite 7 to 36
+    set the ink of sprite 8 to 36
+  end if
+  go to the frame
+end
+
+=== miembro 7    (cast 36) ===
+on enterFrame
+  preloadCast "Cyuten End Theme"
+  if result()=the number of cast "Cyuten End Theme" then
+    puppetSound "Cyuten End Theme"
+  else
+    puppetSound "Cyuten End Theme 11"
+  end if
+end
+
+=== miembro 11    (cast 38) ===
+on exitFrame
+  cursor 4
+end
+
+=== miembro 9    (cast 46) ===
+on mouseDown
+  set the ink of sprite 7 to 0
+end
+
+on mouseUp
+  updateStage
+  cursoroff
+  play done
+end
+
+=== miembro 10    (cast 47) ===
+on mouseDown
+  set the ink of sprite 8 to 0
+end
+
+on mouseUp
+  global beforeColorDepth
+  updateStage
+  if machineType()>=256 then
+    cursoroff
+    closeXLib "fileio"
+  else
+    --    set the colorDepth = beforeColorDepth
+  end if
+  go "xe"
+end
+
+=== miembro 12    (cast 55) ===
+on exitFrame
+  cursor -1
+end
+
+=== miembro 13    (cast 78) ===
+on exitFrame
+  if not mouseDown() then
+    set the ink of sprite 7 to 36
+    set the ink of sprite 8 to 36
+  end if
+end
+

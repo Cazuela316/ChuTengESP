@@ -1,0 +1,16 @@
+{
+ "source": "CAPSULE.DIR",
+ "sounds": [
+  {
+   "file": "s0006.wav",
+   "member": 6,
+   "name": "",
+   "cast_id": 41,
+   "snd_id": 42,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 352838
+  }
+ ]
+}

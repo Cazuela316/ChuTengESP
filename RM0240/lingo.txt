@@ -1,0 +1,141 @@
+=== miembro 17    (cast 40) ===
+on mouseUp
+  go to "grave"
+end
+
+=== miembro 22    (cast 43) ===
+on mouseUp
+  if doubleClick() then
+    set the visibility of sprite 11 to false
+    getItem "Ç®È\ì™"
+    appendcondition "Ç®È\ì™"
+  end if
+end
+
+=== miembro 25    (cast 47) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 35    (cast 56) ===
+on mouseDown
+  global dma
+  set dma=TRUE
+  puppetSound "FX-52"
+end
+
+=== miembro 24    (cast 61) ===
+on mouseUp
+  if doubleClick() and (the locH of sprite 8<300 or the locH of sprite 8>340) then
+    set the visibility of sprite 7 to false
+    getItemx "êØê}î’"
+    appendCondition "êØê}î’"
+  end if
+end
+
+=== miembro 26    (cast 63) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 21    (cast 64) ===
+on mouseUp
+  if doubleClick() then
+    set the visibility of sprite 10 to false
+    getItem "Ç®â‘"
+    appendcondition "Ç®â‘"
+    --    putMsg "Ç®â‘msg",0
+  end if
+end
+
+=== miembro 23    (cast 66) ===
+on mouseUp
+   if doubleClick() then
+    set the visibility of sprite 12 to false
+    getItem "ÉçÅ[É\ÉN"
+    appendcondition "ÉçÅ[É\ÉN"
+    end if
+end
+
+=== miembro 31    (cast 70) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 19    (cast 71) ===
+on exitFrame
+  global dma
+  if the mouseDown and rollOver(8) then
+    set x=the mouseH
+    if x<280 then set x=280
+    if x>360 then set x=360
+    set the locH of sprite 8 to x
+  else
+    if dma=TRUE then
+      set dma=FALSE
+      puppetSound 0
+    end if
+  end if
+  go to the frame
+end
+
+=== miembro 20    (cast 76) ===
+on exitFrame
+  set the puppet of sprite 8 to true
+  set the ink of sprite 8 to 36
+  set the type of sprite 8 to 1
+  set the castNum of sprite 8 to the number of cast "tombStone"
+  set the visibility of sprite 8 to true
+  set the locH of sprite 8 to 320
+  set the locV of sprite 8 to 135
+  
+  set the visibility of sprite 7 to not existCondition("êØê}î’")
+  set the visibility of sprite 10 to not existCondition("Ç®â‘")
+  set the visibility of sprite 11 to not existCondition("Ç®È\ì™")
+  set the visibility of sprite 12 to not existCondition("ÉçÅ[É\ÉN")
+end
+
+=== miembro 18    (cast 78) ===
+on exitFrame
+  initScene "rm0240"
+  go to the frame
+end
+
+=== miembro 27    (cast 92) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 28    (cast 93) ===
+on mouseUp
+  go to "gohosimiya"
+end
+
+=== miembro 34    (cast 98) ===
+on exitFrame
+  initScene "rm0240"
+  go to the frame
+end
+
+=== miembro 30    (cast 107) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 32    (cast 109) ===
+on mouseUp
+  set the puppet of sprite 8 to FALSE
+  gohb
+end
+
+=== miembro 33    (cast 110) ===
+on mouseUp
+  set the puppet of sprite 8 to FALSE
+  gohf
+end
+
+=== miembro 29    (cast 125) ===
+on exitFrame
+  endThenGoFMov "hall1","hosimiya"
+end
+

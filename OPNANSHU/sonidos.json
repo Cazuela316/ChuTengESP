@@ -1,0 +1,82 @@
+{
+ "source": "OPNANSHU.DIR",
+ "sounds": [
+  {
+   "file": "s0085_M13.09.wav",
+   "member": 85,
+   "name": "M13.09",
+   "cast_id": 338,
+   "snd_id": 114,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 872189
+  },
+  {
+   "file": "s0086_CHARA-12.wav",
+   "member": 86,
+   "name": "CHARA-12",
+   "cast_id": 351,
+   "snd_id": 352,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 24968
+  },
+  {
+   "file": "s0087_CHARA-07.wav",
+   "member": 87,
+   "name": "CHARA-07",
+   "cast_id": 353,
+   "snd_id": 354,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 29402
+  },
+  {
+   "file": "s0088_CHARA-17.wav",
+   "member": 88,
+   "name": "CHARA-17",
+   "cast_id": 355,
+   "snd_id": 356,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 50557
+  },
+  {
+   "file": "s0089_CHARA-11.wav",
+   "member": 89,
+   "name": "CHARA-11",
+   "cast_id": 357,
+   "snd_id": 358,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 29192
+  },
+  {
+   "file": "s0090_CHARA-09.wav",
+   "member": 90,
+   "name": "CHARA-09",
+   "cast_id": 359,
+   "snd_id": 360,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 33920
+  },
+  {
+   "file": "s0091_CHARA-13.wav",
+   "member": 91,
+   "name": "CHARA-13",
+   "cast_id": 361,
+   "snd_id": 362,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 24538
+  }
+ ]
+}

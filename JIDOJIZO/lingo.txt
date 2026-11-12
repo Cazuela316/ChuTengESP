@@ -1,0 +1,86 @@
+=== miembro 67    (cast 20) ===
+on mouseUp
+  go "jSPK4"
+end
+
+=== miembro 55    (cast 60) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 58    (cast 112) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 71    (cast 155) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 70    (cast 156) ===
+on mouseUp
+  go "union"
+end
+
+=== miembro 64    (cast 171) ===
+on exitFrame
+  goFMov "af","topcastl.dir"
+end
+
+=== miembro 56    (cast 181) ===
+on exitFrame
+  initScene "jidojizo"
+  appendCondition "jidojizo"
+end
+
+=== miembro 57    (cast 191) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 59    (cast 195) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 60    (cast 196) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 61    (cast 197) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 62    (cast 198) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 63    (cast 200) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 65    (cast 201) ===
+on mouseUp
+  go "jSPK2"
+end
+
+=== miembro 66    (cast 202) ===
+on mouseUp
+  go "jSPK3"
+end
+
+=== miembro 68    (cast 203) ===
+on mouseUp
+  go "jSPK5"
+end
+
+=== miembro 69    (cast 204) ===
+on mouseUp
+  go "jSPK6"
+end
+

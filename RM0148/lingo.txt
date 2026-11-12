@@ -1,0 +1,76 @@
+=== miembro 8    (cast 7) ===
+on exitFrame
+  putMsg "text",0
+  go to the frame
+end
+
+=== miembro 9    (cast 21) ===
+on exitFrame
+  initScene "rm0148"
+end
+
+=== miembro 7    (cast 34) ===
+on exitFrame
+  initScene "rm0148"
+end
+
+=== miembro 10    (cast 36) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 11    (cast 37) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 12    (cast 38) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 13    (cast 39) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 14    (cast 40) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 15    (cast 41) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 16    (cast 42) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 17    (cast 43) ===
+on mouseUp
+  pmsg 1
+  go to "QTplay"
+end
+
+=== miembro 18    (cast 44) ===
+on exitFrame
+  endThenGo "warp"
+end
+
+=== miembro 19    (cast 45) ===
+on exitFrame
+  if random(2)=1 then
+    goFMov "","goemn.dir"
+  else
+    goFMov "eye01","moon:moonload.dir"
+  end if
+end
+
+=== miembro 20    (cast 67) ===
+on startMovie
+  initMovie
+end
+

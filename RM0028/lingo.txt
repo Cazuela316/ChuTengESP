@@ -1,0 +1,121 @@
+=== miembro 41    (cast 70) ===
+on exitFrame
+  go to "out"
+end
+
+=== miembro 33    (cast 74) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 38    (cast 75) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>2 then
+    go to "nose"
+  end if
+  
+end
+
+=== miembro 31    (cast 77) ===
+on exitFrame
+  go "out"
+end
+
+=== miembro 45    (cast 79) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 32    (cast 84) ===
+on exitFrame
+  global usingItem
+  if existCanUse(usingItem) then
+    deleteThisItem
+    clrUsingItem
+    go to "up"
+  else
+    clrUsingItem
+    go the frame
+  end if
+  clrUsingItem
+end
+
+=== miembro 39    (cast 93) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ï@ÉçÉÄ"
+    go to "bye"
+  end if
+  
+end
+
+=== miembro 46    (cast 97) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 34    (cast 106) ===
+on mouseUp
+  go to "notice"
+end
+
+=== miembro 40    (cast 110) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 49    (cast 111) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 43    (cast 112) ===
+on exitFrame
+  initScene "rm0028"
+  go to the frame
+end
+
+=== miembro 42    (cast 113) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 48    (cast 117) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 47    (cast 118) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 44    (cast 119) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 35    (cast 130) ===
+on mouseUp
+  global loadx
+  set loadx=TRUE
+  pushPuppet
+  playFMov "","capsule.dir"
+end
+
+=== miembro 36    (cast 134) ===
+on exitFrame
+  initScene "rm0028"
+  clrUsingItem
+  clrCanUse
+  appendCanUse "Ç®â‘"
+end
+
+=== miembro 37    (cast 136) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+

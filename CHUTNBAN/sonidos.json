@@ -1,0 +1,38 @@
+{
+ "source": "CHUTNBAN.DIR",
+ "sounds": [
+  {
+   "file": "s0271_U-3.wav",
+   "member": 271,
+   "name": "U-3",
+   "cast_id": 725,
+   "snd_id": 728,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 92105
+  },
+  {
+   "file": "s0310_Null_Sound.wav",
+   "member": 310,
+   "name": "Null Sound",
+   "cast_id": 743,
+   "snd_id": 744,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0300_13.wav",
+   "member": 300,
+   "name": "13",
+   "cast_id": 882,
+   "snd_id": 181,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 3420
+  }
+ ]
+}

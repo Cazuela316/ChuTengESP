@@ -1,0 +1,27 @@
+{
+ "source": "JIDOJIZO.DIR",
+ "sounds": [
+  {
+   "file": "s0054_FX-17.wav",
+   "member": 54,
+   "name": "FX-17",
+   "cast_id": 235,
+   "snd_id": 236,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 38076
+  },
+  {
+   "file": "s0053_OS-11.wav",
+   "member": 53,
+   "name": "OS-11*",
+   "cast_id": 250,
+   "snd_id": 237,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 140689
+  }
+ ]
+}

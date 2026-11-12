@@ -1,0 +1,102 @@
+=== miembro 49    (cast 19) ===
+on exitFrame
+  initScene "AmaK"
+end
+
+=== miembro 32    (cast 53) ===
+on exitFrame
+  go to marker(-1)
+end
+
+=== miembro 33    (cast 83) ===
+on mouseUp
+  go "kan01"
+end
+
+=== miembro 40    (cast 88) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 41    (cast 89) ===
+on exitFrame
+  getItem "êØÇÃäÑÇËïÑ"
+end
+
+=== miembro 42    (cast 90) ===
+on exitFrame
+  if soundBusy(1) then
+    go to marker(-1)
+  else
+    go to "kan04"
+  end if
+end
+
+=== miembro 43    (cast 105) ===
+on exitFrame
+  retMov "k1n"
+end
+
+=== miembro 34    (cast 109) ===
+on mouseUp
+  go "kan02"
+end
+
+=== miembro 35    (cast 112) ===
+on mouseUp
+  if doubleClick() then
+    go "kan03"
+  end if
+end
+
+=== miembro 46    (cast 115) ===
+on mouseUp
+  retFMov "k1mov"
+end
+
+=== miembro 31    (cast 116) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 39    (cast 118) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 45    (cast 119) ===
+on mouseUp
+  retLMov "k4"
+end
+
+=== miembro 36    (cast 131) ===
+on mouseUp
+  go "kan04"
+end
+
+=== miembro 37    (cast 132) ===
+on exitFrame
+  putMsg "text",0
+  go to marker(-1)
+end
+
+=== miembro 47    (cast 134) ===
+on mouseUp
+  retRMov "k2"
+end
+
+=== miembro 38    (cast 167) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 48    (cast 183) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 44    (cast 199) ===
+on exitFrame
+  --dummy
+end
+

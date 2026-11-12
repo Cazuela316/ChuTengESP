@@ -1,0 +1,27 @@
+{
+ "source": "RM0022.DIR",
+ "sounds": [
+  {
+   "file": "s0049_OS-11.wav",
+   "member": 49,
+   "name": "OS-11*",
+   "cast_id": 162,
+   "snd_id": 238,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 140689
+  },
+  {
+   "file": "s0050_FX-17.wav",
+   "member": 50,
+   "name": "FX-17",
+   "cast_id": 250,
+   "snd_id": 251,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 38076
+  }
+ ]
+}

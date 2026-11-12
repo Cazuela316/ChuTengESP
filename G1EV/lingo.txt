@@ -1,0 +1,58 @@
+=== miembro 33    (cast 6) ===
+on mouseUp
+  global g1msg1,g1msg2
+  
+  set g1msg2=g1msg2+1
+  if g1msg2>1 then
+    set g1msg2=0
+    set g1msg1=g1msg1+1
+    if g1msg1>2 then set g1msg1=0
+    retMov "g1n"
+  end if
+end
+
+=== miembro 32    (cast 53) ===
+on exitFrame
+  global g1msg1,g1msg2
+  
+  putMsg "text",g1msg1*2+g1msg2
+  go to marker(-1)
+end
+
+=== miembro 34    (cast 103) ===
+on mouseUp
+  global g1msg1,g1msg2
+  
+  set g1msg2=0
+  set g1msg1=g1msg1+1
+  if g1msg1>2 then set g1msg1=0
+  retFMov "g1mov"
+end
+
+=== miembro 35    (cast 104) ===
+on exitFrame
+  global g1msg1,g1msg2
+  
+  putMsg "text",g1msg1*2+g1msg2
+end
+
+=== miembro 36    (cast 105) ===
+on mouseUp
+  retLMov "g4"
+end
+
+=== miembro 37    (cast 106) ===
+on mouseUp
+  retRMov "g2"
+end
+
+=== miembro 38    (cast 131) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 31    (cast 134) ===
+on exitFrame
+  initScene "AmaG"
+end
+

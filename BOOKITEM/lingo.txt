@@ -1,0 +1,55 @@
+=== miembro 15    (cast 26) ===
+on mouseUp
+  go "F4"
+end
+
+=== miembro 14    (cast 31) ===
+on mouseUp
+  go "F3"
+end
+
+=== miembro 13    (cast 33) ===
+on mouseUp
+  go "F2"
+end
+
+=== miembro 8    (cast 44) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 19    (cast 56) ===
+on exitFrame
+  
+end
+
+=== miembro 16    (cast 65) ===
+on mouseUp
+  go "B1"
+end
+
+=== miembro 17    (cast 66) ===
+on mouseUp
+  go "B2"
+end
+
+=== miembro 18    (cast 67) ===
+on mouseUp
+  go "B3"
+end
+
+=== miembro 20    (cast 77) ===
+on mouseUp
+  cursoroff
+  --Å@ëºÇÃÉÄÅ[ÉrÅ[Ç…ãAÇÈ
+  play done
+end
+
+=== miembro 21    (cast 79) ===
+on startMovie
+  --Å@É}ÉEÉXÉJÅ[É\ÉãÇÃê›íËÇÇ∑ÇÈ  
+  set the cursor of sprite 3 to [702,703]
+  set the cursor of sprite 4 to [704,705]
+  set the cursor of sprite 5 to [700,701]
+end
+

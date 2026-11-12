@@ -1,0 +1,682 @@
+=== miembro 197    (cast 74) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 199    (cast 94) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 200    (cast 128) ===
+on mouseUp
+  
+end
+
+=== miembro 238    (cast 312) ===
+on exitFrame
+  putMsg "text",9
+end
+
+=== miembro 240    (cast 362) ===
+on exitFrame
+  clrMsg
+  appendCondition "evkingroom212"
+end
+
+=== miembro 291    (cast 411) ===
+on mouseUp
+  go "jkm"
+end
+
+=== miembro 228    (cast 428) ===
+on mouseUp
+  go "jfc2spk2"
+end
+
+=== miembro 226    (cast 429) ===
+on mouseUp
+  go "jfc2spk1"
+end
+
+=== miembro 231    (cast 431) ===
+on mouseUp
+  clrmsg
+  go "jfc"
+end
+
+=== miembro 229    (cast 432) ===
+on mouseUp
+  go "jfc2spk3"
+end
+
+=== miembro 237    (cast 445) ===
+on exitFrame
+  putMsg "text",8
+end
+
+=== miembro 235    (cast 447) ===
+on exitFrame
+  playsound "M19.05"
+  play "ajm"
+  if existCondition("evkingroom212") then
+    go "jfc"
+  end if
+end
+
+=== miembro 239    (cast 461) ===
+on exitFrame
+  putMsg "text",10
+end
+
+=== miembro 201    (cast 501) ===
+on exitFrame
+  play done
+end
+
+=== miembro 206    (cast 515) ===
+on mouseUp
+  go "jfc1spk3"
+end
+
+=== miembro 202    (cast 517) ===
+on exitFrame
+  endThenGo "AJmRT"
+end
+
+=== miembro 227    (cast 518) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 241    (cast 524) ===
+on exitFrame
+  go "jfc"
+end
+
+=== miembro 233    (cast 531) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 232    (cast 540) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 311    (cast 544) ===
+on mouseUp
+  go "kb"
+end
+
+=== miembro 225    (cast 545) ===
+on exitFrame
+  playsound "M19.03"
+  play "ajm"
+end
+
+=== miembro 234    (cast 546) ===
+on exitFrame
+  putMsg "text",7
+end
+
+=== miembro 272    (cast 549) ===
+on exitFrame
+  putMsg "text",21
+  clrCanUse
+  appendCanUse "êØÇÃåı"
+end
+
+=== miembro 236    (cast 568) ===
+on mouseUp
+  go "jfc3spk1"
+end
+
+=== miembro 221    (cast 582) ===
+on mouseUp
+  go "jl"
+end
+
+=== miembro 246    (cast 585) ===
+on mouseUp
+  go "jfc4spk1"
+end
+
+=== miembro 249    (cast 604) ===
+on mouseUp
+  go "jfc4dead"
+end
+
+=== miembro 198    (cast 635) ===
+on mouseUp
+  go "jfc1spk2"
+end
+
+=== miembro 203    (cast 636) ===
+on exitFrame
+  play "ajm"
+end
+
+=== miembro 204    (cast 637) ===
+on exitFrame
+  playsound "M19.02"
+  play "ajm"
+end
+
+=== miembro 205    (cast 638) ===
+on mouseUp
+  go next
+end
+
+=== miembro 208    (cast 639) ===
+on mouseUp
+  clrMsg
+  go "jfc"
+end
+
+=== miembro 209    (cast 640) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 210    (cast 641) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 211    (cast 642) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 212    (cast 643) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 213    (cast 644) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 214    (cast 646) ===
+on mouseUp
+  go "jl"
+end
+
+=== miembro 215    (cast 647) ===
+on mouseUp
+  go "jr"
+end
+
+=== miembro 216    (cast 648) ===
+on mouseUp
+  go "jb"
+end
+
+=== miembro 217    (cast 649) ===
+on mouseUp
+  go "jfc"
+end
+
+=== miembro 218    (cast 650) ===
+on mouseUp
+  go "jfc"
+end
+
+=== miembro 219    (cast 651) ===
+on mouseUp
+  go "jb"
+end
+
+=== miembro 220    (cast 652) ===
+on mouseUp
+  go "jr"
+end
+
+=== miembro 222    (cast 653) ===
+on mouseUp
+  go "jam"
+end
+
+=== miembro 223    (cast 654) ===
+on exitFrame
+  endThenGo "JAmRT"
+end
+
+=== miembro 224    (cast 655) ===
+on exitFrame
+  goFMov "af","topcastl.dir"
+end
+
+=== miembro 207    (cast 657) ===
+on mouseUp
+  go "jfc1spk4"
+end
+
+=== miembro 230    (cast 672) ===
+on mouseUp
+  go "jfc2spk4"
+end
+
+=== miembro 242    (cast 676) ===
+on mouseUp
+  go "jfc3spk2"
+end
+
+=== miembro 243    (cast 677) ===
+on mouseUp
+  go "jfc3spk3"
+end
+
+=== miembro 266    (cast 678) ===
+on mouseUp
+  go "jfc6spk2"
+end
+
+=== miembro 245    (cast 679) ===
+on exitFrame
+  playsound "M19.07"
+  play "ajm"
+  if existCondition("evkingroom232") then
+    go "jfc"
+  end if
+end
+
+=== miembro 247    (cast 681) ===
+on mouseUp
+  go "jfc4spk2"
+end
+
+=== miembro 248    (cast 682) ===
+on mouseUp
+  go "jfc4spk3"
+end
+
+=== miembro 250    (cast 683) ===
+on exitFrame
+  appendCondition "evkingroom232"
+end
+
+=== miembro 251    (cast 684) ===
+on mouseUp
+  clrMsg
+  go "jfc"
+end
+
+=== miembro 252    (cast 685) ===
+on exitFrame
+  putMsg "text",11
+end
+
+=== miembro 253    (cast 686) ===
+on exitFrame
+  putMsg "text",12
+end
+
+=== miembro 254    (cast 687) ===
+on exitFrame
+  putMsg "text",13
+end
+
+=== miembro 255    (cast 688) ===
+on mouseUp
+  go "jfc5spk1"
+end
+
+=== miembro 256    (cast 689) ===
+on mouseUp
+  go "jfc5spk2"
+end
+
+=== miembro 257    (cast 690) ===
+on mouseUp
+  go "jfc5spk3"
+end
+
+=== miembro 258    (cast 691) ===
+on mouseUp
+  go "jfc5spk4"
+end
+
+=== miembro 259    (cast 692) ===
+on mouseUp
+  clrMsg
+  go "jfc"
+end
+
+=== miembro 260    (cast 693) ===
+on exitFrame
+  putMsg "text",14
+end
+
+=== miembro 261    (cast 694) ===
+on exitFrame
+  putMsg "text",15
+end
+
+=== miembro 262    (cast 695) ===
+on exitFrame
+  putMsg "text",16
+end
+
+=== miembro 263    (cast 696) ===
+on exitFrame
+  putMsg "text",17
+end
+
+=== miembro 264    (cast 697) ===
+on exitFrame
+  playsound "M19.09"
+  play "ajm"
+end
+
+=== miembro 265    (cast 698) ===
+on mouseUp
+  go "jfc6spk1"
+end
+
+=== miembro 267    (cast 699) ===
+on mouseUp
+  go "jfc6spk3"
+end
+
+=== miembro 268    (cast 700) ===
+on mouseUp
+  go "jfc6spk4"
+end
+
+=== miembro 269    (cast 701) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 270    (cast 703) ===
+on mouseUp
+  play done
+end
+
+=== miembro 244    (cast 704) ===
+on mouseUp
+  go "jfc3spk4"
+end
+
+=== miembro 271    (cast 705) ===
+on mouseUp
+  clrMsg
+  go "jfc"
+end
+
+=== miembro 273    (cast 706) ===
+on exitFrame
+  global usingItem
+  if usingItem="êØÇÃåı" then
+    clrMsg
+    play "starlight"
+    putMsg "text",22
+  end if
+  clrUsingItem
+end
+
+=== miembro 310    (cast 710) ===
+on mouseUp
+  go "kf2"
+end
+
+=== miembro 274    (cast 752) ===
+on exitFrame
+  playsound "M19.10"
+  play "ajm"
+end
+
+=== miembro 275    (cast 753) ===
+on exitFrame
+  putMsg "text",23
+end
+
+=== miembro 276    (cast 754) ===
+on exitFrame
+  putMsg "text",24
+end
+
+=== miembro 277    (cast 755) ===
+on exitFrame
+  putMsg "text",25
+end
+
+=== miembro 278    (cast 756) ===
+on exitFrame
+  putMsg "text",26
+end
+
+=== miembro 279    (cast 757) ===
+on exitFrame
+  putMsg "text",27
+end
+
+=== miembro 280    (cast 758) ===
+on mouseUp
+  go "jfc7spk1"
+end
+
+=== miembro 281    (cast 759) ===
+on mouseUp
+  go "jfc7spk2"
+end
+
+=== miembro 282    (cast 760) ===
+on mouseUp
+  go "jfc7spk3"
+end
+
+=== miembro 283    (cast 761) ===
+on mouseUp
+  go "jfc7spk4"
+end
+
+=== miembro 284    (cast 762) ===
+on mouseUp
+  go "jfc7spk5"
+end
+
+=== miembro 285    (cast 763) ===
+on mouseUp
+  appendCondition "evkingroom323"
+  clrMsg
+  go "jf1"
+end
+
+=== miembro 286    (cast 764) ===
+on mouseUp
+  go "jl"
+end
+
+=== miembro 287    (cast 765) ===
+on mouseUp
+  go "jr"
+end
+
+=== miembro 288    (cast 766) ===
+on exitFrame
+  stopSound
+  clrCanUse
+  clrUsingItem
+  appendCanUse "êØñúî\åÆ"
+  appendCanUse "åéñúî\åÆ"
+  appendCanUse "ì˙ñúî\åÆ"
+  appendCanUse "êØñúî\åÆï°êª"
+  appendCanUse "åéñúî\åÆï°êª"
+  appendCanUse "ì˙ñúî\åÆï°êª"
+end
+
+=== miembro 289    (cast 767) ===
+on exitFrame
+  global usingItem
+  clrCanUse
+  appendCanUse "êØñúî\åÆ"
+  appendCanUse "åéñúî\åÆ"
+  appendCanUse "ì˙ñúî\åÆ"
+  appendCanUse "êØñúî\åÆï°êª"
+  appendCanUse "åéñúî\åÆï°êª"
+  appendCanUse "ì˙ñúî\åÆï°êª"
+  if existCanUse(usingItem) then
+    deleteThisItem
+    clrUsingItem
+    go "jf2"
+  end if
+  clrUsingItem
+  go to the frame
+end
+
+=== miembro 290    (cast 768) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 292    (cast 770) ===
+on exitFrame
+  endThenGo "Kf"
+end
+
+=== miembro 293    (cast 792) ===
+on startMovie
+  initMovie
+  initscene "topCastle"
+end
+
+=== miembro 294    (cast 793) ===
+on exitFrame
+  putMsg "text",28
+end
+
+=== miembro 295    (cast 799) ===
+on exitFrame
+  putMsg "text",29
+end
+
+=== miembro 296    (cast 800) ===
+on exitFrame
+  putMsg "text",30
+end
+
+=== miembro 297    (cast 801) ===
+on exitFrame
+  putMsg "text",31
+end
+
+=== miembro 298    (cast 802) ===
+on exitFrame
+  putMsg "text",32
+end
+
+=== miembro 299    (cast 803) ===
+on exitFrame
+  putMsg "text",33
+end
+
+=== miembro 300    (cast 804) ===
+on mouseUp
+  if doubleClick() then
+    getItem "éµÇ¬ã ÅiçïÅj"
+    go "kf2"
+  end if
+end
+
+=== miembro 301    (cast 805) ===
+on mouseUp
+  go "kingSPK2"
+end
+
+=== miembro 302    (cast 806) ===
+on mouseUp
+  go "kingSPK3"
+end
+
+=== miembro 303    (cast 807) ===
+on mouseUp
+  go "kaiApr"
+end
+
+=== miembro 304    (cast 808) ===
+on mouseUp
+  go "kingSPK4"
+end
+
+=== miembro 305    (cast 809) ===
+on mouseUp
+  go "kaiFlash"
+end
+
+=== miembro 306    (cast 810) ===
+on mouseUp
+  go "kl"
+end
+
+=== miembro 307    (cast 811) ===
+on mouseUp
+  go "kr"
+end
+
+=== miembro 309    (cast 813) ===
+on mouseUp
+  go "kf2"
+end
+
+=== miembro 312    (cast 815) ===
+on mouseUp
+  go "Kr"
+end
+
+=== miembro 313    (cast 816) ===
+on mouseUp
+  go "kl"
+end
+
+=== miembro 314    (cast 817) ===
+on mouseUp
+  playsound "M19.10"
+  go "kjm"
+end
+
+=== miembro 315    (cast 818) ===
+on exitFrame
+  endThenGo "jb"
+end
+
+=== miembro 308    (cast 838) ===
+on mouseUp
+  go "kb"
+end
+
+=== miembro 321    (cast 839) ===
+on mouseUp
+  putWaitMsg "text",35
+  clrMsg
+end
+
+=== miembro 316    (cast 846) ===
+on exitFrame
+  putMsg "text",18
+end
+
+=== miembro 317    (cast 851) ===
+on exitFrame
+  putMsg "text",19
+end
+
+=== miembro 318    (cast 852) ===
+on exitFrame
+  putMsg "text",20
+end
+
+=== miembro 319    (cast 858) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 320    (cast 887) ===
+on exitFrame
+  playsound "M19.08"
+  play "ajm"
+end
+

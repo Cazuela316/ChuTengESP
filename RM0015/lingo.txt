@@ -1,0 +1,82 @@
+=== miembro 28    (cast 49) ===
+on exitFrame
+  go to previous
+end
+
+=== miembro 29    (cast 76) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 30    (cast 79) ===
+on exitFrame
+  initScene "rm0015"
+end
+
+=== miembro 31    (cast 108) ===
+on mouseUp
+  go to "spk"
+end
+
+=== miembro 32    (cast 109) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 34    (cast 110) ===
+on exitFrame
+  initScene "rm0015"
+  if existCondition("rm0015ev") then go to "flg"
+end
+
+=== miembro 35    (cast 111) ===
+on exitFrame
+  clrMsg
+  appendCondition("rm0015ev")
+  go to the frame
+end
+
+=== miembro 36    (cast 112) ===
+on exitFrame
+  initScene "rm0015"
+  go to the frame
+end
+
+=== miembro 37    (cast 114) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 38    (cast 115) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 39    (cast 116) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 40    (cast 117) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 41    (cast 118) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 42    (cast 120) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 33    (cast 126) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>7 then go to "flg"
+end
+

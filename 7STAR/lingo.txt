@@ -1,0 +1,20 @@
+=== miembro 4    (cast 7) ===
+on startMovie
+  set the exitLock to true
+  when keydown then shortcut
+  
+  saveDisable
+end
+
+=== miembro 2    (cast 21) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 3    (cast 26) ===
+on mouseUp
+  cursoroff
+  --Å@ï ÇÃÉÄÅ[ÉrÅ[Ç…ãAÇÈ
+  play done
+end
+

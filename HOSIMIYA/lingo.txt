@@ -1,0 +1,356 @@
+=== miembro 47    (cast 7) ===
+on exitFrame
+  setMovieTime 1
+end
+
+=== miembro 25    (cast 16) ===
+on mouseUp
+  goL "hall3l"
+end
+
+=== miembro 26    (cast 22) ===
+on mouseUp
+  goF "hall3f"
+end
+
+=== miembro 27    (cast 23) ===
+on mouseUp
+  goR "hall3r"
+end
+
+=== miembro 28    (cast 24) ===
+on mouseUp
+  goL "hall2l"
+end
+
+=== miembro 19    (cast 25) ===
+on exitFrame
+  global pushFlag
+  
+  if pushFlag=1 and mouseDown() then
+    --Å@É}ÉEÉXÉJÅ[É\ÉãÇÃê›íËÇÇ∑ÇÈ  
+    set the cursor of sprite 3 to [702,703]
+    set the cursor of sprite 4 to [704,705]
+    set the cursor of sprite 5 to [700,701]
+    set the cursor of sprite 6 to [706,707]
+    cursor -1
+    updateStage
+    go "hallxx"  
+  else
+    if the movieTime of sprite 35  >= the duration of cast "starg.mov" then
+      if pushFlag=1 then
+        go to marker(1)
+      else
+        set the movieTime of sprite 35 to 660
+        set the movieRate of sprite 35 to 1
+      end if
+    end if
+    go to the frame
+  end if
+end
+
+=== miembro 20    (cast 26) ===
+on mouseUp
+  global pushFlag
+  set pushFlag=1
+  cursor 4
+end
+
+=== miembro 48    (cast 28) ===
+on exitFrame
+  setMovieTime 80
+end
+
+=== miembro 49    (cast 29) ===
+on exitFrame
+  setMovieTime 155
+end
+
+=== miembro 21    (cast 30) ===
+on exitFrame
+  if the movieTime of sprite 35 < the duration of cast "starzm02.mov" then
+    go to the frame
+  else
+    cursor -1
+    --Å@É}ÉEÉXÉJÅ[É\ÉãÇÃê›íËÇÇ∑ÇÈ  
+    set the cursor of sprite 3 to [702,703]
+    set the cursor of sprite 4 to [704,705]
+    set the cursor of sprite 5 to [700,701]
+    set the cursor of sprite 6 to [706,707]
+    cursor -1
+    go to "hall3"
+  end if
+end
+
+=== miembro 22    (cast 31) ===
+on exitFrame
+  global pushFlag
+  set pushFlag=0
+  
+  cursor -1
+end
+
+=== miembro 50    (cast 32) ===
+on exitFrame
+  setMovieTime 230
+end
+
+=== miembro 29    (cast 39) ===
+on mouseUp
+  goF "hall2f"
+end
+
+=== miembro 51    (cast 48) ===
+on exitFrame
+  setMovieTime 1
+end
+
+=== miembro 30    (cast 50) ===
+on mouseUp
+  goR "hall2r"
+end
+
+=== miembro 23    (cast 57) ===
+on exitFrame
+  endThenGo "hall2"
+end
+
+=== miembro 24    (cast 58) ===
+on exitFrame
+  endThenGo "hall4"
+end
+
+=== miembro 31    (cast 62) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 32    (cast 63) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 33    (cast 64) ===
+on exitFrame
+  endThenGo "hall1"
+end
+
+=== miembro 34    (cast 65) ===
+on exitFrame
+  endThenGo "hall3"
+end
+
+=== miembro 53    (cast 66) ===
+on exitFrame
+  setMovieTime 155
+end
+
+=== miembro 54    (cast 67) ===
+on exitFrame
+  setMovieTime 80
+end
+
+=== miembro 35    (cast 76) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 36    (cast 77) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 37    (cast 78) ===
+on mouseUp
+  goL "hall1l"
+end
+
+=== miembro 38    (cast 79) ===
+on mouseUp
+  goF "hall1f"
+end
+
+=== miembro 39    (cast 80) ===
+on mouseUp
+  goR "hall1r"
+end
+
+=== miembro 40    (cast 81) ===
+on mouseUp
+  goL "hall4l"
+end
+
+=== miembro 41    (cast 82) ===
+on mouseUp
+  goF "hall4f"
+end
+
+=== miembro 42    (cast 83) ===
+on mouseUp
+  goR "hall4r"
+end
+
+=== miembro 43    (cast 84) ===
+on exitFrame
+  endThenGo "hall4"
+end
+
+=== miembro 44    (cast 85) ===
+on exitFrame
+  endThenGo "hall2"
+end
+
+=== miembro 45    (cast 86) ===
+on exitFrame
+  endThenGo "hall3"
+end
+
+=== miembro 46    (cast 87) ===
+on exitFrame
+  endThenGo "hall1"
+end
+
+=== miembro 52    (cast 108) ===
+on exitFrame
+  setMovieTime 230
+end
+
+=== miembro 55    (cast 139) ===
+on exitFrame
+  endThenGoFMov "out","rm0240"
+end
+
+=== miembro 56    (cast 140) ===
+on exitFrame
+  endThenGoFMov "out","rm0181"
+end
+
+=== miembro 57    (cast 142) ===
+on exitFrame
+  endThenGoFMov "out","rm0121"
+end
+
+=== miembro 83    (cast 159) ===
+on exitFrame
+  putGrp "têØÇÃã{.dif",0
+  wait 180
+  clrMsg
+end
+
+=== miembro 61    (cast 169) ===
+on mouseUp
+  go "h3x"
+end
+
+=== miembro 62    (cast 170) ===
+on mouseUp
+  go "h2x"
+end
+
+=== miembro 63    (cast 171) ===
+on mouseUp
+  go "h1x"
+end
+
+=== miembro 64    (cast 172) ===
+on mouseUp
+  go "h4x"
+end
+
+=== miembro 65    (cast 173) ===
+on mouseUp
+  go "hall3"
+end
+
+=== miembro 66    (cast 174) ===
+on mouseUp
+  go "hall2"
+end
+
+=== miembro 67    (cast 175) ===
+on mouseUp
+  go "hall1"
+end
+
+=== miembro 68    (cast 176) ===
+on mouseUp
+  go "hall4"
+end
+
+=== miembro 69    (cast 177) ===
+on mouseUp
+  go "goCorridor"
+end
+
+=== miembro 70    (cast 178) ===
+on startMovie
+  initMovie
+  saveEnable
+  set the cursor of sprite 3 to [702,703]
+  set the cursor of sprite 4 to [704,705]
+  set the cursor of sprite 5 to [700,701]
+  set the cursor of sprite 6 to [706,707]
+  initscene "rmx"
+end
+
+=== miembro 79    (cast 214) ===
+on exitFrame
+  global pictCast,pictCastB,pcv,pcvB,nowFrame
+  set pictCast="F0121.dif"
+  set pictCastB="B0120.dif"
+  set pcv=14
+  set pcvB=42
+  set nowFrame=605
+end
+
+=== miembro 71    (cast 222) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 73    (cast 226) ===
+on exitFrame
+  goFMov "sbShip","corridor:tyuload.dir"
+end
+
+=== miembro 74    (cast 227) ===
+on exitFrame
+  endThenGo "goc"
+  if mouseDown() then go "goc"
+end
+
+=== miembro 58    (cast 245) ===
+on exitFrame
+  endThenGoFMov "out","rm0061"
+end
+
+=== miembro 77    (cast 265) ===
+on exitFrame
+  global pictCast,pictCastB,pcv,pcvB,nowFrame
+  set pictCast="F0240.dif"
+  set pictCastB="B0240.dif"
+  set pcv=28
+  set pcvB=56
+  set nowFrame=5
+end
+
+=== miembro 78    (cast 266) ===
+on exitFrame
+  global pictCast,pictCastB,pcv,pcvB,nowFrame
+  set pictCast="F0181.dif"
+  set pictCastB="B0060.dif"
+  set pcv=21
+  set pcvB=35
+  set nowFrame=905
+end
+
+=== miembro 80    (cast 268) ===
+on exitFrame
+  global pictCast,pictCastB,pcv,pcvB,nowFrame
+  set pictCast="F0061.dif"
+  set pictCastB="B0180.dif"
+  set pcv=7
+  set pcvB=49
+  set nowFrame=900
+end
+

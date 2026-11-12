@@ -1,0 +1,16 @@
+{
+ "source": "RM0028.DIR",
+ "sounds": [
+  {
+   "file": "s0030_M17.16.wav",
+   "member": 30,
+   "name": "M17.16",
+   "cast_id": 143,
+   "snd_id": 105,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 352838
+  }
+ ]
+}

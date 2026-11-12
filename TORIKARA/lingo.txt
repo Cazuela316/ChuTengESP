@@ -1,0 +1,50 @@
+=== miembro 41    (cast 86) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 42    (cast 127) ===
+on exitFrame
+  initScene "torikara"
+end
+
+=== miembro 43    (cast 134) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 44    (cast 135) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 45    (cast 136) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 46    (cast 137) ===
+on mouseUp
+  go "toriSPK2"
+end
+
+=== miembro 47    (cast 138) ===
+on mouseUp
+  go "toriSPK3"
+end
+
+=== miembro 48    (cast 139) ===
+on mouseUp
+  go "toriEnd"
+end
+
+=== miembro 49    (cast 140) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 50    (cast 141) ===
+on exitFrame
+  goFMov "af","topcastl.dir"
+end
+

@@ -1,0 +1,22 @@
+=== miembro 23    (cast 29) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 26    (cast 34) ===
+on exitFrame
+  pmsg 0
+end
+
+=== miembro 24    (cast 100) ===
+on mouseUp
+  cursoroff
+  --ï ÉÄÅ[ÉrÅ[Ç…ñﬂÇÈ
+  play done
+end
+
+=== miembro 19    (cast 106) ===
+on exitFrame
+  go previous
+end
+

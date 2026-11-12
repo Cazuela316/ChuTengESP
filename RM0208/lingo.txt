@@ -1,0 +1,120 @@
+=== miembro 13    (cast 6) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 14    (cast 17) ===
+on exitFrame
+  initScene "rm0208"
+  appendCanUse "åıÉAÉ~"
+  appendCanUse "åıèe"
+  appendCanUse "åıñÓ"
+  set the visibility of sprite 6 to not existItem("åıÉAÉ~")
+  set the visibility of sprite 7 to not existItem("åıèe")
+  set the visibility of sprite 8 to not existItem("åıñÓ")
+end
+
+=== miembro 15    (cast 31) ===
+on exitFrame
+  initScene "rm0208"
+  go to the frame
+end
+
+=== miembro 16    (cast 32) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 10    (cast 36) ===
+on mouseUp
+  if doubleClick() then
+    if existItem("åıÉAÉ~") or existItem("åıèe") or existItem("åıñÓ") then
+      putWaitMsg "text",1
+    else
+      deleteItem("åıÉAÉ~")
+      deleteItem("åıèe")
+      deleteItem("åıñÓ")
+      
+      getItem("åıÉAÉ~")
+    end if
+  end if
+end
+
+=== miembro 9    (cast 38) ===
+on exitFrame
+  putMsg("text",0)
+  set the visibility of sprite 6 to not existItem("åıÉAÉ~")
+  set the visibility of sprite 7 to not existItem("åıèe")
+  set the visibility of sprite 8 to not existItem("åıñÓ")
+  updateStage
+  
+  if IsUsingItem("åıÉAÉ~") then
+    deleteItem "åıÉAÉ~"
+    drawBag
+  else if IsUsingItem("åıèe") then
+    deleteItem "åıèe"
+    drawBag
+  else if IsUsingItem("åıñÓ") then 
+    deleteItem "åıñÓ"
+    drawBag
+  end if
+  
+  clrUsingItem
+  go to the frame
+end
+
+=== miembro 11    (cast 48) ===
+on mouseUp
+  if doubleClick() then
+    if existItem("åıÉAÉ~") or existItem("åıèe") or existItem("åıñÓ") then
+      putWaitMsg "text",1
+    else
+      deleteItem("åıÉAÉ~")
+      deleteItem("åıèe")
+      deleteItem("åıñÓ")
+      
+      getItem("åıèe")
+    end if
+  end if
+end
+
+=== miembro 12    (cast 52) ===
+on mouseUp
+  if doubleClick() then
+    if existItem("åıÉAÉ~") or existItem("åıèe") or existItem("åıñÓ") then
+      putWaitMsg "text",1
+    else
+      deleteItem("åıÉAÉ~")
+      deleteItem("åıèe")
+      deleteItem("åıñÓ")
+      
+      getItem("åıñÓ")
+    end if
+  end if
+end
+
+=== miembro 17    (cast 57) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 18    (cast 58) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 19    (cast 59) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 20    (cast 62) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 21    (cast 63) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+

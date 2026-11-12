@@ -1,0 +1,5 @@
+=== miembro 1    (cast 19) ===
+on exitFrame
+  go to movie "ChuTeng:program:start.dir"
+end
+

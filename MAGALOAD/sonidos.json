@@ -1,0 +1,27 @@
+{
+ "source": "MAGALOAD.DIR",
+ "sounds": [
+  {
+   "file": "s0097_itiba.snd.wav",
+   "member": 97,
+   "name": "itiba.snd",
+   "cast_id": 267,
+   "snd_id": 334,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 177904
+  },
+  {
+   "file": "s0098_EF-19.wav",
+   "member": 98,
+   "name": "EF-19",
+   "cast_id": 293,
+   "snd_id": 294,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 69632
+  }
+ ]
+}

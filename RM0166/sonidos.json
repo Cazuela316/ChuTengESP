@@ -1,0 +1,49 @@
+{
+ "source": "RM0166.DIR",
+ "sounds": [
+  {
+   "file": "s0081_SM.04.wav",
+   "member": 81,
+   "name": "SM.04",
+   "cast_id": 216,
+   "snd_id": 220,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 112765
+  },
+  {
+   "file": "s0108_19.wav",
+   "member": 108,
+   "name": "19",
+   "cast_id": 222,
+   "snd_id": 257,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 7425
+  },
+  {
+   "file": "s0083_Null_Sound.wav",
+   "member": 83,
+   "name": "Null Sound",
+   "cast_id": 291,
+   "snd_id": 287,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0082_EF-15.wav",
+   "member": 82,
+   "name": "EF-15",
+   "cast_id": 313,
+   "snd_id": 75,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 37522
+  }
+ ]
+}

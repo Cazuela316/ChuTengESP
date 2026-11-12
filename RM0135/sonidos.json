@@ -1,0 +1,38 @@
+{
+ "source": "RM0135.DIR",
+ "sounds": [
+  {
+   "file": "s0091_EF-01.wav",
+   "member": 91,
+   "name": "EF-01",
+   "cast_id": 228,
+   "snd_id": 227,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 2388
+  },
+  {
+   "file": "s0064_marcha.snd.wav",
+   "member": 64,
+   "name": "marcha.snd",
+   "cast_id": 269,
+   "snd_id": 271,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 213664
+  },
+  {
+   "file": "s0065_SM.04.wav",
+   "member": 65,
+   "name": "SM.04",
+   "cast_id": 272,
+   "snd_id": 276,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 112765
+  }
+ ]
+}

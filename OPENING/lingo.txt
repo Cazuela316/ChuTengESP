@@ -1,0 +1,50 @@
+=== miembro 85    (cast 196) ===
+on exitFrame
+  preloadcast 1,49
+  preloadcast 55,77
+end
+
+=== miembro 86    (cast 231) ===
+on exitFrame
+  sound fadeout 1,30
+end
+
+=== miembro 87    (cast 232) ===
+on exitFrame
+  endThenGo "n2"
+  if mouseDown() then
+    goFMov "","opnanshu.dir"
+  end if
+end
+
+=== miembro 88    (cast 253) ===
+on exitFrame
+  if mouseDown() then
+    goFMov "","opnanshu.dir"
+  else
+    go to the frame
+  end if
+end
+
+=== miembro 89    (cast 292) ===
+on exitFrame
+  endThenGo "startx"
+end
+
+=== miembro 90    (cast 293) ===
+on exitFrame
+  set the visibility of sprite 35 to FALSE
+end
+
+=== miembro 91    (cast 294) ===
+on exitFrame
+  set the visibility of sprite 35 to TRUE
+end
+
+=== miembro 93    (cast 326) ===
+on startMovie
+  global bagnodraw
+  set bagnodraw=TRUE
+  initMovie
+end
+

@@ -1,0 +1,16 @@
+{
+ "source": "RM0208.DIR",
+ "sounds": [
+  {
+   "file": "s0008_SM.03.wav",
+   "member": 8,
+   "name": "SM.03 ",
+   "cast_id": 82,
+   "snd_id": 90,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 192047
+  }
+ ]
+}

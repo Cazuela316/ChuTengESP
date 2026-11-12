@@ -1,0 +1,27 @@
+{
+ "source": "HOSILOOP.DIR",
+ "sounds": [
+  {
+   "file": "s0063_Null_Sound.wav",
+   "member": 63,
+   "name": "Null Sound",
+   "cast_id": 265,
+   "snd_id": 270,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0062_SM.08.wav",
+   "member": 62,
+   "name": "SM.08",
+   "cast_id": 332,
+   "snd_id": 314,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 81345
+  }
+ ]
+}

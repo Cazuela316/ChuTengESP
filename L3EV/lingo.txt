@@ -1,0 +1,232 @@
+=== miembro 76    (cast 8) ===
+on mouseUp
+  clrMsg
+  --  retLMov "l2"
+  go "rl2"
+end
+
+=== miembro 83    (cast 19) ===
+on mouseUp
+  clrMsg
+  --  retRMov "l4"
+  go "rl4"
+end
+
+=== miembro 98    (cast 21) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 96    (cast 56) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 97    (cast 63) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 85    (cast 82) ===
+on exitFrame
+  if IsUsingItem("êÖóã") then
+    clrUsingItem
+    deleteItem "êÖóã"
+    appendCondition "noama"
+    drawBag
+    go to "ame02"
+  else
+    clrUsingItem
+    go to the frame
+  end if
+end
+
+=== miembro 119    (cast 90) ===
+on exitFrame
+  go "l3event"
+end
+
+=== miembro 79    (cast 119) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 77    (cast 129) ===
+on exitFrame
+  go to marker(-1)
+end
+
+=== miembro 78    (cast 131) ===
+on mouseUp
+  go "ame01"
+end
+
+=== miembro 80    (cast 136) ===
+on mouseUp
+  go "ame02"
+end
+
+=== miembro 94    (cast 138) ===
+on startMovie
+  initMovie
+  saveEnable
+  
+  putGrp "tîíìπñÂ.dif",0
+  wait 180
+  clrMsg
+end
+
+=== miembro 84    (cast 142) ===
+on exitFrame
+  initScene "AmaL"
+  if existCondition("noama") then
+    go to "koma01"
+  end if
+end
+
+=== miembro 99    (cast 146) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 86    (cast 149) ===
+on mouseUp
+  go to "koma01"
+end
+
+=== miembro 90    (cast 163) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 110    (cast 178) ===
+on exitFrame
+  if IsUsingItem("êÖóã") then
+    clrUsingItem
+    deleteItem "êÖóã"
+    appendCondition "noama"
+    drawBag
+    go to "ame02"
+  end if
+  clrUsingItem
+end
+
+=== miembro 87    (cast 187) ===
+on exitFrame
+  clrCanUse
+  appendCanUse "êØÇÃäÑÇËïÑ"
+  if IsUsingItem("êØÇÃäÑÇËïÑ") then
+    clrUsingItem
+    updateStage
+    go to "koma02"
+  end if
+  clrUsingItem
+end
+
+=== miembro 82    (cast 200) ===
+on mouseUp
+  go "koma03"
+end
+
+=== miembro 88    (cast 206) ===
+on mouseUp
+  go to "ame01"
+end
+
+=== miembro 91    (cast 208) ===
+on exitFrame
+  go to marker(-1)
+end
+
+=== miembro 92    (cast 211) ===
+on mouseUp
+  go to "koma03"
+end
+
+=== miembro 81    (cast 216) ===
+on mouseUp
+  go "koma02"
+end
+
+=== miembro 101    (cast 248) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 93    (cast 288) ===
+on exitFrame
+  initlist
+  appendItem "íÜìVî’"
+  appendItem "êØÇÃäÑÇËïÑ"
+  goFMov "wi","corridor:tyuload.dir"
+end
+
+=== miembro 89    (cast 301) ===
+on mouseUp
+  go to "koma01"
+end
+
+=== miembro 95    (cast 315) ===
+on exitFrame
+  initScene "AmaL"
+  putMsg "text",3
+end
+
+=== miembro 103    (cast 317) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 107    (cast 322) ===
+on exitFrame
+  retRMov "l4"
+  --goFMov "l4","amamain.dir"
+end
+
+=== miembro 100    (cast 342) ===
+on exitFrame
+  clrCanUse
+  clrUsingItem
+  appendCanUse "êÖóã"
+end
+
+=== miembro 104    (cast 345) ===
+on mouseUp
+  --  retLMov "l2"
+  go "gl2"
+end
+
+=== miembro 102    (cast 351) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 105    (cast 388) ===
+on mouseUp
+  --  retRMov "l4"
+  go "gl4"
+end
+
+=== miembro 106    (cast 389) ===
+on exitFrame
+   retLMov "l2"
+ -- goFMov "l2","amamain.dir"
+end
+
+=== miembro 108    (cast 396) ===
+on mouseUp
+  clrMsg
+  retLMov "l2"
+end
+
+=== miembro 109    (cast 397) ===
+on mouseUp
+  clrMsg
+  retRMov "l4"
+end
+
+=== miembro 75    (cast 414) ===
+on mouseUp
+  retLMov "l2"
+end
+

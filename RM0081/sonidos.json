@@ -1,0 +1,38 @@
+{
+ "source": "RM0081.DIR",
+ "sounds": [
+  {
+   "file": "s0058_EF-15re.wav",
+   "member": 58,
+   "name": "EF-15re",
+   "cast_id": 138,
+   "snd_id": 142,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 21266
+  },
+  {
+   "file": "s0059_Null_Sound.wav",
+   "member": 59,
+   "name": "Null Sound",
+   "cast_id": 141,
+   "snd_id": 245,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0038_M05.10.wav",
+   "member": 38,
+   "name": "M05.10",
+   "cast_id": 168,
+   "snd_id": 169,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 97059
+  }
+ ]
+}

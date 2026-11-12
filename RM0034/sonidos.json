@@ -1,0 +1,16 @@
+{
+ "source": "RM0034.DIR",
+ "sounds": [
+  {
+   "file": "s0022_M05.99.wav",
+   "member": 22,
+   "name": "M05.99",
+   "cast_id": 123,
+   "snd_id": 124,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 99496
+  }
+ ]
+}

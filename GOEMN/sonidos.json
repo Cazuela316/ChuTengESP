@@ -1,0 +1,16 @@
+{
+ "source": "GOEMN.DIR",
+ "sounds": [
+  {
+   "file": "s0046_goemon.snd.wav",
+   "member": 46,
+   "name": "goemon.snd",
+   "cast_id": 233,
+   "snd_id": 234,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 164328
+  }
+ ]
+}

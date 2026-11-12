@@ -1,0 +1,16 @@
+{
+ "source": "K1EV.DIR",
+ "sounds": [
+  {
+   "file": "s0030_S01.06.wav",
+   "member": 30,
+   "name": "S01.06",
+   "cast_id": 156,
+   "snd_id": 107,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 135680
+  }
+ ]
+}

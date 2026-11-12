@@ -1,0 +1,16 @@
+{
+ "source": "G1EV.DIR",
+ "sounds": [
+  {
+   "file": "s0030_S01.04.wav",
+   "member": 30,
+   "name": "S01.04",
+   "cast_id": 107,
+   "snd_id": 108,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 73468
+  }
+ ]
+}

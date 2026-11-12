@@ -1,0 +1,112 @@
+=== miembro 31    (cast 55) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 32    (cast 94) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 49    (cast 103) ===
+on exitFrame
+  initScene "rm0226"
+  go to the frame
+end
+
+=== miembro 34    (cast 125) ===
+on exitFrame
+  initScene "rm0226"
+  if existCondition("rm0226ev") then
+    go to "noEvent"
+  end if
+  
+end
+
+=== miembro 35    (cast 126) ===
+on mouseUp
+  go to "kaeru"
+end
+
+=== miembro 36    (cast 127) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 37    (cast 128) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>1 then
+    go to "hane"
+  end if
+  
+end
+
+=== miembro 38    (cast 129) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 39    (cast 130) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ÉJÉGÉãâH"
+    appendCondition("rm0226ev")
+    go to "bye"
+  end if
+  
+end
+
+=== miembro 40    (cast 131) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 41    (cast 132) ===
+on mouseUp
+  clrMsg
+  go to "noEvent"
+end
+
+=== miembro 42    (cast 133) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 33    (cast 137) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 43    (cast 138) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 44    (cast 139) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 45    (cast 140) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 46    (cast 141) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 47    (cast 142) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 48    (cast 143) ===
+on startMovie
+  initMovie
+end
+

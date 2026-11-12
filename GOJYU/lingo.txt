@@ -1,0 +1,943 @@
+=== miembro 334    (cast 46) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 335    (cast 144) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 336    (cast 162) ===
+on exitFrame
+  
+end
+
+=== miembro 343    (cast 193) ===
+on mouseUp
+  goFMov "gr","moonload.dir"
+end
+
+=== miembro 337    (cast 201) ===
+on exitFrame
+  
+end
+
+=== miembro 438    (cast 227) ===
+on exitFrame
+  putMsg "text",11
+end
+
+=== miembro 489    (cast 321) ===
+on startMovie
+  global epower
+  initMovie
+  set epower=40
+  saveEnable
+end
+
+=== miembro 392    (cast 362) ===
+on mouseUp
+  go "xl"
+end
+
+=== miembro 411    (cast 377) ===
+on mouseUp
+  go "zb"
+end
+
+=== miembro 375    (cast 465) ===
+on exitFrame
+  endThenGo "rb"
+end
+
+=== miembro 388    (cast 722) ===
+on exitFrame
+  endThenGo "tb"
+end
+
+=== miembro 432    (cast 773) ===
+on mouseUp
+  clrMsg
+  go "pflift"
+end
+
+=== miembro 347    (cast 825) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 393    (cast 844) ===
+on mouseUp
+  go "xr"
+end
+
+=== miembro 464    (cast 861) ===
+on mouseUp
+  if existCondition("gojyu2fclr") then go "rtm"
+end
+
+=== miembro 379    (cast 863) ===
+on mouseUp
+  go "or"
+end
+
+=== miembro 338    (cast 868) ===
+on exitFrame
+  appendCondition "gojyu4fclr"
+  deleteItem "ÉÑÉ~ÉqÉáÉEÉ^Éì"
+  drawBag
+  go "Xb"
+end
+
+=== miembro 446    (cast 869) ===
+on mouseUp
+  go "fighterSPK3"
+end
+
+=== miembro 396    (cast 872) ===
+on mouseUp
+  go "xf"
+end
+
+=== miembro 426    (cast 874) ===
+on mouseUp
+  clrMsg
+  go "pflift"
+end
+
+=== miembro 417    (cast 875) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 413    (cast 876) ===
+on mouseUp
+  go "zl"
+end
+
+=== miembro 340    (cast 894) ===
+on exitFrame
+  initScene "hmg"
+  appendCondition "first"
+  endThenGo "DoorOpen"
+end
+
+=== miembro 359    (cast 909) ===
+on exitFrame
+  endThenGo "Qb"
+end
+
+=== miembro 418    (cast 916) ===
+on mouseUp
+  go "usaSPK2"
+end
+
+=== miembro 431    (cast 928) ===
+on exitFrame
+  putMsg "text",7
+end
+
+=== miembro 442    (cast 930) ===
+on exitFrame
+  putMsg "text",12
+end
+
+=== miembro 408    (cast 942) ===
+on mouseUp
+  go "zb"
+end
+
+=== miembro 370    (cast 943) ===
+on mouseUp
+  go "sb"
+end
+
+=== miembro 389    (cast 952) ===
+on exitFrame
+  endThenGo "wb"
+end
+
+=== miembro 369    (cast 970) ===
+on mouseUp
+  go "sb"
+end
+
+=== miembro 406    (cast 982) ===
+on mouseUp
+  go "zl"
+end
+
+=== miembro 398    (cast 983) ===
+on mouseUp
+  go "elwm"
+end
+
+=== miembro 394    (cast 984) ===
+on mouseUp
+  go "xb"
+end
+
+=== miembro 425    (cast 987) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 410    (cast 988) ===
+on mouseUp
+  go "zf"
+end
+
+=== miembro 424    (cast 991) ===
+on mouseUp
+  go "usaSPK5"
+end
+
+=== miembro 409    (cast 1000) ===
+on mouseUp
+  go "zf"
+end
+
+=== miembro 404    (cast 1006) ===
+on exitFrame
+  endThenGo "wb"
+end
+
+=== miembro 430    (cast 1018) ===
+on mouseUp
+  clrMsg
+  go "pflift"
+end
+
+=== miembro 457    (cast 1026) ===
+on exitFrame
+  putMsg "text",17
+end
+
+=== miembro 428    (cast 1027) ===
+on mouseUp
+  clrMsg
+  go "pflift"
+end
+
+=== miembro 468    (cast 1029) ===
+on mouseUp
+  if existCondition("gojyu4fclr") then go "wym"
+end
+
+=== miembro 451    (cast 1032) ===
+on exitFrame
+  global dma
+  global dmb--enemy's x
+  global dmc--player's x
+  global dmd
+  set dmd=0
+  set dma=0
+  repeat with i=6 to 7
+    set the puppet of sprite i to TRUE
+    set the ink of sprite i to 36
+    set the type of sprite i to 1
+    set the locV of sprite i to 260
+  end repeat
+  
+  set dmb=220
+  set dmc=420
+  set the type of sprite 6 to 16
+  set the locH of sprite 6 to dmb
+  set the locH of sprite 7 to dmc
+  set the castNum of sprite 7 to the number of cast "guru"
+  set the castNum of sprite 6 to the number of cast "fightcast"
+  
+  preload 825,850
+end
+
+=== miembro 461    (cast 1037) ===
+on exitFrame
+  endThenGo "tb"
+end
+
+=== miembro 344    (cast 1040) ===
+on mouseUp
+  go "pf"
+end
+
+=== miembro 412    (cast 1045) ===
+on mouseUp
+  go "zr"
+end
+
+=== miembro 444    (cast 1047) ===
+on exitFrame
+  putMsg "text",14
+end
+
+=== miembro 433    (cast 1048) ===
+on exitFrame
+  putMsg "text",8
+end
+
+=== miembro 459    (cast 1050) ===
+on exitFrame
+  putMsg "text",16
+end
+
+=== miembro 439    (cast 1051) ===
+on exitFrame
+  putMsg "text",10
+  appendCondition "gojyu2fclr"
+end
+
+=== miembro 339    (cast 1053) ===
+on mouseUp
+  
+end
+
+=== miembro 452    (cast 1062) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 448    (cast 1064) ===
+on mouseUp
+  if doubleClick() then
+    appendCondition "gojyu3fclr"
+    getItem "ÉÑÉ~ÉqÉáÉEÉ^Éì"
+    go "ob"
+  end if
+end
+
+=== miembro 466    (cast 1076) ===
+on mouseUp
+  if existCondition("gojyu3fclr") then go "twm"
+end
+
+=== miembro 381    (cast 1098) ===
+on mouseUp
+  go "of"
+end
+
+=== miembro 342    (cast 1114) ===
+on mouseUp
+  goFMov "gl","moonload.dir"
+end
+
+=== miembro 421    (cast 1115) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 358    (cast 1118) ===
+on mouseUp
+  go "elQm"
+end
+
+=== miembro 346    (cast 1127) ===
+on mouseUp
+  go "pr"
+end
+
+=== miembro 372    (cast 1138) ===
+on mouseUp
+  go "sl"
+end
+
+=== miembro 355    (cast 1145) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 341    (cast 1155) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 350    (cast 1158) ===
+on mouseUp
+  go "pr"
+end
+
+=== miembro 447    (cast 1160) ===
+on mouseUp
+  clrMsg
+  go "fighterFade"
+end
+
+=== miembro 367    (cast 1162) ===
+on mouseUp
+  go "sl"
+end
+
+=== miembro 349    (cast 1163) ===
+on mouseUp
+  go "pf"
+end
+
+=== miembro 345    (cast 1164) ===
+on mouseUp
+  go "pl"
+end
+
+=== miembro 357    (cast 1166) ===
+on mouseUp
+  go "pr"
+end
+
+=== miembro 419    (cast 1167) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 348    (cast 1168) ===
+on mouseUp
+  go "pb"
+end
+
+=== miembro 351    (cast 1169) ===
+on mouseUp
+  go "pl"
+end
+
+=== miembro 352    (cast 1170) ===
+on mouseUp
+  goFMov "gb","moonload.dir"
+end
+
+=== miembro 356    (cast 1171) ===
+on mouseUp
+  go "pl"
+end
+
+=== miembro 353    (cast 1172) ===
+on mouseUp
+  go "pf"
+end
+
+=== miembro 361    (cast 1173) ===
+on mouseUp
+  go "qrm"
+end
+
+=== miembro 362    (cast 1176) ===
+on exitFrame
+  endThenGo "rb"
+end
+
+=== miembro 371    (cast 1177) ===
+on mouseUp
+  go "sf"
+end
+
+=== miembro 360    (cast 1178) ===
+on mouseUp
+  go "pb"
+end
+
+=== miembro 472    (cast 1180) ===
+on exitFrame
+  putMsg "text",18
+end
+
+=== miembro 354    (cast 1181) ===
+on mouseUp
+  go "pb"
+end
+
+=== miembro 458    (cast 1182) ===
+on mouseUp
+  clrMsg
+  playFMov "","gutspose.dir"
+  go "koan"
+end
+
+=== miembro 471    (cast 1184) ===
+on mouseUp
+  go "fightsub"
+end
+
+=== miembro 365    (cast 1185) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 373    (cast 1186) ===
+on mouseUp
+  go "sr"
+end
+
+=== miembro 382    (cast 1187) ===
+on mouseUp
+  go "ob"
+end
+
+=== miembro 378    (cast 1188) ===
+on exitFrame
+  endThenGo "rb"
+end
+
+=== miembro 420    (cast 1190) ===
+on mouseUp
+  go "usaSPK3"
+end
+
+=== miembro 366    (cast 1191) ===
+on mouseUp
+  go "sr"
+end
+
+=== miembro 407    (cast 1192) ===
+on mouseUp
+  go "zr"
+end
+
+=== miembro 363    (cast 1193) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 364    (cast 1194) ===
+on exitFrame
+  endThenGo "Qb"
+end
+
+=== miembro 405    (cast 1195) ===
+on mouseUp
+  if existCondition("gojyu5fclr") then
+    go "zb"
+  else
+    go "zakoApr"
+  end if
+end
+
+=== miembro 376    (cast 1198) ===
+on exitFrame
+  endThenGo "tb"
+end
+
+=== miembro 374    (cast 1199) ===
+on mouseUp
+  go "elRm"
+end
+
+=== miembro 368    (cast 1200) ===
+on mouseUp
+  go "sf"
+end
+
+=== miembro 380    (cast 1201) ===
+on mouseUp
+  go "ol"
+end
+
+=== miembro 386    (cast 1202) ===
+on mouseUp
+  go "or"
+end
+
+=== miembro 385    (cast 1203) ===
+on mouseUp
+  go "ol"
+end
+
+=== miembro 395    (cast 1204) ===
+on mouseUp
+  go "xf"
+end
+
+=== miembro 377    (cast 1205) ===
+on mouseUp
+  if existCondition("gojyu3fclr") then
+    go "ob"
+  else
+    go "HyotamApr"
+  end if
+end
+
+=== miembro 390    (cast 1206) ===
+on exitFrame
+  endThenGo "tb"
+end
+
+=== miembro 460    (cast 1207) ===
+on mouseUp
+  go "lose2"
+end
+
+=== miembro 391    (cast 1208) ===
+on mouseUp
+  if existCondition("gojyu4fclr") then
+    go "xb"
+  else
+    go "enemySpk1"
+  end if
+end
+
+=== miembro 456    (cast 1209) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 383    (cast 1210) ===
+on mouseUp
+  go "ob"
+end
+
+=== miembro 400    (cast 1211) ===
+on mouseUp
+  go "xr"
+end
+
+=== miembro 399    (cast 1212) ===
+on exitFrame
+  endThenGo "wb"
+end
+
+=== miembro 387    (cast 1213) ===
+on mouseUp
+  go "eltm"
+end
+
+=== miembro 402    (cast 1214) ===
+on exitFrame
+  ThisSceneIs "hmg"
+  go to the frame
+end
+
+=== miembro 384    (cast 1215) ===
+on mouseUp
+  go "of"
+end
+
+=== miembro 401    (cast 1218) ===
+on mouseUp
+  go "xl"
+end
+
+=== miembro 422    (cast 1219) ===
+on mouseUp
+  go "usaSPK4"
+end
+
+=== miembro 397    (cast 1221) ===
+on mouseUp
+  go "xb"
+end
+
+=== miembro 429    (cast 1222) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 427    (cast 1223) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 403    (cast 1224) ===
+on exitFrame
+  endThenGo "yb"
+end
+
+=== miembro 423    (cast 1225) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 414    (cast 1229) ===
+on exitFrame
+  endThenGo "yb"
+end
+
+=== miembro 436    (cast 1230) ===
+on exitFrame
+  global usingItem
+  if usingItem="êÖóã" then
+    deleteThisItem
+    clrUsingitem
+    go "amOut"
+  end if
+  clrUsingItem
+end
+
+=== miembro 416    (cast 1232) ===
+on mouseUp
+  if existCondition("gojyu2fclr") then
+    go "sb"
+  else
+    go "amApr"
+  end if
+end
+
+=== miembro 415    (cast 1233) ===
+on mouseUp
+  go "elYm"
+end
+
+=== miembro 445    (cast 1235) ===
+on mouseUp
+  go "fighterSPK2"
+end
+
+=== miembro 440    (cast 1237) ===
+on mouseUp
+  if doubleClick() then
+    getItem "åéñúî\åÆ"
+    go "sb"
+  end if
+end
+
+=== miembro 435    (cast 1238) ===
+on exitFrame
+  putMsg "text",9
+  clrCanUse
+  appendCanUse "êÖóã"
+end
+
+=== miembro 441    (cast 1239) ===
+on mouseUp
+  go "fighterApr"
+end
+
+=== miembro 443    (cast 1240) ===
+on exitFrame
+  putMsg "text",13
+end
+
+=== miembro 434    (cast 1241) ===
+on mouseUp
+  go "amZOOM"
+end
+
+=== miembro 450    (cast 1242) ===
+on exitFrame
+  global usingItem
+  if usingItem="ÉÑÉ~ÉqÉáÉEÉ^Éì" then
+    clrMsg
+    clrUsingItem
+    go "threat"
+  end if
+end
+
+=== miembro 449    (cast 1243) ===
+on exitFrame
+  putMsg "text",15
+  clrUsingItem
+  clrCanUse
+  appendCanUse "ÉÑÉ~ÉqÉáÉEÉ^Éì"
+end
+
+=== miembro 462    (cast 1250) ===
+on exitFrame
+  global  epower
+  set epower=epower-5
+  if epower<10 then set epower=10
+  clrmsg
+end
+
+=== miembro 478    (cast 1252) ===
+on exitFrame
+  putMsg "text",24
+end
+
+=== miembro 455    (cast 1257) ===
+on exitFrame
+  global dma,dmb,dmc,dmd
+  
+  if dmd then
+    set dma=dma+1
+    if dma>6 then
+      set dma=0
+      set dmd=false
+    end if
+    set the castNum of sprite 7 to the number of cast "guru"+dma
+  end if
+  
+  set the locH of sprite 6 to dmb
+  set the locH of sprite 7 to dmc
+  if dmb<100 then
+    set the puppet of sprite 6 to FALSE
+    set the puppet of sprite 7 to FALSE
+    go "win"
+  else if dmc>540 then
+    set the puppet of sprite 6 to FALSE
+    set the puppet of sprite 7 to FALSE
+    go "lose1"
+  end if
+end
+
+=== miembro 453    (cast 1262) ===
+on mouseUp
+  global dma
+  global dmb,dmc
+  global dmd
+  --  set dma=dma+1
+  --  if dma>6 then set dma=0
+  set dmd=TRUE
+  --set the castNum of sprite 7 to the number of cast "guru"+dma
+  set dmc=dmc-4
+  if dmb>(dmc-65) then
+    set dmb=dmc-65
+ if not soundBusy(1) then puppetSound "EF-03"
+  end if
+end
+
+=== miembro 485    (cast 1264) ===
+on mouseUp
+  if doubleClick() then
+    getItem "éµÇ¬ã ÅióŒÅj"
+    appendCondition "gojyu5fclr"
+    go "zakoSPK2"
+  end if
+end
+
+=== miembro 454    (cast 1273) ===
+on exitFrame
+  global dmb,dmc
+  global epower
+  set dmb=dmb+epower
+  if (dmb+65)>dmc then 
+    set dmc=dmb+65
+    puppetSound "EF-04"
+  end if
+end
+
+=== miembro 486    (cast 1284) ===
+on mouseUp
+  go "zakoSPK3"
+end
+
+=== miembro 483    (cast 1299) ===
+on exitFrame
+  set the locH of sprite 7 to the mouseH
+  set the locV of sprite 7 to the mouseV
+  go to the frame
+end
+
+=== miembro 463    (cast 1328) ===
+on exitFrame
+  clrCanUse
+  appendCanUse "êÖóã"
+  putmsg "text",9
+end
+
+=== miembro 465    (cast 1330) ===
+on mouseUp
+  go "rqm"
+end
+
+=== miembro 467    (cast 1331) ===
+on mouseUp
+  go "trm"
+end
+
+=== miembro 469    (cast 1332) ===
+on mouseUp
+  go "wtm"
+end
+
+=== miembro 470    (cast 1333) ===
+on mouseUp
+  go "ywm"
+end
+
+=== miembro 473    (cast 1334) ===
+on exitFrame
+  putMsg "text",19
+end
+
+=== miembro 475    (cast 1335) ===
+on exitFrame
+  putMsg "text",21
+end
+
+=== miembro 476    (cast 1338) ===
+on exitFrame
+  putMsg "text",22
+end
+
+=== miembro 477    (cast 1341) ===
+on exitFrame
+  putMsg "text",23
+end
+
+=== miembro 474    (cast 1343) ===
+on exitFrame
+  putMsg "text",20
+end
+
+=== miembro 479    (cast 1363) ===
+on mouseUp
+  go "zakoSPK1"
+end
+
+=== miembro 480    (cast 1366) ===
+on mouseUp
+  go "zakoPresent"
+end
+
+=== miembro 482    (cast 1367) ===
+on mouseUp
+  set the puppet of sprite 7 to TRUE
+  set the type of sprite 7 to 1
+  set the ink of sprite 7 to 36
+  set the castNum of sprite 7 to the number of cast "kaicast"
+  set the locH of sprite 7 to the mouseH
+  set the locV of sprite 7 to the mouseV
+  go "kaiMove"
+end
+
+=== miembro 487    (cast 1370) ===
+on mouseUp
+--  putWaitMsg "text",25
+  getitemx "ÉUÉRÉCÉì"
+  appendCondition "ÉUÉRÉCÉì"
+  go "zb"
+end
+
+=== miembro 488    (cast 1380) ===
+on mouseUp
+  if existCondition("first") and not existCondition("ÉUÉRÉCÉì") then
+    deleteCondition "first"
+    go "usazoom"
+  else if existCondition("gojyu2fclr") and existCondition("gojyu3fclr") and existCondition("gojyu4fclr") and existCondition("gojyu5fclr") then
+    go "usaspk7"
+  else if existCondition("gojyu2fclr") then
+    go "usaspk8"
+  else
+    go "usaspk6"
+    end if
+end
+
+=== miembro 490    (cast 1386) ===
+on exitFrame
+  global usingItem
+  if usingItem="êÖóã" then
+    deleteThisItem
+    clrUsingitem
+    go "amOut"
+  end if
+  clrUsingItem
+  go to the frame
+end
+
+=== miembro 484    (cast 1411) ===
+on mouseUp
+  set the puppet of sprite 7 to FALSE
+  go "kaiOpen"
+end
+
+=== miembro 481    (cast 1418) ===
+on mouseUp
+  go "kaiRun"
+end
+
+=== miembro 491    (cast 1474) ===
+on exitFrame
+  puppetsound 0
+end
+
+=== miembro 437    (cast 1508) ===
+on mouseUp
+  clrMsg
+  go "pf"
+end
+

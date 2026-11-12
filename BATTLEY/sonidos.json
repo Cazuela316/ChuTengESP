@@ -1,0 +1,60 @@
+{
+ "source": "BATTLEY.DIR",
+ "sounds": [
+  {
+   "file": "s0120_EF-04.wav",
+   "member": 120,
+   "name": "EF-04",
+   "cast_id": 263,
+   "snd_id": 266,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 17080
+  },
+  {
+   "file": "s0121_EF-06.wav",
+   "member": 121,
+   "name": "EF-06",
+   "cast_id": 273,
+   "snd_id": 274,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12736
+  },
+  {
+   "file": "s0122_M17.07.wav",
+   "member": 122,
+   "name": "M17.07",
+   "cast_id": 290,
+   "snd_id": 298,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 352948
+  },
+  {
+   "file": "s0123_EF-08.wav",
+   "member": 123,
+   "name": "EF-08",
+   "cast_id": 305,
+   "snd_id": 306,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 108857
+  },
+  {
+   "file": "s0144_Null_Sound.wav",
+   "member": 144,
+   "name": "Null Sound",
+   "cast_id": 361,
+   "snd_id": 133,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  }
+ ]
+}

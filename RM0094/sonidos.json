@@ -1,0 +1,27 @@
+{
+ "source": "RM0094.DIR",
+ "sounds": [
+  {
+   "file": "s0046_M18.05.wav",
+   "member": 46,
+   "name": "M18.05",
+   "cast_id": 150,
+   "snd_id": 151,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 92101
+  },
+  {
+   "file": "s0047_l.wav",
+   "member": 47,
+   "name": "\u2030\u00cc\u201a\u00a4\ufffdl",
+   "cast_id": 219,
+   "snd_id": 220,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 467965
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "source": "SHARED.DIR",
+ "encoding": "cp1252",
+ "entries": [
+  {
+   "id": 45,
+   "cast_chunk": 62,
+   "cast_slot": 24,
+   "original": "ƒ„ƒLƒgƒŠ‚ðŽè‚É“ü‚ê‚½",
+   "translation": "ƒ„ƒLƒgƒŠ‚ðŽè‚É“ü‚ê‚½"
+  },
+  {
+   "id": 57,
+   "cast_chunk": 96,
+   "cast_slot": 90,
+   "original": "ƒAƒCƒeƒ€‚Ì�I‚í‚è",
+   "translation": "ƒAƒCƒeƒ€‚Ì�I‚í‚è"
+  },
+  {
+   "id": 76,
+   "cast_chunk": 41,
+   "cast_slot": 7,
+   "original": "Copyright\n\n1995 Sony Music Entertainment (Japan) Inc.\n1995 Osamu Sato & O.S.D.Co.,LTD.",
+   "translation": "Copyright\n\n1995 Sony Music Entertainment (Japan) Inc.\n1995 Osamu Sato & O.S.D.Co.,LTD."
+  },
+  {
+   "id": 78,
+   "cast_chunk": 43,
+   "cast_slot": 29,
+   "original": "ƒAƒCƒeƒ€‚ÌŽn‚Ü‚è",
+   "translation": "ƒAƒCƒeƒ€‚ÌŽn‚Ü‚è"
+  },
+  {
+   "id": 84,
+   "cast_chunk": 94,
+   "cast_slot": 6,
+   "original": "menu:@\nAbout \"Chu-Teng\"Åalert the text of cast \"copyright\"\nmenu:File\nNew Game/NÅNewGame\nOpen Game/OÅLoadGame\nSave Game/SÅSaveGame\n(-\nQuit/QÅquitChuTeng\nmenu:Sound\nno soundÅset the soundLevel = 0\nLevel 1Åset the soundLevel = 1\nLevel 2Åset the soundLevel = 2\nLevel 3Åset the soundLevel = 3\nLevel 4Åset the soundLevel = 4\nLevel 5Åset the soundLevel = 5\nLevel 6Åset the soundLevel = 6\nLevel 7Åset the soundLevel = 7\n",
+   "translation": "menu:@\nAbout \"Chu-Teng\"Åalert the text of cast \"copyright\"\nmenu:File\nNew Game/NÅNewGame\nOpen Game/OÅLoadGame\nSave Game/SÅSaveGame\n(-\nQuit/QÅquitChuTeng\nmenu:Sound\nno soundÅset the soundLevel = 0\nLevel 1Åset the soundLevel = 1\nLevel 2Åset the soundLevel = 2\nLevel 3Åset the soundLevel = 3\nLevel 4Åset the soundLevel = 4\nLevel 5Åset the soundLevel = 5\nLevel 6Åset the soundLevel = 6\nLevel 7Åset the soundLevel = 7\n"
+  },
+  {
+   "id": 420,
+   "cast_chunk": 242,
+   "cast_slot": 9,
+   "original": "�@‚±‚Ìƒtƒ@ƒCƒ‹‚Í�A�u’†“V�v‚Ìƒf�[ƒ^ƒZ�[ƒu—pƒtƒ@ƒCƒ‹‚Å‚·�B•Û‘¶‚µ‚½ƒf�[ƒ^‚Ì�ó‘Ô‚©‚çƒQ�[ƒ€‚ð�ÄŠJ‚·‚é�ê�‡‚Í�A�u’†“VƒXƒ^�[ƒg�v‚ÌƒAƒCƒRƒ“‚ðƒ_ƒuƒ‹ƒNƒŠƒbƒN‚µ‚Ä�Aƒ�ƒjƒ…�[ƒo�[‚Ì�uFile�v‚©‚ç�uOpen Game�v‚ð‘I‘ð‚µ�Aƒ��[ƒh‚µ‚½‚¢ƒf�[ƒ^‚ðŠJ‚¢‚Ä‚­‚¾‚³‚¢�B",
+   "translation": "�@‚±‚Ìƒtƒ@ƒCƒ‹‚Í�A�u’†“V�v‚Ìƒf�[ƒ^ƒZ�[ƒu—pƒtƒ@ƒCƒ‹‚Å‚·�B•Û‘¶‚µ‚½ƒf�[ƒ^‚Ì�ó‘Ô‚©‚çƒQ�[ƒ€‚ð�ÄŠJ‚·‚é�ê�‡‚Í�A�u’†“VƒXƒ^�[ƒg�v‚ÌƒAƒCƒRƒ“‚ðƒ_ƒuƒ‹ƒNƒŠƒbƒN‚µ‚Ä�Aƒ�ƒjƒ…�[ƒo�[‚Ì�uFile�v‚©‚ç�uOpen Game�v‚ð‘I‘ð‚µ�Aƒ��[ƒh‚µ‚½‚¢ƒf�[ƒ^‚ðŠJ‚¢‚Ä‚­‚¾‚³‚¢�B"
+  }
+ ]
+}

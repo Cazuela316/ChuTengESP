@@ -1,0 +1,676 @@
+=== miembro 162    (cast 55) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 163    (cast 74) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 164    (cast 78) ===
+on mouseUp
+  global rtval
+  if rtval=1 then
+    go "k1f01"
+  else if rtval=2 then
+    go "k2f01"
+  else if rtval=3 then
+    go "k3f01"
+  else if rtval=4 then
+    go "k4f01"
+  else if rtval=5 then
+    go "k5f01"
+  else if rtval=6 then
+    go "k6f01"
+  end if  
+end
+
+=== miembro 220    (cast 104) ===
+on mouseUp
+  go "dadezuSPK2"
+end
+
+=== miembro 230    (cast 193) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 259    (cast 223) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 244    (cast 233) ===
+on mouseUp
+  go "k5fitem"
+end
+
+=== miembro 216    (cast 277) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 218    (cast 332) ===
+on mouseUp
+  go "dadezuApr"
+end
+
+=== miembro 165    (cast 338) ===
+on mouseUp
+  global rtval
+  if rtval=1 then
+    go "k1l01"
+  else if rtval=2 then
+    go "k2l01"
+  else if rtval=3 then
+    go "k3l01"
+  else if rtval=4 then
+    go "k4l01"
+  else if rtval=5 then
+    go "k5l01"
+  else if rtval=6 then
+    go "k6l01"
+  end if  
+end
+
+=== miembro 215    (cast 343) ===
+on mouseUp
+  go "k3l02"
+end
+
+=== miembro 166    (cast 348) ===
+on mouseUp
+  global rtval
+  if rtval=1 then
+    go "k1b01"
+  else if rtval=2 then
+    go "k2b01"
+  else if rtval=3 then
+    go "k3b01"
+  else if rtval=4 then
+    go "k4b01"
+  else if rtval=5 then
+    go "k5b01"
+  else if rtval=6 then
+    go "k6b01"
+  end if  
+end
+
+=== miembro 167    (cast 352) ===
+on mouseUp
+  global rtval
+  if rtval=1 then
+    go "k1r01"
+  else if rtval=2 then
+    go "k2r01"
+  else if rtval=3 then
+    go "k3r01"
+  else if rtval=4 then
+    go "k4r01"
+  else if rtval=5 then
+    go "k5r01"
+  else if rtval=6 then
+    go "k6r01"
+  end if  
+end
+
+=== miembro 250    (cast 358) ===
+on exitFrame
+  pmsg 38
+end
+
+=== miembro 278    (cast 365) ===
+on exitFrame
+  if existItem("å˚ÉçÉÄ") then go "kameloop"
+end
+
+=== miembro 228    (cast 420) ===
+on mouseUp
+  go "dadezuUnion"
+end
+
+=== miembro 182    (cast 429) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 261    (cast 453) ===
+on mouseUp
+  go "k6b02"
+end
+
+=== miembro 168    (cast 454) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 169    (cast 455) ===
+on mouseUp
+  go "k1f02"
+end
+
+=== miembro 170    (cast 457) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 171    (cast 458) ===
+on mouseUp
+  go "k1fitem"
+end
+
+=== miembro 262    (cast 470) ===
+on exitFrame
+  pmsg 44
+end
+
+=== miembro 266    (cast 471) ===
+on exitFrame
+  pmsg 47
+end
+
+=== miembro 172    (cast 473) ===
+on mouseUp
+  if doubleClick() then
+    getItem "å˚ÉçÉÄ"
+    magatamaBGM
+    go "kameloop"
+  end if
+end
+
+=== miembro 173    (cast 474) ===
+on mouseUp
+  cursoroff
+  --Å@ï ÉÄÅ[ÉrÅ[Ç…ñﬂÇÈ
+  play done
+end
+
+=== miembro 175    (cast 476) ===
+on mouseUp
+  go "k1b02"
+end
+
+=== miembro 176    (cast 477) ===
+on exitFrame
+  pmsg 3
+end
+
+=== miembro 177    (cast 478) ===
+on mouseUp
+  go "k1b03"
+end
+
+=== miembro 178    (cast 479) ===
+on exitFrame
+  pmsg 4
+end
+
+=== miembro 179    (cast 480) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 174    (cast 484) ===
+on exitFrame
+  pmsg 2
+end
+
+=== miembro 180    (cast 493) ===
+on exitFrame
+  pmsg 5
+end
+
+=== miembro 181    (cast 494) ===
+on mouseUp
+  go "k1r02"
+end
+
+=== miembro 183    (cast 495) ===
+on exitFrame
+  pmsg 6
+end
+
+=== miembro 184    (cast 496) ===
+on exitFrame
+  clrmsg
+end
+
+=== miembro 185    (cast 497) ===
+on exitFrame
+  pmsg 7
+end
+
+=== miembro 186    (cast 498) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 187    (cast 499) ===
+on exitFrame
+  pmsg 8
+end
+
+=== miembro 188    (cast 500) ===
+on mouseUp
+  go "k2f02"
+end
+
+=== miembro 189    (cast 501) ===
+on exitFrame
+--  pmsg 9
+end
+
+=== miembro 190    (cast 504) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 191    (cast 505) ===
+on exitFrame
+  pmsg 9
+end
+
+=== miembro 192    (cast 506) ===
+on mouseUp
+  go "k2b02"
+end
+
+=== miembro 193    (cast 507) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 194    (cast 508) ===
+on exitFrame
+  pmsg 10
+end
+
+=== miembro 196    (cast 509) ===
+on mouseUp
+  go "k2r02"
+end
+
+=== miembro 197    (cast 510) ===
+on exitFrame
+  pmsg 12
+end
+
+=== miembro 198    (cast 511) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 199    (cast 512) ===
+on exitFrame
+  pmsg 13
+end
+
+=== miembro 200    (cast 513) ===
+on mouseUp
+  go "k2l02"
+end
+
+=== miembro 201    (cast 514) ===
+on exitFrame
+  pmsg 14
+end
+
+=== miembro 202    (cast 515) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 203    (cast 516) ===
+on exitFrame
+  pmsg 15
+end
+
+=== miembro 204    (cast 517) ===
+on mouseUp
+  go "k3fitem"
+end
+
+=== miembro 205    (cast 518) ===
+on exitFrame
+  pmsg 16
+end
+
+=== miembro 206    (cast 519) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ì˙ÇÃäÑÇËïÑ"
+    magatamaBGM
+    go "kameloop"
+  end if
+end
+
+=== miembro 207    (cast 520) ===
+on exitFrame
+  pmsg 17
+end
+
+=== miembro 208    (cast 521) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 209    (cast 522) ===
+on exitFrame
+  pmsg 18
+end
+
+=== miembro 210    (cast 523) ===
+on mouseUp
+  go "k3r02"
+end
+
+=== miembro 211    (cast 524) ===
+on exitFrame
+  pmsg 19
+end
+
+=== miembro 212    (cast 525) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 213    (cast 526) ===
+on exitFrame
+  pmsg 20
+end
+
+=== miembro 214    (cast 527) ===
+on exitFrame
+  pmsg 21
+end
+
+=== miembro 195    (cast 549) ===
+on exitFrame
+  pmsg 11
+end
+
+=== miembro 217    (cast 557) ===
+on exitFrame
+  pmsg 22
+end
+
+=== miembro 219    (cast 560) ===
+on exitFrame
+  pmsg 23
+end
+
+=== miembro 221    (cast 561) ===
+on exitFrame
+  pmsg 24
+end
+
+=== miembro 222    (cast 562) ===
+on exitFrame
+  pmsg 25
+end
+
+=== miembro 223    (cast 564) ===
+on exitFrame
+  pmsg 26
+end
+
+=== miembro 238    (cast 565) ===
+on exitFrame
+  pmsg 32
+end
+
+=== miembro 240    (cast 566) ===
+on mouseUp
+  go "k4l02"
+end
+
+=== miembro 225    (cast 567) ===
+on mouseUp
+  go "dadezuSPK3"
+end
+
+=== miembro 224    (cast 568) ===
+on exitFrame
+  pmsg 27
+end
+
+=== miembro 226    (cast 569) ===
+on mouseUp
+  go "dadezuSPK4"
+end
+
+=== miembro 227    (cast 570) ===
+on mouseUp
+  go "dadezuSPK5"
+end
+
+=== miembro 229    (cast 571) ===
+on exitFrame
+  pmsg 28
+  appendCondition "magtwin"
+end
+
+=== miembro 231    (cast 573) ===
+on exitFrame
+  pmsg 29
+end
+
+=== miembro 232    (cast 574) ===
+on mouseUp
+  go "k4b02"
+end
+
+=== miembro 233    (cast 575) ===
+on exitFrame
+  pmsg 30
+end
+
+=== miembro 234    (cast 576) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 235    (cast 579) ===
+on exitFrame
+  pmsg 31
+end
+
+=== miembro 236    (cast 580) ===
+on mouseUp
+  go "k4r02"
+end
+
+=== miembro 237    (cast 581) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 241    (cast 583) ===
+on exitFrame
+  pmsg 34
+end
+
+=== miembro 270    (cast 584) ===
+on mouseUp
+  go "k6r04"
+end
+
+=== miembro 242    (cast 585) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 243    (cast 620) ===
+on exitFrame
+  pmsg 35
+end
+
+=== miembro 245    (cast 621) ===
+on mouseUp
+  if doubleClick() then
+    getItem "åéÇÃäÑÇËïÑ" 
+    magatamaBGM
+    go "kameloop"
+  end if
+end
+
+=== miembro 246    (cast 622) ===
+on exitFrame
+  pmsg 36
+end
+
+=== miembro 247    (cast 623) ===
+on mouseUp
+  go "k5b02"
+end
+
+=== miembro 248    (cast 625) ===
+on exitFrame
+  pmsg 37
+end
+
+=== miembro 239    (cast 626) ===
+on exitFrame
+  pmsg 33
+end
+
+=== miembro 249    (cast 627) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 251    (cast 628) ===
+on mouseUp
+  go "k5r02"
+end
+
+=== miembro 252    (cast 629) ===
+on exitFrame
+  pmsg 39
+end
+
+=== miembro 253    (cast 630) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 254    (cast 631) ===
+on exitFrame
+  pmsg 40
+end
+
+=== miembro 255    (cast 632) ===
+on mouseUp
+  go "k5l02"
+end
+
+=== miembro 256    (cast 633) ===
+on exitFrame
+  pmsg 41
+end
+
+=== miembro 257    (cast 644) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 258    (cast 651) ===
+on exitFrame
+  pmsg 42
+end
+
+=== miembro 260    (cast 652) ===
+on exitFrame
+  pmsg 43
+end
+
+=== miembro 263    (cast 654) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 265    (cast 656) ===
+on exitFrame
+  pmsg 46
+end
+
+=== miembro 264    (cast 657) ===
+on exitFrame
+  pmsg 45
+end
+
+=== miembro 267    (cast 658) ===
+on exitFrame
+  pmsg 48
+end
+
+=== miembro 268    (cast 659) ===
+on mouseUp
+  go "k6r02"
+end
+
+=== miembro 269    (cast 660) ===
+on mouseUp
+  go "k6r03"
+end
+
+=== miembro 271    (cast 661) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 272    (cast 662) ===
+on exitFrame
+  pmsg 49
+end
+
+=== miembro 274    (cast 681) ===
+on exitFrame
+  if existItem("åéÇÃäÑÇËïÑ") or existCondition("tukiportal") then go "kameloop"
+end
+
+=== miembro 275    (cast 682) ===
+on exitFrame
+  if existItem("ì˙ÇÃäÑÇËïÑ") or existCondition("hiportal") then go "kameloop"
+end
+
+=== miembro 276    (cast 688) ===
+on startMovie
+  initMovie
+end
+
+on magatamaBGM
+  global rtval
+  if rtval=1 then
+    playsound "M17.16"
+  else if rtval=2 then
+    playsound "OS-15*"
+  else if rtval=3 then
+    playsound "M22.02"
+  else if rtval=4 then
+    playsound "OS-11*"
+  else if rtval=5 then
+    playsound "OS-19"
+  else if rtval=6 then
+    playsound "OS-12*"
+  end if  
+end
+
+=== miembro 277    (cast 692) ===
+on enterFrame
+  magatamaBGM
+end
+
+=== miembro 273    (cast 705) ===
+on mouseUp
+  go "kameloop"
+end
+
+=== miembro 279    (cast 751) ===
+on exitFrame
+  if existCondition("magtwin") then
+    go "kameloop"
+  end if
+end
+

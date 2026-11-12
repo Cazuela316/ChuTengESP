@@ -1,0 +1,16 @@
+{
+ "source": "RM0015.DIR",
+ "sounds": [
+  {
+   "file": "s0027_M03.07.wav",
+   "member": 27,
+   "name": "M03.07",
+   "cast_id": 140,
+   "snd_id": 105,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 100924
+  }
+ ]
+}

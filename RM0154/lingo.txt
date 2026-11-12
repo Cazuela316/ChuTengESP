@@ -1,0 +1,118 @@
+=== miembro 62    (cast 20) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ÉEÉTé®"
+    go "sp2"
+  end if
+end
+
+=== miembro 54    (cast 22) ===
+on exitFrame
+  initScene "rm0154"
+  go to the frame
+end
+
+=== miembro 56    (cast 25) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 60    (cast 31) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>7 then
+    if existItem("ÉEÉTé®") then
+      set dma=3
+    else
+      go "ear"
+    end if
+  end if
+end
+
+=== miembro 59    (cast 34) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 52    (cast 49) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 53    (cast 57) ===
+on exitFrame
+  initScene "rm0154"
+end
+
+=== miembro 55    (cast 70) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 61    (cast 105) ===
+on exitFrame
+  putMsg "text",8
+end
+
+=== miembro 57    (cast 149) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 58    (cast 151) ===
+on mouseUp
+  go "up"
+end
+
+=== miembro 63    (cast 157) ===
+on exitFrame
+  putMsg "text",9
+end
+
+=== miembro 64    (cast 161) ===
+on exitFrame
+  go "out"
+end
+
+=== miembro 65    (cast 192) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 66    (cast 193) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 67    (cast 194) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 68    (cast 195) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 69    (cast 196) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 70    (cast 197) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 72    (cast 217) ===
+on mouseUp
+  go "back"
+end
+
+=== miembro 71    (cast 232) ===
+on exitFrame
+  go previous
+end
+

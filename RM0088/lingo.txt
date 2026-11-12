@@ -1,0 +1,415 @@
+=== miembro 112    (cast 6) ===
+on exitFrame
+  
+end
+
+=== miembro 113    (cast 13) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 120    (cast 50) ===
+on exitFrame
+  endThenGo "ffx"
+end
+
+=== miembro 114    (cast 64) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 169    (cast 69) ===
+on mouseDown
+  global dma
+  set dma=TRUE
+  puppetSound "FX-52"
+end
+
+=== miembro 121    (cast 70) ===
+on exitFrame
+  global usingItem
+  if IsUsingItem("êØÇÃÇ†Ç©ÇËâŒ") then
+    deleteThisItem
+    clrUsingItem
+    puppetsound "SE 8.24"
+    putWaitMsg "text",26
+    puppetsound 0
+    putWaitMsg "text",25
+    go to the frame
+  else if IsUsingItem("êØÇÃÇ†Ç©ÇËâŒÅEÇP") or IsUsingItem("êØÇÃÇ†Ç©ÇËâŒÅEÇQ") or IsUsingItem("êØÇÃÇ†Ç©ÇËâŒÅEÇR") then
+    --existCanUse(usingItem) then
+    deleteThisItem
+    drawBag
+    clrUsingItem
+    go to "fire"
+  else
+    if existItem(usingItem) then
+      putWaitMsg "text",9
+      clrUsingItem
+      go to the frame
+    else
+      clrUsingItem
+      putMsg "text",0
+      go to the frame
+    end if
+  end if
+end
+
+=== miembro 122    (cast 137) ===
+on mouseUp
+  clrMsg
+  go to "left"
+end
+
+=== miembro 123    (cast 138) ===
+on mouseUp
+  clrMsg
+  go to "right"
+end
+
+=== miembro 124    (cast 143) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 125    (cast 144) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 126    (cast 145) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 127    (cast 155) ===
+on mouseUp
+  go to "fmov"
+end
+
+=== miembro 134    (cast 164) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 149    (cast 191) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 147    (cast 196) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 148    (cast 198) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 128    (cast 206) ===
+on exitFrame
+  set the movieRate of sprite 35 to 0
+  set the movieTime of sprite 35 to 0
+  go to the frame
+end
+
+=== miembro 129    (cast 228) ===
+on mouseUp
+  set the movieRate of sprite 35 to 1
+  go to the frame+1
+end
+
+=== miembro 130    (cast 234) ===
+on mouseUp
+  go to "back"
+end
+
+=== miembro 150    (cast 235) ===
+on exitFrame
+  if existCondition("rm0088wake") then
+    go "speak2"
+  end if
+end
+
+=== miembro 131    (cast 236) ===
+on mouseUp
+  go to "front"
+end
+
+=== miembro 132    (cast 237) ===
+on mouseUp
+  go to "front"
+end
+
+=== miembro 133    (cast 238) ===
+on mouseUp
+  go to "back"
+end
+
+=== miembro 160    (cast 266) ===
+on exitFrame
+  global dma
+  set dma=0
+end
+
+=== miembro 135    (cast 291) ===
+on mouseUp
+  go to "right"
+end
+
+=== miembro 136    (cast 292) ===
+on mouseUp
+  go to "left"
+end
+
+=== miembro 137    (cast 293) ===
+on exitFrame
+  endThenGo "in"
+end
+
+=== miembro 138    (cast 294) ===
+on mouseUp
+  go to "bmov"
+end
+
+=== miembro 139    (cast 295) ===
+on exitFrame
+  initScene "rm0088"
+  go to the frame
+end
+
+=== miembro 161    (cast 296) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>19 then go "speak2"
+end
+
+=== miembro 165    (cast 299) ===
+on exitFrame
+  pmsg 14
+end
+
+=== miembro 166    (cast 300) ===
+on mouseUp
+  if doubleClick() then
+    getItem "éµÇ¬êØÉVÉìÉpÉI"
+    go "ns2"
+  end if
+end
+
+=== miembro 164    (cast 301) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>13 then go "newSinpao"
+end
+
+=== miembro 116    (cast 329) ===
+on exitFrame
+  global dma
+  if the mouseDown and rollOver(8) then
+    if the mouseH>=150 and  the mouseH<=210 then
+      set the locH of sprite 8 to the mouseH
+      set the locV of sprite 8 to 124+93
+    end if
+  else
+    if dma=TRUE then
+      set dma=FALSE
+      puppetSound 0
+    end if
+  end if
+  go to the frame
+end
+
+=== miembro 117    (cast 330) ===
+on exitFrame
+  initScene "rm0088"
+  set the puppet of sprite 8 to true
+  set the type of sprite 8 to 1
+  set the castNum of sprite 8 to the number of cast "pole"
+  set the ink of sprite 8 to 36
+  set the locH of sprite 8 to 168+15
+  set the locV of sprite 8 to 124+93
+end
+
+=== miembro 118    (cast 332) ===
+on mouseUp
+if the locH of sprite 8<>168+15 then  go to the frame+1
+end
+
+=== miembro 119    (cast 333) ===
+on exitFrame
+  set the puppet of sprite 8 to false
+end
+
+=== miembro 163    (cast 370) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 143    (cast 376) ===
+on mouseUp
+  set the puppet of sprite 8 to FALSE
+  gohb
+end
+
+=== miembro 142    (cast 377) ===
+on exitFrame
+  --  initScene "rm0088"
+  clrMsg
+  appendCondition "rm0088wake"
+end
+
+=== miembro 144    (cast 379) ===
+on mouseUp
+  set the puppet of sprite 8 to FALSE
+  gohf
+end
+
+=== miembro 145    (cast 380) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 146    (cast 381) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 154    (cast 387) ===
+on mouseUp
+  global dma
+  if dma=1 then
+    play done
+  else
+    set dma=1
+    putMsg "text",24
+  end if
+end
+
+=== miembro 168    (cast 388) ===
+on mouseUp
+  alert "aa"
+  go "speak2"
+end
+
+=== miembro 167    (cast 393) ===
+on exitFrame
+  putMsg "text",15
+end
+
+=== miembro 141    (cast 395) ===
+on mouseUp
+  go to "wakeup"
+end
+
+=== miembro 162    (cast 407) ===
+on exitFrame
+  global dma
+  deleteItem "ÉjÉZÉVÉìÉpÉI"
+  deleteItem "ÉVÉìÉpÉI"
+  drawBag
+  set dma=10
+end
+
+=== miembro 151    (cast 409) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 152    (cast 410) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>7 then set dma=1
+end
+
+=== miembro 153    (cast 411) ===
+on exitFrame
+  global dma
+  set dma=1
+  clrUsingItem
+end
+
+=== miembro 157    (cast 435) ===
+on exitFrame
+  clrCanUse
+  appendCanUseAll
+  if existCondition("rm0088wake") then
+    go "speak2"
+  else
+    go "front"
+  end if
+end
+
+=== miembro 155    (cast 438) ===
+on exitFrame
+  global usingitem
+  global dma
+  if IsUsingItem("åıÉAÉ~") then
+    clrUsingItem
+    putMsg "text",20
+    play "speakX"
+    clrMsg
+  else if IsUsingItem("ê∂Ç´ÇΩÉgÉäÉJÉâ") then
+    clrUsingItem
+    putMsg "text",21
+    play "speakX"
+    clrMsg
+  else if IsUsingItem("ÉÑÉLÉgÉä") then
+    clrUsingItem
+    putMsg "text",22
+    play "speakX"
+    clrMsg
+  else if IsUsingItem("ÉjÉZÉVÉìÉpÉI") then
+    clrUsingItem
+    go "wrong"
+  else if IsUsingItem("ÉVÉìÉpÉI") then
+    clrUsingItem
+    go "good"
+  else if existItem(usingItem) then
+    clrUsingItem
+    putWaitMsg "text",23
+    play "speakX"
+    clrMsg
+  end if
+  putMsg "text",dma
+end
+
+=== miembro 156    (cast 439) ===
+on exitFrame
+  global dma
+  set dma=8
+  
+  clrUsingItem
+end
+
+=== miembro 159    (cast 449) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 158    (cast 450) ===
+on exitFrame
+  global dma
+  set dma=16
+  deleteItem "ÉjÉZÉVÉìÉpÉI"
+  drawBag
+end
+
+=== miembro 140    (cast 474) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 115    (cast 493) ===
+on mouseUp
+  go "speak2"
+end
+

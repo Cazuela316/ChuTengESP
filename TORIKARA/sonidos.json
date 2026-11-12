@@ -1,0 +1,27 @@
+{
+ "source": "TORIKARA.DIR",
+ "sounds": [
+  {
+   "file": "s0039_SM.04.wav",
+   "member": 39,
+   "name": "SM.04",
+   "cast_id": 158,
+   "snd_id": 159,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 112765
+  },
+  {
+   "file": "s0040_EF-15.wav",
+   "member": 40,
+   "name": "EF-15",
+   "cast_id": 160,
+   "snd_id": 124,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 37522
+  }
+ ]
+}

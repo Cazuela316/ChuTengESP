@@ -1,0 +1,126 @@
+{
+ "source": "SANGO.DIR",
+ "sounds": [
+  {
+   "file": "s0176_85.wav",
+   "member": 176,
+   "name": "85",
+   "cast_id": 282,
+   "snd_id": 298,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 146432
+  },
+  {
+   "file": "s0177_84.wav",
+   "member": 177,
+   "name": "84",
+   "cast_id": 303,
+   "snd_id": 363,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 235441
+  },
+  {
+   "file": "s0089_FX-26.wav",
+   "member": 89,
+   "name": "FX-26",
+   "cast_id": 331,
+   "snd_id": 491,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12732
+  },
+  {
+   "file": "s0174_64.wav",
+   "member": 174,
+   "name": "64",
+   "cast_id": 361,
+   "snd_id": 137,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 191129
+  },
+  {
+   "file": "s0175_M08.01.wav",
+   "member": 175,
+   "name": "M08.01",
+   "cast_id": 362,
+   "snd_id": 309,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 140878
+  },
+  {
+   "file": "s0178_Null_Sound.wav",
+   "member": 178,
+   "name": "Null Sound",
+   "cast_id": 379,
+   "snd_id": 263,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0084_M18.17.wav",
+   "member": 84,
+   "name": "M18.17",
+   "cast_id": 463,
+   "snd_id": 69,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 184070
+  },
+  {
+   "file": "s0085_M20.12.wav",
+   "member": 85,
+   "name": "M20.12",
+   "cast_id": 464,
+   "snd_id": 465,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58853
+  },
+  {
+   "file": "s0087_OS-16.wav",
+   "member": 87,
+   "name": "OS-16*",
+   "cast_id": 466,
+   "snd_id": 446,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 65877
+  },
+  {
+   "file": "s0086_M20.07.wav",
+   "member": 86,
+   "name": "M20.07",
+   "cast_id": 467,
+   "snd_id": 468,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117568
+  },
+  {
+   "file": "s0088_OS-09.wav",
+   "member": 88,
+   "name": "OS-09*",
+   "cast_id": 470,
+   "snd_id": 469,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 151551
+  }
+ ]
+}

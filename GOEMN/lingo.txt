@@ -1,0 +1,162 @@
+=== miembro 64    (cast 7) ===
+on mouseUp
+  goFMov "eye01","moon:moonload.dir"
+end
+
+=== miembro 55    (cast 18) ===
+on mouseUp
+  go "no"
+end
+
+=== miembro 49    (cast 22) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 56    (cast 36) ===
+on exitFrame
+  pmsg 2
+end
+
+=== miembro 65    (cast 37) ===
+on exitFrame
+  global dma
+  pmsg dma
+end
+
+=== miembro 57    (cast 38) ===
+on mouseUp
+  goFMov "out","rm0148.dir"
+end
+
+=== miembro 54    (cast 55) ===
+on mouseUp
+  go "yes1"
+end
+
+=== miembro 50    (cast 58) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 71    (cast 60) ===
+on exitFrame
+  global dma
+  set dma=9
+end
+
+=== miembro 60    (cast 61) ===
+on exitFrame
+  pmsg 4
+end
+
+=== miembro 51    (cast 62) ===
+on exitFrame
+  initScene "goemon"
+end
+
+=== miembro 66    (cast 69) ===
+on mouseUp
+  global conditionList
+  global itemList
+  global dma
+  set dma=dma+1
+  if dma>12 then
+    set conditionList=[]
+    set d1=0
+    set d2=0
+    set d3=0
+    if existItem("êØÇÃäÑÇËïÑ") then set d1=1
+    if existItem("åéÇÃäÑÇËïÑ") then set d2=1
+    if existItem("ì˙ÇÃäÑÇËïÑ") then set d3=1
+    set itemLIst=[]
+    appenditem "íÜìVî’"
+    if d1=1 then appendItem "êØÇÃäÑÇËïÑ"  
+    if d2=1 then appendItem "åéÇÃäÑÇËïÑ"  
+    if d3=1 then appendItem "ì˙ÇÃäÑÇËïÑ" 
+    drawBag
+    goFMov "out","rm0148.dir"
+  end if
+end
+
+=== miembro 52    (cast 71) ===
+on exitFrame
+  pmsg 0
+end
+
+=== miembro 61    (cast 72) ===
+on exitFrame
+  set the puppet of sprite 10 to TRUE
+  set the puppet of sprite 11 to TRUE
+  set d1=random(6)
+  set d2=random(6)
+  set the castNum of sprite 10 to the number of cast "dise1"+d1-1
+  set the castNum of sprite 11 to the number of cast "dise1"+d2-1
+  updatestage
+  if (d1+d2) mod 2=1 then
+    putWaitMsg "text",8
+    go "win"
+  else
+    putWaitMsg "text",7
+    go "lose"
+  end if
+end
+
+=== miembro 59    (cast 75) ===
+on mouseUp
+  go "yes2"
+end
+
+=== miembro 62    (cast 153) ===
+on exitFrame
+  set the puppet of sprite 10 to TRUE
+  set the puppet of sprite 11 to TRUE
+  set d1=random(6)
+  set d2=random(6)
+  set the castNum of sprite 10 to the number of cast "dise1"+d1-1
+  set the castNum of sprite 11 to the number of cast "dise1"+d2-1
+  updatestage
+  if (d1+d2) mod 2=0 then
+    putWaitMsg "text",7
+    go "win"
+  else
+    putWaitMsg "text",8
+    go "lose"
+  end if
+end
+
+=== miembro 68    (cast 161) ===
+on exitFrame
+  pmsg 1
+end
+
+=== miembro 70    (cast 166) ===
+on mouseUp
+  go "judgOdd"
+end
+
+=== miembro 63    (cast 189) ===
+on exitFrame
+  pmsg 5
+end
+
+=== miembro 67    (cast 194) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 69    (cast 201) ===
+on mouseUp
+  go "judgEven"
+end
+
+=== miembro 58    (cast 236) ===
+on exitFrame
+  pmsg 3
+end
+
+=== miembro 53    (cast 242) ===
+on mouseUp
+  go "goeSPK1"
+end
+

@@ -1,0 +1,159 @@
+{
+ "source": "TYULOAD.DIR",
+ "sounds": [
+  {
+   "file": "s0345_19.wav",
+   "member": 345,
+   "name": "19",
+   "cast_id": 7,
+   "snd_id": 16,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 7425
+  },
+  {
+   "file": "s0351_64.wav",
+   "member": 351,
+   "name": "64",
+   "cast_id": 71,
+   "snd_id": 72,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 191129
+  },
+  {
+   "file": "s0333_U-5.wav",
+   "member": 333,
+   "name": "U-5",
+   "cast_id": 381,
+   "snd_id": 616,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117462
+  },
+  {
+   "file": "s0344_29.wav",
+   "member": 344,
+   "name": "29",
+   "cast_id": 406,
+   "snd_id": 521,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 4841
+  },
+  {
+   "file": "s0128_OS-17.wav",
+   "member": 128,
+   "name": "OS-17",
+   "cast_id": 450,
+   "snd_id": 704,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 81745
+  },
+  {
+   "file": "s0343_52.wav",
+   "member": 343,
+   "name": "52",
+   "cast_id": 471,
+   "snd_id": 473,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 32810
+  },
+  {
+   "file": "s0334_Null_Sound.wav",
+   "member": 334,
+   "name": "Null Sound",
+   "cast_id": 538,
+   "snd_id": 492,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0332_U-4.wav",
+   "member": 332,
+   "name": "U-4",
+   "cast_id": 612,
+   "snd_id": 614,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117382
+  },
+  {
+   "file": "s0127_OS-18.wav",
+   "member": 127,
+   "name": "OS-18",
+   "cast_id": 701,
+   "snd_id": 702,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 302109
+  },
+  {
+   "file": "s0130_M22.02.wav",
+   "member": 130,
+   "name": "M22.02",
+   "cast_id": 708,
+   "snd_id": 710,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117595
+  },
+  {
+   "file": "s0131_OS-19.wav",
+   "member": 131,
+   "name": "OS-19",
+   "cast_id": 711,
+   "snd_id": 954,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 161917
+  },
+  {
+   "file": "s0132_OS-20.wav",
+   "member": 132,
+   "name": "OS-20",
+   "cast_id": 712,
+   "snd_id": 713,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 163286
+  },
+  {
+   "file": "s0133_EF-19.wav",
+   "member": 133,
+   "name": "EF-19",
+   "cast_id": 781,
+   "snd_id": 793,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 69632
+  },
+  {
+   "file": "s0129_M22.22.wav",
+   "member": 129,
+   "name": "M22.22",
+   "cast_id": 920,
+   "snd_id": 707,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 235183
+  }
+ ]
+}

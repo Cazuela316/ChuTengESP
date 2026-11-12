@@ -1,0 +1,148 @@
+{
+ "source": "SUNEVENT.DIR",
+ "sounds": [
+  {
+   "file": "s0155_FX-54.wav",
+   "member": 155,
+   "name": "FX-54",
+   "cast_id": 175,
+   "snd_id": 137,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 7132
+  },
+  {
+   "file": "s0145_OS-12.wav",
+   "member": 145,
+   "name": "OS-12*",
+   "cast_id": 198,
+   "snd_id": 625,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176331
+  },
+  {
+   "file": "s0144_OS-12_copy.wav",
+   "member": 144,
+   "name": "OS-12* copy",
+   "cast_id": 417,
+   "snd_id": 616,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 151663
+  },
+  {
+   "file": "s0148_M03.10.wav",
+   "member": 148,
+   "name": "M03.10",
+   "cast_id": 436,
+   "snd_id": 629,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 100720
+  },
+  {
+   "file": "s0153_FX-17.wav",
+   "member": 153,
+   "name": "FX-17",
+   "cast_id": 468,
+   "snd_id": 648,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 38076
+  },
+  {
+   "file": "s0152_SE01.06.wav",
+   "member": 152,
+   "name": "SE01.06",
+   "cast_id": 532,
+   "snd_id": 469,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 93666
+  },
+  {
+   "file": "s0146_OS-14.wav",
+   "member": 146,
+   "name": "OS-14*",
+   "cast_id": 575,
+   "snd_id": 624,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 116933
+  },
+  {
+   "file": "s0143_M03.10.wav",
+   "member": 143,
+   "name": "M03.10",
+   "cast_id": 622,
+   "snd_id": 609,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 100720
+  },
+  {
+   "file": "s0147_OS-10.wav",
+   "member": 147,
+   "name": "OS-10*",
+   "cast_id": 627,
+   "snd_id": 628,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 124139
+  },
+  {
+   "file": "s0150_SM-34.wav",
+   "member": 150,
+   "name": "SM-34",
+   "cast_id": 632,
+   "snd_id": 414,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 175809
+  },
+  {
+   "file": "s0149_SM-33.wav",
+   "member": 149,
+   "name": "SM-33",
+   "cast_id": 634,
+   "snd_id": 640,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 141058
+  },
+  {
+   "file": "s0151_OS-11.wav",
+   "member": 151,
+   "name": "OS-11*",
+   "cast_id": 635,
+   "snd_id": 631,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 140689
+  },
+  {
+   "file": "s0154_FX-02.wav",
+   "member": 154,
+   "name": "FX-02",
+   "cast_id": 662,
+   "snd_id": 655,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 11324
+  }
+ ]
+}

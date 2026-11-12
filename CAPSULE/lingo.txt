@@ -1,0 +1,12 @@
+=== miembro 4    (cast 20) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 5    (cast 32) ===
+on mouseUp
+  cursoroff
+  --Å@ëºÇÃÉÄÅ[ÉrÅ[Ç…ãAÇÈ
+  play done
+end
+

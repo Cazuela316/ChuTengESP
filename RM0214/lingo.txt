@@ -1,0 +1,149 @@
+=== miembro 40    (cast 7) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 41    (cast 13) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 43    (cast 32) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 30    (cast 34) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 27    (cast 35) ===
+on exitFrame
+  clrCanUse
+  appendCanUse("êØñúî\åÆ")
+  appendCanUse("åéñúî\åÆ")
+  appendCanUse("ì˙ñúî\åÆ")
+  appendCanUse("êØñúî\åÆï°êª")
+  appendCanUse("åéñúî\åÆï°êª")
+  appendCanUse("ì˙ñúî\åÆï°êª")
+  appendCanUse("èëå…åÆ")
+  appendCanUse("èëå…åÆï°êª")
+  
+  if existCanUse(usingItem) then
+    deleteThisItem
+    clrUsingItem
+    go to "open"
+  else
+    clrUsingItem
+    go the frame
+  end if
+end
+
+=== miembro 26    (cast 36) ===
+on exitFrame
+  set the visibility of sprite 11 to not existItem("éÜ")
+  go the frame
+end
+
+=== miembro 25    (cast 57) ===
+on exitFrame
+  go "out"
+end
+
+=== miembro 29    (cast 74) ===
+on mouseUp
+  go to "msg"
+end
+
+=== miembro 42    (cast 81) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 24    (cast 87) ===
+on exitFrame
+  initScene "rm0214"
+  set the visibility of sprite 11 to not existItem("éÜ")
+  if existCondition("rm0214ev") then
+    go to "open"
+  end if
+end
+
+=== miembro 33    (cast 91) ===
+on mouseUp
+  global loadx
+  if doubleClick() then
+    set loadx=true
+    pushpuppet
+    playFMov "paper","bookitem.dir"
+  end if
+end
+
+=== miembro 28    (cast 95) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 32    (cast 98) ===
+on exitFrame
+  appendCondition("rm0214ev")
+  if existItem("éÜ") then
+    set the visibility of sprite 11 to false
+  end if
+end
+
+=== miembro 34    (cast 106) ===
+on mouseUp
+  global loadx
+  if doubleClick() then
+    set loadx=true
+    pushpuppet
+    playFMov "wood","bookitem.dir"
+  end if
+end
+
+=== miembro 38    (cast 108) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 35    (cast 109) ===
+on mouseUp
+  global loadx
+  if doubleClick() then
+    set loadx=true
+    pushpuppet
+    playFMov "stone","bookitem.dir"
+  end if
+end
+
+=== miembro 37    (cast 111) ===
+on exitFrame
+  initScene "rm0214"
+  go to the frame
+end
+
+=== miembro 31    (cast 115) ===
+on mouseUp
+  if doubleClick() then
+    getItem("éÜ")
+    set the visibility of sprite 11 to false
+  end if
+end
+
+=== miembro 36    (cast 120) ===
+on mouseUp
+  global loadx
+  if doubleClick() then
+    set loadx=true
+    pushpuppet
+    playFMov "F0","bookitem.dir"
+  end if
+end
+
+=== miembro 39    (cast 121) ===
+on mouseUp
+  gohb
+end
+

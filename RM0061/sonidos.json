@@ -1,0 +1,16 @@
+{
+ "source": "RM0061.DIR",
+ "sounds": [
+  {
+   "file": "s0014_SM.07.wav",
+   "member": 14,
+   "name": "SM.07",
+   "cast_id": 71,
+   "snd_id": 94,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 240462
+  }
+ ]
+}

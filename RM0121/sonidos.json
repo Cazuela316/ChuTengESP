@@ -1,0 +1,27 @@
+{
+ "source": "RM0121.DIR",
+ "sounds": [
+  {
+   "file": "s0047_U-8.wav",
+   "member": 47,
+   "name": "U-8",
+   "cast_id": 208,
+   "snd_id": 209,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 335931
+  },
+  {
+   "file": "s0046_EF-17.wav",
+   "member": 46,
+   "name": "EF-17",
+   "cast_id": 215,
+   "snd_id": 216,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 31156
+  }
+ ]
+}

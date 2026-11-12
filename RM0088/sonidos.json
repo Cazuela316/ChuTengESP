@@ -1,0 +1,60 @@
+{
+ "source": "RM0088.DIR",
+ "sounds": [
+  {
+   "file": "s0170_SE_8.24.wav",
+   "member": 170,
+   "name": "SE 8.24",
+   "cast_id": 97,
+   "snd_id": 179,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 15022
+  },
+  {
+   "file": "s0106_16.wav",
+   "member": 106,
+   "name": "16",
+   "cast_id": 309,
+   "snd_id": 315,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 128344
+  },
+  {
+   "file": "s0107_FX-52.wav",
+   "member": 107,
+   "name": "FX-52",
+   "cast_id": 321,
+   "snd_id": 320,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 32508
+  },
+  {
+   "file": "s0105_FX-52.wav",
+   "member": 105,
+   "name": "FX-52",
+   "cast_id": 386,
+   "snd_id": 298,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 32508
+  },
+  {
+   "file": "s0104_SM.04.wav",
+   "member": 104,
+   "name": "SM.04",
+   "cast_id": 445,
+   "snd_id": 167,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 112765
+  }
+ ]
+}

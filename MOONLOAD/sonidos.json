@@ -1,0 +1,71 @@
+{
+ "source": "MOONLOAD.DIR",
+ "sounds": [
+  {
+   "file": "s0068_OS-09.wav",
+   "member": 68,
+   "name": "OS-09*",
+   "cast_id": 533,
+   "snd_id": 532,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 151551
+  },
+  {
+   "file": "s0069_M13.06.wav",
+   "member": 69,
+   "name": "M13.06",
+   "cast_id": 534,
+   "snd_id": 536,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 217049
+  },
+  {
+   "file": "s0070_M05.06.wav",
+   "member": 70,
+   "name": "M05.06",
+   "cast_id": 540,
+   "snd_id": 541,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 97132
+  },
+  {
+   "file": "s0071_S01.02.wav",
+   "member": 71,
+   "name": "S01.02",
+   "cast_id": 544,
+   "snd_id": 545,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 73468
+  },
+  {
+   "file": "s0072_M13.06.wav",
+   "member": 72,
+   "name": "M13.06",
+   "cast_id": 555,
+   "snd_id": 675,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 217049
+  },
+  {
+   "file": "s0073_FX-02.wav",
+   "member": 73,
+   "name": "FX-02",
+   "cast_id": 595,
+   "snd_id": 603,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 11324
+  }
+ ]
+}

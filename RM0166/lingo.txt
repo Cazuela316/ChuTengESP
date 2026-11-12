@@ -1,0 +1,526 @@
+=== miembro 102    (cast 6) ===
+on exitFrame
+  initScene "rm0166"
+  go to the frame
+end
+
+=== miembro 84    (cast 7) ===
+on startMovie
+  global toriX,toriY,toriZ
+  global toriVX,toriVY,toriVZ
+  global toriAX,toriAY,toriAZ
+  global toriCC
+  global nageFlag
+  global amiAnim
+  global netX,netY
+  global czone
+  global chCount
+  global tukamaeta
+  
+  set toriX=320
+  set toriY=200
+  set toriZ=0
+  set toriVX=0
+  set toriVY=0
+  set toriVZ=0
+  set toriCC=0
+  set toriAX=0
+  set toriAY=0
+  set toriAZ=0
+  set nageFlag=0
+  set amiAnim=0
+  set netX=the mouseH
+  set netY=the mouseV
+  set czone=24
+  set chCount=0
+  set tukamaeta=0
+  
+  initMovie
+end
+
+on initTorikara
+  set the puppet of sprite 7 to true
+  set the type of sprite 7 to 1
+  set the ink of sprite 7 to 36
+  set the locH of sprite 7 to 320
+  set the locV of sprite 7 to 200
+  set the visibility of sprite 7 to true
+end
+
+on moveTorikara
+  global toriX,toriY,toriZ
+  global toriVX,toriVY,toriVZ
+  global toriAX,toriAY,toriAZ
+  global toriCC
+  global lockC
+  global netX,netY
+  global chCount
+  
+  --Å@ãÛãCíÔçRÅHÇ…ÇÊÇÈå∏ë¨  
+  if toriVX>0 then 
+    set toriVX=toriVX-2  
+  else
+    set toriVX=toriVX+2
+  end if
+  
+  if toriVY>0 then 
+    set toriVY=toriVY-2  
+  else
+    set toriVY=toriVY+2
+  end if
+  
+  if toriVZ>0 then 
+    set toriVZ=toriVZ-2  
+  else
+    set toriVZ=toriVZ+2
+  end if
+  
+  --Å@ëÅÇ≥Çâ¡ë¨ìxÇ≈ïœâªÇ≥ÇπÇÈ
+  set toriVX=toriVX+toriAX
+  set toriVY=toriVY+toriAY
+  set toriVZ=toriVZ+toriAZ
+  
+  
+  --Å@í·ë¨Ç…Ç»Ç¡ÇΩÇÁÅAâ¡ë¨Ç∑ÇÈ
+  if abs(toriVX)<=5 then set toriAX=random(4)+4
+  if abs(toriVY)<=5 then set toriAY=random(4)+4
+  if abs(toriVZ)<=5 then set toriAZ=random(4)+4
+  
+  
+  --Å@ïêäÌÇ…ïﬂë®Ç≥ÇÍÇªÇ§Ç…Ç»Ç¡ÇΩÇÁì¶Ç∞ÇÈ
+  if abs(netX-toriX)<64 and abs(netY-toriY)<64 then set lockC=lockC+50
+  if abs(netX-toriX)<128 and abs(netY-toriY)<128 then set lockC=lockC+20
+  
+  set lockC=lockC-1
+  if lockC<0 then set lockC=0
+  
+  set chCount=chCount-1
+  if chCount<0 then set chCount=0
+  
+  --Å@ãŸã}âÒî 
+  if lockC>60 and chCount=0 then
+    set chCount=10
+    set lockC=0
+    set toriAX=random(30)-15
+    set toriAY=random(30)-15
+    set toriAZ=random(30)-15
+  end if
+  
+  if lockC>50 and chCount=0 then
+    set chCount=10
+    set lockC=0
+    set toriAX=random(20)-10
+    set toriAY=random(20)-10
+    set toriAZ=random(20)-10
+  end if
+  
+  
+  if toriVX> 30 then set toriVX= 30
+  if toriVX<-30 then set toriVX=-30
+  if toriVY> 30 then set toriVY= 30
+  if toriVY<-30 then set toriVY=-30
+  
+  
+  set toriX=toriX+toriVX
+  set toriY=toriY+toriVY
+  set toriZ=toriZ+toriVZ
+  
+  
+  if toriX<150 and toriAX<0 then set toriAX=-toriAX
+  if toriX>600 and toriAX>0 then set toriAX=-toriAX
+  if toriY<150 and toriAY<0 then set toriAY=-toriAY
+  if toriY>300 and toriAY>0 then set toriAY=-toriAY
+  
+  --ÉgÉäÉJÉâÇÃÉAÉjÉÅÅ[ÉVÉáÉì
+  if toriCC>14 then
+    set toriCC=0
+  else
+    set toriCC=toriCC+1
+  end if
+  
+  set the castNum of sprite 7 to the number of cast "cloop"+toriCC
+  
+  set the locH of sprite 7 to toriX
+  set the locV of sprite 7 to toriY
+end
+
+
+on initNet
+  set the puppet of sprite 9 to true
+  set the type of sprite 9 to 1
+  set the ink of sprite 9 to 36
+  set the castNum of sprite 9 to the number of cast "HIKARIAMI 0000"
+  set the visibility of sprite 9 to true
+end
+
+on initGun
+  global gunBullet
+  set gunBullet=6
+  set the puppet of sprite 9 to true
+  set the type of sprite 9 to 1
+  set the ink of sprite 9 to 36
+  set the castNum of sprite 9 to the number of cast "cGun"
+  set the visibility of sprite 9 to true
+end
+
+on moveNet
+  global nageFlag
+  global amiAnim
+  global netX,netY
+  global toriX,toriY
+  global czone
+  global tukamaeta
+  global tAnim
+  
+  if tukamaeta then
+    puppetSound "EF-15"
+    pmsg 4
+    if the locV of sprite 7>550 then
+      getItem("ê∂Ç´ÇΩÉgÉäÉJÉâ")
+      return TRUE
+      --      exit
+    end if
+    
+    set the visibility of sprite 9 to false
+    set the castNum of sprite 7 to the number of cast "tukamaeta"+tAnim
+    set tAnim=tAnim+1
+    if tAnim>4 then set tAnim=0
+    
+    set the locV of sprite 7 to the locV of sprite 7 +15
+    exit
+  end if
+  
+  if the mouseDown and (not nageFlag) then
+    puppetsound "19"
+    set nageFlag=true
+    set amiAnim=0
+  end if
+  
+  if not nageFlag then
+    set netX=the mouseH
+    set netY=the mouseV
+  end if
+  
+  if nageFlag then set amiAnim=amiAnim+1
+  
+  if amiAnim>7 and abs(netX-toriX)<czone and abs(netY-toriY)<czone then
+    set tukamaeta=1
+  else if amiAnim=10 then
+    puppetSound "EF-15"
+    pmsg random(3)
+  end if
+  
+  if amiAnim>10 then
+    set nageFlag=false
+    set amiAnim=0
+    set czone=czone+1
+    if czone>80 then set czone=80
+  end if
+  
+  set the locH of sprite 9 to netX
+  set the locV of sprite 9 to netY
+  set the castNum of sprite 9 to the number of cast "HIKARIAMI 0000"+amiAnim
+  
+  return FALSE
+end
+
+on moveGun
+  global nageFlag
+  global amiAnim
+  global netX,netY
+  global toriX,toriY
+  global czone
+  global tukamaeta
+  global tAnim
+  global gunBullet
+  
+  if the mouseDown and (not nageFlag) then
+    set gunBullet=gunBullet-1
+    set nageFlag=true
+    set amiAnim=0
+  end if
+  
+  if not nageFlag then
+    set netX=the mouseH
+    set netY=400
+  end if
+  
+  if nageFlag then set amiAnim=amiAnim+1
+  
+  if amiAnim>7 and abs(netX-toriX)<czone and abs(netY-toriY)<czone then
+    --    alert "aaa"
+    set tukamaeta=1
+  end if
+  
+  if amiAnim=10 then
+    pmsg 8+random(3)
+    puppetSound "EF-15"
+  end if
+  
+  if amiAnim>10 then
+    set nageFlag=false
+    set amiAnim=0
+    set czone=czone+1
+    if czone>80 then set czone=80
+  end if
+  
+  set the locH of sprite 9 to netX
+  set the locV of sprite 9 to 350-amiAnim*10
+  set the castNum of sprite 9 to the number of cast "cGun"+amiAnim
+  
+  if gunBullet<1 then
+    return TRUE
+  else
+    return FALSE
+  end if
+  
+  
+end
+
+
+
+on moveArrow
+  global nageFlag
+  global amiAnim
+  global netX,netY
+  global toriX,toriY
+  global czone
+  global tukamaeta
+  global tAnim
+  
+  if the mouseDown and (not nageFlag) then
+    set nageFlag=true
+    set amiAnim=0
+  end if
+  
+  if not nageFlag then
+    set netX=the mouseH
+    set netY=400
+  end if
+  
+  if nageFlag then set amiAnim=amiAnim+1
+  
+  if amiAnim>7 and abs(netX-toriX)<czone and abs(netY-toriY)<100 then
+    set tukamaeta=1
+  else if amiAnim=10 then
+    pmsg random(3)
+    puppetSound "EF-15"
+  end if
+  
+  if amiAnim>10 then
+    set nageFlag=false
+    set amiAnim=0
+    set czone=czone+5
+    if czone>120 then set czone=120
+  end if
+  
+  set the locH of sprite 9 to netX
+  set the locV of sprite 9 to 350-amiAnim*10
+  set the castNum of sprite 9 to the number of cast "cArrow"+amiAnim
+  if tukamaeta then
+    return TRUE
+  else
+    return FALSE
+  end if
+end
+
+=== miembro 85    (cast 69) ===
+on exitFrame
+  initScene "rm0166"
+  clrCanUse
+  
+  --Å@ïêäÌÅAÉgÉäÉJÉâÇï\é¶ÇµÇ»Ç¢ 
+  set the visibility of sprite 7 to false
+  set the visibility of sprite 9 to false
+  
+  if existItem("ê∂Ç´ÇΩÉgÉäÉJÉâ") or existItem("éÄÇÒÇæÉgÉäÉJÉâ") or existItem("ÉÑÉLÉgÉä") or existItem("ÉVÉìÉpÉI") or existItem("éµÇ¬êØÉVÉìÉpÉI") or existCondition("rm0046tori") then
+    go to "noEvent"
+   else
+    play "ÉgÉäÉJÉâìoèÍÅI"
+    go to "gotaku"
+  end if
+end
+
+=== miembro 92    (cast 73) ===
+on exitFrame
+  --  play "ÉgÉäÉJÉâìoèÍÅI"
+  clrMsg
+  initTorikara
+  initNet
+end
+
+=== miembro 95    (cast 77) ===
+on exitFrame
+  clrMsg
+  initTorikara
+  initGun
+end
+
+=== miembro 86    (cast 90) ===
+on exitFrame
+  moveTorikara
+  
+  updateStage
+  go to the frame
+end
+
+=== miembro 87    (cast 145) ===
+on exitFrame
+  initNet
+  initTorikara
+  play "ÉgÉäÉJÉâìoèÍÅI"
+end
+
+=== miembro 88    (cast 146) ===
+on exitFrame
+  play done
+end
+
+=== miembro 98    (cast 147) ===
+on exitFrame
+  moveTorikara
+  
+  if  moveGun() then
+    pmsg 12
+    deleteItem "åıèe"
+    drawBag
+    go to "Ç≥ÇÁÇŒÉgÉäÉJÉâ"
+  end if
+  
+  updateStage
+  go to the frame
+end
+
+=== miembro 104    (cast 154) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 99    (cast 164) ===
+on exitFrame
+  clrCanUse
+  --Å@ïêäÌÅAÉgÉäÉJÉâÇï\é¶ÇµÇ»Ç¢ 
+  set the visibility of sprite 7 to false
+  set the visibility of sprite 9 to false
+end
+
+=== miembro 106    (cast 186) ===
+on mouseUp
+  clrMsg
+  gohb
+end
+
+=== miembro 94    (cast 214) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 96    (cast 218) ===
+on exitFrame
+  --  play "ÉgÉäÉJÉâìoèÍÅI"
+  clrMsg
+  initTorikara
+  initGun
+end
+
+=== miembro 89    (cast 224) ===
+on exitFrame
+  initTorikara
+  clrCanUse
+  appendCanUse "åıÉAÉ~"
+  appendCanUse "åıñÓ"
+  appendCanUse "åıèe"
+end
+
+=== miembro 90    (cast 225) ===
+on exitFrame
+  if IsUsingItem("åıÉAÉ~") then
+    eraseBag
+    go to "wpa"
+  else if IsUsingItem("åıñÓ") then
+    eraseBag
+    go to "wpb"
+  else if IsUsingItem("åıèe") then
+    eraseBag
+    go to "wpc"
+  end if
+  clrUsingItem
+  
+  moveTorikara
+  putMsg "text",0
+  updateStage
+  go to the frame
+end
+
+=== miembro 100    (cast 242) ===
+on exitFrame
+  go to "noEvent"
+end
+
+=== miembro 101    (cast 243) ===
+on exitFrame
+  --Å@ïêäÌÅAÉgÉäÉJÉâÇï\é¶ÇµÇ»Ç¢ 
+  set the visibility of sprite 7 to false
+  set the visibility of sprite 9 to false
+end
+
+=== miembro 91    (cast 251) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 103    (cast 253) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 105    (cast 254) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 107    (cast 255) ===
+on mouseUp
+  clrMsg
+  gohf
+end
+
+=== miembro 93    (cast 278) ===
+on exitFrame
+  global tukamaeta
+  if not tukamaeta then
+    moveTorikara
+  end if
+  
+  if  moveNet() then
+    deleteItem "åıÉAÉ~"
+    drawBag
+    go to "noEvent"
+  end if
+  
+  updateStage
+  go to the frame
+end
+
+=== miembro 97    (cast 301) ===
+on exitFrame
+  global tukamaeta
+  if not tukamaeta then
+    moveTorikara
+  end if
+  
+  if  moveArrow() then
+    set the visibility of sprite 7 to false
+    set the visibility of sprite 9 to false
+    
+    putwaitmsg "text",8
+    deleteItem "åıñÓ"
+    drawBag
+    getItem "éÄÇÒÇæÉgÉäÉJÉâ"
+    go to "noEvent"
+  end if
+  
+  updateStage
+  go to the frame
+end
+

@@ -1,0 +1,109 @@
+=== miembro 33    (cast 6) ===
+on mouseUp
+  go to "birth"
+end
+
+=== miembro 27    (cast 19) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 28    (cast 39) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 34    (cast 60) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 37    (cast 61) ===
+on exitFrame
+ --putMsg "text",0
+  go to the frame
+end
+
+=== miembro 38    (cast 62) ===
+on exitFrame
+  appendCondition("rm0195ev")
+  go to "noevent"
+end
+
+=== miembro 36    (cast 63) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 29    (cast 93) ===
+on exitFrame
+  initScene "rm0195"
+  if existCondition("rm0195ev") then
+    go to "noevent"
+  else
+    go to "event"
+  end if
+end
+
+=== miembro 30    (cast 94) ===
+on exitFrame
+  putMsg "text",0
+  go to the frame
+end
+
+=== miembro 31    (cast 95) ===
+on mouseUp
+  go to "koan"
+end
+
+=== miembro 32    (cast 96) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 35    (cast 98) ===
+on mouseUp
+  go to "bye"
+end
+
+=== miembro 39    (cast 100) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 41    (cast 101) ===
+on exitFrame
+  initScene "rm0195"
+  go to the frame
+end
+
+=== miembro 42    (cast 102) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 43    (cast 103) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 44    (cast 104) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 45    (cast 105) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 40    (cast 106) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 46    (cast 124) ===
+on startMovie
+  initMovie
+end
+

@@ -1,0 +1,27 @@
+{
+ "source": "OVER.DIR",
+ "sounds": [
+  {
+   "file": "s0054_M06.01.wav",
+   "member": 54,
+   "name": "M06.01",
+   "cast_id": 57,
+   "snd_id": 48,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 194189
+  },
+  {
+   "file": "s0056_Null_Sound.wav",
+   "member": 56,
+   "name": "Null Sound",
+   "cast_id": 129,
+   "snd_id": 114,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  }
+ ]
+}

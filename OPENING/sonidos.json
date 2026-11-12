@@ -1,0 +1,27 @@
+{
+ "source": "OPENING.DIR",
+ "sounds": [
+  {
+   "file": "s0081_intro-01_16.wav",
+   "member": 81,
+   "name": "intro-01/16",
+   "cast_id": 139,
+   "snd_id": 140,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 705781
+  },
+  {
+   "file": "s0092_Null_Sound.wav",
+   "member": 92,
+   "name": "Null Sound",
+   "cast_id": 246,
+   "snd_id": 247,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  }
+ ]
+}

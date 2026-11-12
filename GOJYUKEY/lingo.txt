@@ -1,0 +1,24 @@
+=== miembro 14    (cast 25) ===
+on mouseUp
+  if doubleClick() then
+    getItem "å‹èdìÉåÆ"
+    appendCondition "gojyukey"
+    go "ret"
+  end if
+end
+
+=== miembro 13    (cast 27) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 16    (cast 59) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 18    (cast 76) ===
+on exitFrame
+  goFMov "af","topcastl.dir"
+end
+

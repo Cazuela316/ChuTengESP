@@ -1,0 +1,432 @@
+=== miembro 117    (cast 50) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 118    (cast 51) ===
+on exitFrame
+  global dma
+  global usingItem
+  if usingItem="ÉÑÉLÉgÉä" then
+    putMsg "text",2
+    deleteItem "ÉÑÉLÉgÉä"
+    drawBag
+    if existCondition("rm0046tori") then
+      play "yksp1"
+      clrUsingItem
+      go "ykeat1"
+    else
+      play "yksp0"
+      clrUsingItem
+      go "ykeat0"
+    end if
+  else if usingItem="ê∂Ç´ÇΩÉgÉäÉJÉâ" then
+    clrUsingItem
+    go to "tori"
+  else if usingItem="éÄÇÒÇæÉgÉäÉJÉâ" then
+    clrUsingItem
+    putWaitMsg "text",14
+  else if usingItem="Ç®È\ì™" then
+    deleteThisItem
+    drawBag
+    if existCondition("rm0046tori") then
+      clrUsingItem
+      go to "man2"
+    else 
+      clrUsingItem
+      go to "man"
+    end if
+  else if existCanUse(usingItem) then
+    deleteThisItem
+    drawBag
+    if existCondition("rm0046tori") then
+      go to "keyin"
+    else
+      putWaitMsg "Ç»Ç…Ç‡Ç®Ç±ÇÁÇ»Ç©Ç¡ÇΩ",0
+    end if
+  end if
+  clrUsingItem
+  go the frame
+end
+
+=== miembro 148    (cast 53) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>6 then go to "sinpao1"
+end
+
+=== miembro 119    (cast 84) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>6 then go to "sinpao"
+end
+
+=== miembro 133    (cast 158) ===
+on exitFrame
+  putMsg "text",8
+end
+
+=== miembro 146    (cast 172) ===
+on exitFrame
+  go to "eat"
+end
+
+=== miembro 120    (cast 196) ===
+on exitFrame
+  clrCanUse
+  appendCanUse "ì˙ñúî\åÆ"
+  appendCanUse "åéñúî\åÆ"
+  appendCanUse "êØñúî\åÆ"
+  appendCanUse "ì˙ñúî\åÆï°êª"
+  appendCanUse "åéñúî\åÆï°êª"
+  appendCanUse "êØñúî\åÆï°êª"
+  go to "spk2x"
+end
+
+=== miembro 143    (cast 197) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 135    (cast 221) ===
+on mouseUp
+  putWaitMsg "text",9
+end
+
+=== miembro 136    (cast 223) ===
+on exitFrame
+  putMsg "text",8
+end
+
+=== miembro 155    (cast 237) ===
+on mouseUp
+  if doubleClick() then
+    set the visibility of sprite 9 to FALSE
+    getItem "êØÇÃåı"
+  end if
+end
+
+=== miembro 152    (cast 242) ===
+on mouseUp
+  go "spk2"
+end
+
+=== miembro 159    (cast 246) ===
+on exitFrame
+  if existItem("éµÇ¬êØèë") and existItem("êØÇÃåı") and existItem("ñÿï–") and existItem("ê∂Ç´ÇΩÉgÉäÉJÉâ") then
+    go "man3"
+  end if
+end
+
+=== miembro 130    (cast 251) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 132    (cast 252) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ÉVÉìÉpÉI"
+    go to "out"
+  end if
+  
+end
+
+=== miembro 140    (cast 255) ===
+on exitFrame
+  global usingItem
+  if existCanUse(usingItem) then
+    deleteThisItem
+    drawBag
+    go to "keyin"
+  end if
+end
+
+=== miembro 122    (cast 258) ===
+on mouseUp
+  go to "spk"
+end
+
+=== miembro 137    (cast 278) ===
+on exitFrame
+  deleteItem "ê∂Ç´ÇΩÉgÉäÉJÉâ"
+  appendCondition "rm0046tori"
+  drawBag
+end
+
+=== miembro 121    (cast 295) ===
+on exitFrame
+  initScene "rm0046"
+  
+  clrCanUse
+  clrUsingItem
+  appendCanUse "ÉÑÉLÉgÉä"
+  appendCanUse "ê∂Ç´ÇΩÉgÉäÉJÉâ"
+  appendCanUse "éÄÇÒÇæÉgÉäÉJÉâ"
+  appendCanUse "Ç®È\ì™"
+  appendCanUse "ì˙ñúî\åÆ"
+  appendCanUse "åéñúî\åÆ"
+  appendCanUse "êØñúî\åÆ"
+  appendCanUse "ì˙ñúî\åÆï°êª"
+  appendCanUse "åéñúî\åÆï°êª"
+  appendCanUse "êØñúî\åÆï°êª"
+end
+
+=== miembro 154    (cast 321) ===
+on mouseUp
+  if doubleClick() then
+    set the visibility of sprite 8 to FALSE
+    getItem "éµÇ¬êØèë"
+  end if
+end
+
+=== miembro 126    (cast 328) ===
+on exitFrame
+  putMsg "text",2
+  deleteItem "ÉÑÉLÉgÉä"
+  drawBag
+  if existCondition("rm0046tori") then
+    play "yksp1"
+    go "ykeat1"
+  else
+    play "yksp0"
+    go "ykeat0"
+  end if
+end
+
+=== miembro 123    (cast 331) ===
+on exitFrame
+  global dma
+  global usingItem
+  putMsg "text",dma
+  if usingItem="ÉÑÉLÉgÉä" then
+    putMsg "text",2
+    deleteItem "ÉÑÉLÉgÉä"
+    drawBag
+    if existCondition("rm0046tori") then
+      play "yksp1"
+      clrUsingItem
+      go "ykeat1"
+    else
+      play "yksp0"
+      clrUsingItem
+      go "ykeat0"
+    end if
+  else if usingItem="ê∂Ç´ÇΩÉgÉäÉJÉâ" then
+    clrUsingItem
+    go to "tori"
+  else if usingItem="éÄÇÒÇæÉgÉäÉJÉâ" then
+    clrUsingItem
+    putWaitMsg "text",14
+  else if usingItem="Ç®È\ì™" then
+    deleteThisItem
+    drawBag
+    if existCondition("rm0046tori") then
+      clrUsingItem
+      go to "man2"
+    else 
+      clrUsingItem
+      go to "man"
+    end if
+  else if existCanUse(usingItem) then
+    deleteThisItem
+    drawBag
+    if existCondition("rm0046tori") then
+      go to "keyin"
+    else
+      putWaitMsg "Ç»Ç…Ç‡Ç®Ç±ÇÁÇ»Ç©Ç¡ÇΩ",0
+    end if
+  end if
+  clrUsingItem
+end
+
+=== miembro 124    (cast 334) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>1 then
+    set dma=0
+  end if
+end
+
+=== miembro 127    (cast 352) ===
+on mouseUp
+  play done
+end
+
+=== miembro 131    (cast 353) ===
+on exitFrame
+  putMsg "text",7
+end
+
+=== miembro 128    (cast 354) ===
+on mouseUp
+  go to "eat"
+end
+
+=== miembro 129    (cast 355) ===
+on exitFrame
+  global dma
+  set dma=3
+end
+
+=== miembro 125    (cast 356) ===
+on exitFrame
+  clrCanUse
+  clrUsingItem
+  appendCanUse "ÉÑÉLÉgÉä"
+  appendCanUse "ê∂Ç´ÇΩÉgÉäÉJÉâ"
+  appendCanUse "éÄÇÒÇæÉgÉäÉJÉâ"
+  appendCanUse "Ç®È\ì™"
+  appendCanUse "ì˙ñúî\åÆ"
+  appendCanUse "åéñúî\åÆ"
+  appendCanUse "êØñúî\åÆ"
+  appendCanUse "ì˙ñúî\åÆï°êª"
+  appendCanUse "åéñúî\åÆï°êª"
+  appendCanUse "êØñúî\åÆï°êª"
+end
+
+=== miembro 139    (cast 358) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ê∂Ç´ÇΩÉgÉäÉJÉâ"
+    go to "msg11"
+  end if
+  
+end
+
+=== miembro 141    (cast 359) ===
+on exitFrame
+  putMsg "text",11
+end
+
+=== miembro 142    (cast 360) ===
+on mouseUp
+  go to "out"
+end
+
+=== miembro 134    (cast 363) ===
+on mouseUp
+  go to "tori2"
+end
+
+=== miembro 151    (cast 366) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 149    (cast 367) ===
+on exitFrame
+  if existCondition("rm0046tori") then
+    go "out2"
+  end if
+end
+
+=== miembro 165    (cast 369) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 144    (cast 379) ===
+on mouseUp
+  play done
+end
+
+=== miembro 145    (cast 380) ===
+on exitFrame
+  go to marker(0)
+end
+
+=== miembro 147    (cast 382) ===
+on exitFrame
+  go to marker(0)
+end
+
+=== miembro 138    (cast 386) ===
+on exitFrame
+  putMsg "text",10
+  deleteCondition "rm0046tori"
+end
+
+=== miembro 150    (cast 390) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 153    (cast 401) ===
+on exitFrame
+  putMsg "text",12
+  deleteCondition "rm0046tori"
+end
+
+=== miembro 156    (cast 407) ===
+on mouseUp
+  if doubleClick() then
+    set the visibility of sprite 10 to FALSE
+    getItem "ñÿï–"
+  end if
+end
+
+=== miembro 157    (cast 408) ===
+on mouseUp
+  if doubleClick() then
+    set the visibility of sprite 11 to FALSE
+    getItem "ê∂Ç´ÇΩÉgÉäÉJÉâ"
+  end if
+end
+
+=== miembro 158    (cast 409) ===
+on exitFrame
+  if existItem("éµÇ¬êØèë") and existItem("êØÇÃåı") and existItem("ñÿï–") then
+    go "man3"
+  end if
+end
+
+=== miembro 160    (cast 410) ===
+on exitFrame
+  putMsg "text",13
+  set the visibility of sprite 8 to TRUE
+  set the visibility of sprite 9 to TRUE
+  set the visibility of sprite 10 to TRUE
+  set the visibility of sprite 11 to TRUE
+end
+
+=== miembro 162    (cast 411) ===
+on mouseUp
+  go "out"
+end
+
+=== miembro 164    (cast 412) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 163    (cast 413) ===
+on exitFrame
+  initScene "rm0046"
+  go to the frame
+end
+
+=== miembro 166    (cast 427) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 167    (cast 431) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 168    (cast 476) ===
+on mouseUp
+  go to "out"
+end
+
+=== miembro 161    (cast 510) ===
+on exitFrame
+  putMsg "text",13
+end
+

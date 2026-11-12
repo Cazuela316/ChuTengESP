@@ -1,0 +1,126 @@
+{
+ "source": "KINGROOM.DIR",
+ "sounds": [
+  {
+   "file": "s0322_51.wav",
+   "member": 322,
+   "name": "51",
+   "cast_id": 6,
+   "snd_id": 18,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 13432
+  },
+  {
+   "file": "s0190_FX-02.wav",
+   "member": 190,
+   "name": "FX-02",
+   "cast_id": 402,
+   "snd_id": 656,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 11324
+  },
+  {
+   "file": "s0323_M19.10.wav",
+   "member": 323,
+   "name": "M19.10",
+   "cast_id": 576,
+   "snd_id": 577,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 352973
+  },
+  {
+   "file": "s0183_M19.03.wav",
+   "member": 183,
+   "name": "M19.03",
+   "cast_id": 866,
+   "snd_id": 867,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176258
+  },
+  {
+   "file": "s0184_M19.05.wav",
+   "member": 184,
+   "name": "M19.05",
+   "cast_id": 868,
+   "snd_id": 872,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176396
+  },
+  {
+   "file": "s0185_M19.07.wav",
+   "member": 185,
+   "name": "M19.07",
+   "cast_id": 869,
+   "snd_id": 674,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176317
+  },
+  {
+   "file": "s0187_M19.09.wav",
+   "member": 187,
+   "name": "M19.09",
+   "cast_id": 873,
+   "snd_id": 874,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176209
+  },
+  {
+   "file": "s0188_M19.10.wav",
+   "member": 188,
+   "name": "M19.10",
+   "cast_id": 875,
+   "snd_id": 876,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 352973
+  },
+  {
+   "file": "s0189_OS-16.wav",
+   "member": 189,
+   "name": "OS-16*",
+   "cast_id": 879,
+   "snd_id": 880,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 65877
+  },
+  {
+   "file": "s0186_M19.08.wav",
+   "member": 186,
+   "name": "M19.08",
+   "cast_id": 916,
+   "snd_id": 871,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176498
+  },
+  {
+   "file": "s0182_M19.02.wav",
+   "member": 182,
+   "name": "M19.02",
+   "cast_id": 1031,
+   "snd_id": 865,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176482
+  }
+ ]
+}

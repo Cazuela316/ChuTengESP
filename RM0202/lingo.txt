@@ -1,0 +1,117 @@
+=== miembro 40    (cast 14) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>1 then go to "msg2"
+end
+
+=== miembro 39    (cast 17) ===
+on exitFrame
+  global dma
+  initScene "rm0202"
+  putMsg "text",0
+  set dma=0
+end
+
+=== miembro 37    (cast 42) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 43    (cast 48) ===
+on mouseUp
+  go to "msg3"
+end
+
+=== miembro 47    (cast 54) ===
+on mouseUp
+  go to "msg5"
+end
+
+=== miembro 51    (cast 57) ===
+on exitFrame
+  initScene "rm0202"
+  go to the frame
+end
+
+=== miembro 57    (cast 70) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 38    (cast 77) ===
+on exitFrame
+  go to "out"
+end
+
+=== miembro 44    (cast 82) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 42    (cast 83) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 49    (cast 85) ===
+on mouseUp
+  go to "msg6"
+end
+
+=== miembro 46    (cast 86) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 45    (cast 87) ===
+on mouseUp
+  go to "msg4"
+end
+
+=== miembro 50    (cast 89) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 48    (cast 90) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 56    (cast 94) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 41    (cast 142) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 52    (cast 149) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 54    (cast 150) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 55    (cast 151) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 58    (cast 166) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 53    (cast 170) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+

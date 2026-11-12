@@ -1,0 +1,16 @@
+{
+ "source": "UFO.DIR",
+ "sounds": [
+  {
+   "file": "s0056_M05.06.wav",
+   "member": 56,
+   "name": "M05.06",
+   "cast_id": 154,
+   "snd_id": 155,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 97132
+  }
+ ]
+}

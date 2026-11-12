@@ -1,0 +1,369 @@
+=== miembro 26    (cast 14) ===
+on mouseUp
+  go "sl"
+end
+
+=== miembro 59    (cast 21) ===
+on mouseUp
+  go "cb"
+end
+
+=== miembro 80    (cast 24) ===
+on exitFrame
+  goFMov "ro","corridor:tyuload.dir"
+end
+
+=== miembro 32    (cast 26) ===
+on mouseUp
+  go "sl"
+end
+
+=== miembro 82    (cast 27) ===
+on exitFrame
+  goFMov "yo","corridor:tyuload.dir"
+end
+
+=== miembro 81    (cast 28) ===
+on exitFrame
+  goFMov "hf","corridor:tyuload.dir"
+end
+
+=== miembro 31    (cast 35) ===
+on mouseUp
+  go "sr"
+end
+
+=== miembro 29    (cast 36) ===
+on mouseUp
+  go "sf"
+end
+
+=== miembro 36    (cast 37) ===
+on mouseUp
+  go "abm"
+end
+
+=== miembro 58    (cast 38) ===
+on mouseUp
+  go "cf"
+end
+
+=== miembro 27    (cast 48) ===
+on mouseUp
+  go "sr"
+end
+
+=== miembro 28    (cast 50) ===
+on mouseUp
+  go "sb"
+end
+
+=== miembro 62    (cast 73) ===
+on mouseUp
+  go "cbm"
+end
+
+=== miembro 25    (cast 74) ===
+on mouseUp
+  go "sam"
+end
+
+=== miembro 37    (cast 75) ===
+on mouseUp
+  go "ab"
+end
+
+=== miembro 60    (cast 94) ===
+on mouseUp
+  go "cr"
+end
+
+=== miembro 87    (cast 97) ===
+on exitFrame
+  endThenGo "g4"
+  if mouseDown() then go "g4"
+end
+
+=== miembro 84    (cast 108) ===
+on exitFrame
+  endThenGo "g1"
+  if mouseDown() then go "g1"
+end
+
+=== miembro 38    (cast 112) ===
+on mouseUp
+  go "af"
+end
+
+=== miembro 33    (cast 118) ===
+on mouseUp
+  go "goCorridor"
+end
+
+=== miembro 101    (cast 121) ===
+on mouseUp
+  go "sb"
+end
+
+=== miembro 39    (cast 124) ===
+on mouseUp
+  go "af"
+end
+
+=== miembro 40    (cast 125) ===
+on mouseUp
+  go "ab"
+end
+
+=== miembro 35    (cast 126) ===
+on mouseUp
+  go "ar"
+end
+
+=== miembro 79    (cast 130) ===
+on exitFrame
+  goFMov "tf","corridor:tyuload.dir"
+end
+
+=== miembro 30    (cast 131) ===
+on mouseUp
+ go "sf"
+end
+
+=== miembro 83    (cast 132) ===
+on exitFrame
+  goFMov "sf","corridor:tyuload.dir"
+end
+
+=== miembro 56    (cast 133) ===
+on mouseUp
+  go "cb"
+end
+
+=== miembro 34    (cast 135) ===
+on mouseUp
+  go "al"
+end
+
+=== miembro 41    (cast 137) ===
+on mouseUp
+  go "ar"
+end
+
+=== miembro 42    (cast 138) ===
+on mouseUp
+  go "al"
+end
+
+=== miembro 43    (cast 139) ===
+on mouseUp
+  go "asm"
+end
+
+=== miembro 44    (cast 140) ===
+on mouseUp
+  go "bl"
+end
+
+=== miembro 45    (cast 141) ===
+on mouseUp
+  go "br"
+end
+
+=== miembro 46    (cast 142) ===
+on mouseUp
+  go "bcm"
+end
+
+=== miembro 47    (cast 143) ===
+on mouseUp
+  go "bb"
+end
+
+=== miembro 48    (cast 144) ===
+on mouseUp
+  go "bf"
+end
+
+=== miembro 49    (cast 145) ===
+on mouseUp
+  go "bf"
+end
+
+=== miembro 50    (cast 146) ===
+on mouseUp
+  go "bb"
+end
+
+=== miembro 51    (cast 147) ===
+on mouseUp
+  go "br"
+end
+
+=== miembro 52    (cast 149) ===
+on mouseUp
+  go "bl"
+end
+
+=== miembro 54    (cast 150) ===
+on mouseUp
+  go "cl"
+end
+
+=== miembro 55    (cast 151) ===
+on mouseUp
+  go "cr"
+end
+
+=== miembro 57    (cast 153) ===
+on mouseUp
+  go "cf"
+end
+
+=== miembro 61    (cast 154) ===
+on mouseUp
+  go "cl"
+end
+
+=== miembro 53    (cast 155) ===
+on mouseUp
+  go "bam"
+end
+
+=== miembro 63    (cast 188) ===
+on exitFrame
+  endThenGo "af"
+end
+
+=== miembro 64    (cast 189) ===
+on exitFrame
+  endThenGo "sb"
+end
+
+=== miembro 65    (cast 190) ===
+on exitFrame
+  endThenGo "bf"
+end
+
+=== miembro 66    (cast 191) ===
+on exitFrame
+  endThenGo "ab"
+end
+
+=== miembro 67    (cast 192) ===
+on exitFrame
+  endThenGo "cf"
+end
+
+=== miembro 68    (cast 193) ===
+on exitFrame
+  endThenGo "bb"
+end
+
+=== miembro 69    (cast 194) ===
+on exitFrame
+  global rtval
+  if rtval=6 then go "ali"
+end
+
+=== miembro 70    (cast 195) ===
+on exitFrame
+  global rtval
+  if rtval=5 then go "ari"
+end
+
+=== miembro 71    (cast 196) ===
+on exitFrame
+  global rtval
+  if rtval=4 then go "bli"
+end
+
+=== miembro 72    (cast 197) ===
+on exitFrame
+  global rtval
+  if rtval=3 then go "bri"
+end
+
+=== miembro 73    (cast 198) ===
+on exitFrame
+  global rtval
+  if rtval=1 then go "cli"
+end
+
+=== miembro 74    (cast 199) ===
+on exitFrame
+  global rtval
+  if rtval=2 then go "cri"
+end
+
+=== miembro 75    (cast 200) ===
+on mouseUp
+  playFMov "kameApr","magaivnt.dir"
+end
+
+=== miembro 76    (cast 219) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 100    (cast 226) ===
+on exitFrame
+  putGrp "tÉ}ÉKÉ^É}òfêØ.dif",0
+  wait 180
+  clrMsg
+end
+
+=== miembro 77    (cast 229) ===
+on exitFrame
+  global rtval
+  if rtval=1 then
+    go "c1"
+  else if rtval=2 then
+    go "c2"
+  else if rtval=3 then
+    go "c3"
+  else if rtval=4 then
+    go "c4"
+  else if rtval=5 then
+    go "c5"
+  else
+    go "c6"
+  end if
+end
+
+=== miembro 78    (cast 230) ===
+on exitFrame
+  goFMov "wo","corridor:tyuload.dir"
+end
+
+=== miembro 85    (cast 233) ===
+on exitFrame
+  endThenGo "g2"
+  if mouseDown() then go "g2"
+end
+
+=== miembro 86    (cast 234) ===
+on exitFrame
+  endThenGo "g3"
+  if mouseDown() then go "g3"
+end
+
+=== miembro 88    (cast 235) ===
+on exitFrame
+  endThenGo "g5"
+  if mouseDown() then go "g5"
+end
+
+=== miembro 89    (cast 236) ===
+on exitFrame
+  endThenGo "g6"
+  if mouseDown() then go "g6"
+end
+
+=== miembro 96    (cast 283) ===
+on startMovie
+  initMovie
+  saveEnable
+  initScene "m"
+end
+

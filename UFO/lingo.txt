@@ -1,0 +1,27 @@
+=== miembro 51    (cast 121) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 52    (cast 130) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 53    (cast 131) ===
+on exitFrame
+  initScene "ufo"
+end
+
+=== miembro 54    (cast 132) ===
+on mouseUp
+  goFMov "af","topcastl.dir"
+end
+
+=== miembro 55    (cast 133) ===
+on mouseUp
+--  if doubleClick() then
+    goFMov "gf","moonload.dir"
+--  end if
+end
+

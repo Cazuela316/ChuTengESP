@@ -1,0 +1,194 @@
+=== miembro 80    (cast 99) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 101    (cast 104) ===
+on exitFrame
+  go to "back"
+end
+
+=== miembro 100    (cast 149) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 86    (cast 195) ===
+on exitFrame
+  set the textFont of field "textinput" to "ÇlÇr ÉSÉVÉbÉN"
+  if (keyCode()=36 or keyCode()=76) and lastKey()<5*60 then
+    set the visibility of sprite 24 to FALSE
+    repeat with i=39 to 45
+      set the visibility of sprite i to true
+    end repeat
+    updateStage
+    if chars(the text of cast "textinput",1,4)="ÉCÉ\ÉMÉì" or chars(the text of cast "textinput",1,6)="isogin" then
+      go to "isoSpk3"
+    else
+      go to "bad"
+    end if
+  else
+    go to the frame
+  end if
+end
+
+=== miembro 84    (cast 196) ===
+on mouseUp
+  go to "isoSpk2"
+end
+
+=== miembro 85    (cast 197) ===
+on exitFrame
+  putMsg "text",1
+  set the text of cast "textinput" to "" 
+  set the visibility of sprite 24 to TRUE
+  eraseBag
+end
+
+=== miembro 89    (cast 199) ===
+on mouseUp
+  go to "isoSpk4"
+end
+
+=== miembro 95    (cast 213) ===
+on mouseUp
+  if doubleClick() then
+    GetItem "éµÇ¬ã Åiê¬Åj"
+    ClrMsg
+    Go to "topEnt"
+  end if
+  
+end
+
+=== miembro 96    (cast 214) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 92    (cast 219) ===
+on exitFrame
+  set the puppet of sprite 6 to TRUE
+  set the ink of sprite 6 to 36
+  set the type of sprite 6 to 1
+  set the castNum of sprite 6 to 37
+  set the locH of sprite 6 to the mouseH
+  set the locV of sprite 6 to the mouseV
+end
+
+=== miembro 94    (cast 223) ===
+on mouseUp
+  set the puppet of sprite 6 to FALSE
+  go to "kaiDown"
+end
+
+=== miembro 93    (cast 224) ===
+on exitFrame
+  set the locH of sprite 6 to the mouseH
+  set the locV of sprite 6 to the mouseV
+  
+  go to the frame
+end
+
+=== miembro 105    (cast 238) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 81    (cast 239) ===
+on exitFrame
+  initScene "topin"
+end
+
+=== miembro 104    (cast 240) ===
+on mouseUp
+  go to "kaiMove"
+end
+
+=== miembro 102    (cast 241) ===
+on exitFrame
+  alert "aaa"
+end
+
+=== miembro 82    (cast 245) ===
+on exitFrame
+  endThenGo "aprIso"
+end
+
+=== miembro 83    (cast 252) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 90    (cast 254) ===
+on mouseUp
+  go to "byeIso"
+end
+
+=== miembro 88    (cast 255) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 87    (cast 257) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 91    (cast 260) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 97    (cast 261) ===
+on mouseUp
+  goFMov "","topCastl.dir"
+end
+
+=== miembro 98    (cast 262) ===
+on exitFrame
+  clrMsg
+  if existItem("éµÇ¬ã Åiê¬Åj") or existItem("ÉÜÉCÉpÉI") then
+    go to "topEnt"
+  end if
+  
+end
+
+=== miembro 99    (cast 263) ===
+on startMovie
+  initMovie
+  saveEnable
+end
+
+=== miembro 103    (cast 272) ===
+on exitFrame
+  endThenGo "FF"
+end
+
+=== miembro 106    (cast 289) ===
+on mouseUp
+  goFMov "FL","moonload.dir"
+end
+
+=== miembro 107    (cast 290) ===
+on mouseUp
+  goFMov "FR","moonload.dir"
+end
+
+=== miembro 108    (cast 291) ===
+on mouseUp
+  go to "topZoom"
+end
+
+=== miembro 109    (cast 292) ===
+on exitFrame
+  clrMsg
+  go to the frame
+end
+
+=== miembro 110    (cast 342) ===
+on exitFrame
+  putGrp "tínâ∫ã{ìa.dif",0
+  wait 180
+  clrMsg
+end
+

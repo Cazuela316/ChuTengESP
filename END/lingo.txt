@@ -1,0 +1,193 @@
+=== miembro 7    (cast 49) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 19    (cast 102) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 76    (cast 160) ===
+on exitFrame
+  pmsg 1
+end
+
+=== miembro 51    (cast 167) ===
+on exitFrame
+  if existCondition("noameba") then go "mAme02"
+end
+
+=== miembro 78    (cast 171) ===
+on exitFrame
+  endThenGo "mAllPart1"
+end
+
+=== miembro 71    (cast 200) ===
+on mouseUp
+  if existCondition("sekido") then
+    deleteCondition "sekido"
+    goFMov "ri","corridor:tyuload.dir"
+  else
+    deleteCondition "oudo"
+    goFMov "yi","corridor:tyuload.dir"
+  end if  
+end
+
+=== miembro 72    (cast 203) ===
+on exitFrame
+  clrCanUse
+  clrUsingItem
+  appendCanUse "éµÇ¬êØÉVÉìÉpÉI"
+end
+
+=== miembro 50    (cast 205) ===
+on exitFrame
+  endThenGo "eyeRApr"
+end
+
+=== miembro 73    (cast 215) ===
+on exitFrame
+  global usingItem
+  pmsg 0
+  if usingItem="éµÇ¬êØÉVÉìÉpÉI" then
+    deleteThisItem
+    drawBag
+    appendCondition "noameba"
+    clrUsingItem
+    go "sinpPwr"
+  else
+    clrUsingItem
+  end if
+end
+
+=== miembro 75    (cast 219) ===
+on exitFrame
+  pmsg 18
+end
+
+=== miembro 74    (cast 222) ===
+on mouseUp
+  if existItem("ï@ÉçÉÄ") and existItem("å˚ÉçÉÄ") then
+    deleteItem "ï@ÉçÉÄ"
+    deleteItem "å˚ÉçÉÄ"
+    deleteItem "íÜìVî’"
+    drawBag
+    go "nanSPK1"
+  else
+    go "nanSPKn"
+  end if
+end
+
+=== miembro 77    (cast 245) ===
+on mouseUp
+  go "mPart"
+end
+
+=== miembro 79    (cast 246) ===
+on exitFrame
+  endThenGo "nanSPK2"
+end
+
+=== miembro 82    (cast 259) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>8 then
+    clrmsg
+    go "mRot"
+  end if
+end
+
+=== miembro 80    (cast 260) ===
+on exitFrame
+  global dma
+  pmsg dma
+end
+
+=== miembro 83    (cast 261) ===
+on exitFrame
+  endThenGo "tyuSPK0"
+end
+
+=== miembro 84    (cast 265) ===
+on exitFrame
+  global dma
+  set dma=9
+end
+
+=== miembro 85    (cast 266) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>17 then
+    clrMsg
+    cursor 200
+    go "mBom"
+  end if
+end
+
+=== miembro 86    (cast 267) ===
+on exitFrame
+  endThenGo "endx"
+end
+
+=== miembro 87    (cast 268) ===
+on exitFrame
+  updateStage
+  goFMov "","endroll.dir"
+end
+
+=== miembro 88    (cast 275) ===
+on startMovie
+  initMovie
+  puppetSound 0
+end
+
+=== miembro 81    (cast 276) ===
+on exitFrame
+  global dma
+  set dma=2
+end
+
+=== miembro 89    (cast 277) ===
+on exitFrame
+  clrmsg
+end
+
+=== miembro 90    (cast 288) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 91    (cast 297) ===
+on exitFrame
+  endThenGo "nanApr"
+end
+
+=== miembro 94    (cast 317) ===
+on exitFrame
+  --Å@âπÇñ¬ÇÁÇ∑
+  cursor 4
+  eraseBag
+  updateStage
+  unload
+  preloadCast "end.snd(22)"
+  if result()=the number of cast "end.snd(22)" then
+    playSound "end.snd(22)"
+  else
+    unload
+    preloadCast "end.snd(11)"
+    if result()=the number of cast "end.snd(11)" then
+      playSound "end.snd(11)"
+    else
+      unload
+      preloadCast "end150.snd"
+      if result()=the number of cast "end150.snd" then
+        playSound "end150.snd"
+      end if
+    end if
+  end if
+  cursor -1
+end
+

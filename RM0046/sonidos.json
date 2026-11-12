@@ -1,0 +1,27 @@
+{
+ "source": "RM0046.DIR",
+ "sounds": [
+  {
+   "file": "s0115_SM.04.wav",
+   "member": 115,
+   "name": "SM.04",
+   "cast_id": 318,
+   "snd_id": 439,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 112765
+  },
+  {
+   "file": "s0116_M24.09.wav",
+   "member": 116,
+   "name": "M24.09",
+   "cast_id": 606,
+   "snd_id": 34,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176879
+  }
+ ]
+}

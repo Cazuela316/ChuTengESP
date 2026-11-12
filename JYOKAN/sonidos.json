@@ -1,0 +1,38 @@
+{
+ "source": "JYOKAN.DIR",
+ "sounds": [
+  {
+   "file": "s0067_OS-16.wav",
+   "member": 67,
+   "name": "OS-16*",
+   "cast_id": 100,
+   "snd_id": 249,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 65877
+  },
+  {
+   "file": "s0066_M18.17.wav",
+   "member": 66,
+   "name": "M18.17",
+   "cast_id": 226,
+   "snd_id": 241,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 184070
+  },
+  {
+   "file": "s0068_FX-26.wav",
+   "member": 68,
+   "name": "FX-26",
+   "cast_id": 285,
+   "snd_id": 290,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12732
+  }
+ ]
+}

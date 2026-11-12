@@ -1,0 +1,111 @@
+=== miembro 49    (cast 18) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 66    (cast 58) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 63    (cast 83) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 50    (cast 85) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 56    (cast 93) ===
+on mouseUp
+  go to marker(1)
+end
+
+=== miembro 57    (cast 103) ===
+on mouseUp
+  if doubleClick() then
+    getItemx "ÉZÉCÉì"
+    appendCondition "ÉZÉCÉì"
+    go to "out"
+  end if
+end
+
+=== miembro 65    (cast 120) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 55    (cast 133) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>2 then go to "c21"
+end
+
+=== miembro 62    (cast 134) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 51    (cast 136) ===
+on exitFrame
+  initScene "rm0121"
+  go to the frame
+end
+
+=== miembro 61    (cast 139) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 60    (cast 168) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 52    (cast 177) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 53    (cast 178) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 54    (cast 180) ===
+on exitFrame
+  global dma
+  putMsg "text",dma+2
+end
+
+=== miembro 58    (cast 181) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 59    (cast 191) ===
+on exitFrame
+  initScene "rm0121"
+  if not existCondition("ÉZÉCÉì") then
+    go to "c1"
+  end if
+end
+
+=== miembro 64    (cast 192) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 67    (cast 211) ===
+on exitFrame
+  endThenGoFMov "hall3","hosimiya"
+end
+
+=== miembro 68    (cast 261) ===
+on mouseUp
+  go "goPalace"
+end
+

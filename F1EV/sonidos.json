@@ -1,0 +1,27 @@
+{
+ "source": "F1EV.DIR",
+ "sounds": [
+  {
+   "file": "s0081_S01.02.wav",
+   "member": 81,
+   "name": "S01.02",
+   "cast_id": 184,
+   "snd_id": 185,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 73468
+  },
+  {
+   "file": "s0082_SE01.01.wav",
+   "member": 82,
+   "name": "SE01.01",
+   "cast_id": 219,
+   "snd_id": 239,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 5128
+  }
+ ]
+}

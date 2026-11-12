@@ -1,0 +1,134 @@
+=== miembro 1    (cast 147) ===
+on getRootDir
+  global rootdir
+  set rootdir=the pathname
+end
+
+on LoadGameLoc
+  global itemList,canUseList,conditionList
+  
+  global rtMovie,usingItem,sceneName
+  global dma,dmb,dmc,dmd,dme,dmf
+  global bagFlag
+  global iln
+  global eMenu,canSave
+  
+  global moveFlag,nowFrame
+  global pictCast,pictCastB,pcv,pcvB
+  
+  global rtval,sunx,suny
+  global xxdir
+  
+  global loadx
+  
+  global pptLocH,pptLocV
+  global pptInk,pptType
+  global pptVis,pptCastNum
+  global pptppt
+  
+  global gscene
+  global sndBusy,sndName
+  
+  put readFile() into gg
+  if gg <> false then
+    if line 1 of gg <> "***ChuTeng-SaveData***" then 
+      alert "Å@ÉfÅ[É^ÉZÅ[ÉuÇÃÉtÉ@ÉCÉãÇ≈ÇÕÇ†ÇËÇ‹ÇπÇÒÅBê≥ÇµÇ¢ÉtÉ@ÉCÉãÇëIëÇµÇƒÇ≠ÇæÇ≥Ç¢ÅB"
+      play done
+    else
+      initgame
+      getRootDir
+      
+      set loadx=TRUE
+      
+      set rtmovie=line 105 of gg
+      set usingItem=line 106 of gg
+      set sceneName=line 107 of gg
+      
+      set dma=value(line 108 of gg)
+      set dmb=value(line 109 of gg)
+      set dmc=value(line 110 of gg)
+      set dmd=value(line 111 of gg)
+      set dme=value(line 112 of gg)
+      set dmf=value(line 113 of gg)
+      
+      set bagFlag=value(line 114 of gg)
+      set iln=value(line 115 of gg)
+      
+      set moveFlag=value(line 116 of gg)
+      set nowFrame=value(line 117 of gg)
+      set pictCast=line 118 of gg
+      set pictCastB=line 119 of gg
+      set pcv=value(line 120 of gg)
+      set pcvB=value(line 121 of gg)
+      
+      set rtval=value(line 122 of gg)
+      set sunx=value(line 123 of gg)
+      set suny=value(line 124 of gg)
+      set xxdir=value(line 125 of gg)
+      
+      set gscene=line 126 of gg
+      set sndBusy=value(line 127 of gg)
+      set sndName=line 128 of gg
+      
+      
+      set ctx=value(line 200 of gg)
+      repeat with i=1 to ctx
+        setAt itemList,i,line (200+i) of gg
+      end repeat
+      
+      set ctx=value(line 300 of gg)
+      repeat with i=1 to ctx
+        setAt conditionList,i,line (300+i) of gg
+      end repeat
+      
+      
+      set ctx=value(line 400 of gg)
+      repeat with i=1 to ctx
+        setAt canUseList,i,line (400+i) of gg
+      end repeat
+      
+      repeat with i=1 to 48
+        setAt pptLocH,i,value(line 500+i*8 of gg)
+        setAt pptLocV,i,value(line 500+i*8+1 of gg)
+        setAt pptInk,i,value(line 500+i*8+2 of gg)
+        setAt pptType,i,value(line 500+i*8+3 of gg)
+        setAt pptVis,i,value(line 500+i*8+4 of gg)
+        setAt pptCastNum,i,value(line 500+i*8+5 of gg)
+        setAt pptppt,i,value(line 500+i*8+6 of gg)
+      end repeat
+      
+      cursoroff
+      go to integer(value(line 103 of gg)) of movie (line 102 of gg)
+      -- **ç≈å„Ç…äJÇ¢ÇƒÇ¢ÇΩÉtÉåÅ[ÉÄÇ÷ÉWÉÉÉìÉv
+      -- puppetSound 0 
+    end if
+  else
+    set loadx=TRUE
+    beep
+  end if
+end
+
+on startMovie
+  puppetSound 0
+end
+
+=== miembro 4    (cast 349) ===
+on exitFrame
+  loadgameloc
+end
+
+=== miembro 3    (cast 474) ===
+on exitFrame
+  initGame
+  getRootDir
+  goFMov "","op:sumie.dir"
+end
+
+=== miembro 2    (cast 505) ===
+on exitFrame
+  initGame
+  getRootDir
+  appendItem "íÜìVî’"
+  goFMov "a3x","amanog:amamain.dir"
+end
+

@@ -1,0 +1,16 @@
+{
+ "source": "GOJYUKEY.DIR",
+ "sounds": [
+  {
+   "file": "s0017_M11.01.wav",
+   "member": 17,
+   "name": "M11.01",
+   "cast_id": 49,
+   "snd_id": 51,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 173539
+  }
+ ]
+}

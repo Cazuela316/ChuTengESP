@@ -1,0 +1,16 @@
+{
+ "source": "RM0226.DIR",
+ "sounds": [
+  {
+   "file": "s0030_M03.10.wav",
+   "member": 30,
+   "name": "M03.10",
+   "cast_id": 167,
+   "snd_id": 168,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 100720
+  }
+ ]
+}

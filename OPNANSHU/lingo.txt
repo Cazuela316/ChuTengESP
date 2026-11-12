@@ -1,0 +1,172 @@
+=== miembro 100    (cast 149) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 120    (cast 151) ===
+on exitFrame
+  preloadcast 61,79
+end
+
+=== miembro 117    (cast 167) ===
+on exitFrame
+  xpmsg 6
+end
+
+=== miembro 118    (cast 168) ===
+on exitFrame
+  if the movieTime of sprite 35>270 then
+    go "ms2"
+  else
+    go to the frame
+  end if
+end
+
+=== miembro 101    (cast 268) ===
+on startMovie
+  global bagnodraw
+  set bagnodraw=TRUE
+  initMovie
+end
+
+on xpmsg tn
+  set the puppet of sprite 37 to true
+  set the ink of sprite 37 to 36
+  --Å@É^ÉCÉvÇÕÉeÉLÉXÉgÉLÉÉÉXÉg
+  set the type of sprite 37 to 7
+  set the castNum of sprite 37 to the number of cast "text"+tn
+  --Å@ÉeÉLÉXÉgÉLÉÉÉXÉgÇ≈ÇÕÅAïùÇ™ÇOÇ…Ç»ÇÈÅ@ÉrÉbÉgÉ}ÉbÉvÉLÉÉÉXÉgÇ≈Ç»Ç¢Ç∆ÅAílÇéÊìæÇ≈Ç´Ç»Ç¢
+  --  set the locH of sprite sp to 160-(the width of sprite sp)
+  
+  set the locH of sprite 37 to 320
+  set the locV of sprite 37 to 440
+  set the visibility of sprite 37 to true
+  updateStage
+end
+
+=== miembro 102    (cast 269) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 103    (cast 270) ===
+on mouseUp
+  global dma
+  if dma>3 then
+    go "bangm"
+  else
+    go "eyer"
+  end if
+end
+
+=== miembro 104    (cast 271) ===
+on mouseUp
+  global dma
+  if dma>3 then
+    go "bangm"
+  else
+    go "eyel"
+  end if
+end
+
+=== miembro 105    (cast 276) ===
+on mouseUp
+  global dma
+  if dma>3 then
+    go "bangm"
+  else
+    go "nose"
+  end if
+end
+
+=== miembro 106    (cast 277) ===
+on mouseUp
+  global dma
+  if dma>3 then
+    go "bangm"
+  else
+    go "earr"
+  end if
+end
+
+=== miembro 107    (cast 278) ===
+on mouseUp
+  global dma
+  if dma>3 then
+    go "bangm"
+  else
+    go "earl"
+  end if
+end
+
+=== miembro 108    (cast 279) ===
+on mouseUp
+  global dma
+  if dma>3 then
+    go "bangm"
+  else
+    go "tang"
+  end if
+end
+
+=== miembro 109    (cast 280) ===
+on exitFrame
+  global dmb
+  set dmb=0
+  go "talk"
+end
+
+=== miembro 110    (cast 281) ===
+on exitFrame
+  global dma,dmb
+  set dma=1
+  xpmsg 0
+end
+
+=== miembro 111    (cast 282) ===
+on exitFrame
+  global dmb
+  set dmb=dmb+1
+  if dmb>2 then 
+    go "wait"
+  else
+    go previous
+  end if
+end
+
+=== miembro 112    (cast 283) ===
+on exitFrame
+  global dma
+  xpmsg dma
+  set dma=dma+1
+end
+
+=== miembro 114    (cast 313) ===
+on exitFrame
+  endThenGo "nbx"
+end
+
+=== miembro 115    (cast 314) ===
+on exitFrame
+  xpmsg 4
+end
+
+=== miembro 116    (cast 315) ===
+on exitFrame
+  xpmsg 5
+end
+
+=== miembro 119    (cast 317) ===
+on exitFrame
+  if the movieTime of sprite 35>540 then
+    go "ms3"
+  else
+    go to the frame
+  end if
+end
+
+=== miembro 113    (cast 318) ===
+on exitFrame
+  endThenGoFMov "start","sumie.dir"
+end
+

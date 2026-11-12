@@ -1,0 +1,60 @@
+{
+ "source": "BATTLER.DIR",
+ "sounds": [
+  {
+   "file": "s0172_M17.05.wav",
+   "member": 172,
+   "name": "M17.05",
+   "cast_id": 469,
+   "snd_id": 425,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176674
+  },
+  {
+   "file": "s0175_EF-08.wav",
+   "member": 175,
+   "name": "EF-08",
+   "cast_id": 487,
+   "snd_id": 310,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 108857
+  },
+  {
+   "file": "s0193_Null_Sound.wav",
+   "member": 193,
+   "name": "Null Sound",
+   "cast_id": 491,
+   "snd_id": 478,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0173_EF-04.wav",
+   "member": 173,
+   "name": "EF-04",
+   "cast_id": 532,
+   "snd_id": 511,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 17080
+  },
+  {
+   "file": "s0174_EF-06.wav",
+   "member": 174,
+   "name": "EF-06",
+   "cast_id": 535,
+   "snd_id": 536,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12736
+  }
+ ]
+}

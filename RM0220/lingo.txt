@@ -1,0 +1,137 @@
+=== miembro 57    (cast 46) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 73    (cast 101) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 60    (cast 104) ===
+on exitFrame
+  initScene "rm0220"
+end
+
+=== miembro 65    (cast 110) ===
+on exitFrame
+  go to marker(0)
+end
+
+=== miembro 71    (cast 118) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 58    (cast 134) ===
+on exitFrame
+  global usingItem
+  global dma
+  putMsg "text",dma
+  if usingItem="ÉçÅ[É\ÉN" then
+    deleteThisItem
+    go to "candle"
+  else if usingItem="ñÿï–" then
+    deleteThisItem
+    go to "wood"
+  else if usingItem="éÜ" then
+    deleteThisItem
+    go to "paper"
+  end if
+  clrUsingItem
+  
+end
+
+=== miembro 66    (cast 141) ===
+on mouseUp
+  play done
+end
+
+=== miembro 67    (cast 142) ===
+on mouseUp
+  if doubleClick() then
+    getItem "êØÇÃÇ†Ç©ÇËâŒÅEÇR"
+    putMsg "text",3
+    play "spkfunc"
+    go to "out"
+  end if
+  
+end
+
+=== miembro 63    (cast 164) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 74    (cast 168) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 59    (cast 185) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>1 then set dma=0
+end
+
+=== miembro 61    (cast 186) ===
+on exitFrame
+  appendCanUse("ÉçÅ[É\ÉN")
+  appendCanUse("ñÿï–")
+  appendCanUse("éÜ")
+end
+
+=== miembro 62    (cast 187) ===
+on mouseUp
+  go to "up"
+end
+
+=== miembro 64    (cast 188) ===
+on mouseUp
+  if doubleClick() then
+    getItem "êØÇÃÇ†Ç©ÇËâŒ"
+    putMsg "text",2
+    play "spkfunc"
+    go to "out"
+  end if
+  
+end
+
+=== miembro 68    (cast 189) ===
+on mouseUp
+  if doubleClick() then
+    getItem "êØÇÃÇ†Ç©ÇËâŒÅEéÜ"
+    putMsg "text",4
+    play "spkfunc"
+    go to "out"
+  end if
+  
+end
+
+=== miembro 69    (cast 191) ===
+on exitFrame
+  initScene "rm0220"
+  go to the frame
+end
+
+=== miembro 70    (cast 192) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 72    (cast 210) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 75    (cast 217) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 76    (cast 221) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+

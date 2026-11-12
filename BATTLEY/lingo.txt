@@ -1,0 +1,192 @@
+=== miembro 126    (cast 13) ===
+on exitFrame
+  go "battle"
+  --  go previous
+end
+
+=== miembro 125    (cast 109) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 127    (cast 151) ===
+on exitFrame
+  global dma
+  set dma=0
+  clrUsingItem
+  clrCanUse
+  appendCanUse "ÉÜÉCÉpÉI"
+end
+
+=== miembro 128    (cast 153) ===
+on exitFrame
+  global dma,usingitem
+  pmsg dma
+  if dma=3 and usingItem="ÉÜÉCÉpÉI" then
+    --    deleteThisItem
+    repeat with i=39 to 45
+      set the visibility of sprite i to FALSE
+    end repeat
+    
+    clrUsingItem
+    clrMsg
+    eraseBag
+    go "RuBnsn"
+  end if
+  clrUsingItem
+end
+
+=== miembro 129    (cast 155) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>3 then set dma=3
+end
+
+=== miembro 130    (cast 156) ===
+on exitFrame
+  puppetSound 0
+  pmsg 5
+end
+
+=== miembro 131    (cast 157) ===
+on exitFrame
+  puppetSound 0
+  set the puppet of sprite 27 to false
+  pmsg 4
+end
+
+=== miembro 132    (cast 159) ===
+on exitFrame
+  endThenGo "koanFade"
+end
+
+=== miembro 133    (cast 168) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 134    (cast 224) ===
+on exitFrame
+  appendCondition "winy"
+  if existCondition("winr") then
+    goFMov "start","battle:end.dir"
+  else
+    goFMov "yo","corridor:tyuload.dir"
+  end if
+end
+
+=== miembro 145    (cast 230) ===
+on mouseUp
+  goFMov "start","chutnban:over.dir"
+end
+
+=== miembro 135    (cast 242) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 136    (cast 243) ===
+on exitFrame
+  global dmb,dme
+  
+  if dmb<0 then 
+    set the puppet of sprite 27 to FALSE
+    go "lose"
+  else
+    set at=random(12)
+    if dme<random(32) then
+      if at=1 then
+        go "A"
+      else if at=2 then
+        go "B"
+      else if at=3 then
+        go "C"
+      else if at=4 then
+        go "D"
+      else if at=5 then
+        go "E"
+      end if
+    else
+      if at=1 then
+        go "Aatack"
+      else if at=2 then
+        go "Batack"
+      else if at=3 then
+        go "Catack"
+      else if at=4 then
+        go "Datack"
+      else if at=5 then
+        go "Eatack"
+      else 
+        go "noEnemy"
+      end if
+    end if
+    
+    set the loch of sprite 27 to the mouseh
+    set the locv of sprite 27 to the mousev
+    set the castnum of sprite 27 to the number of cast "sight"+dmb
+    set the castNum of sprite 25 to the number of cast "damage"+integer(dme/2.4)
+    go to the frame
+  end if
+end
+
+=== miembro 137    (cast 246) ===
+on exitFrame
+  alert "xx"
+end
+
+=== miembro 138    (cast 247) ===
+on mouseUp
+  global dme
+  set dme=dme+1
+  puppetSound "EF-04"
+  if dme>19 then
+    set the visibility of sprite 25 to false
+    go "winm"
+  else
+    go "battle"
+  end if
+end
+
+=== miembro 139    (cast 275) ===
+on exitFrame
+  global dmb
+  set dmb=dmb-1
+  puppetSound "EF-06"
+  go "battle"
+end
+
+=== miembro 140    (cast 278) ===
+on exitFrame
+  global dmb
+  global dme
+  
+  set dme=0
+  set dmb=7
+  set the puppet of sprite 27 to TRUE
+  set the ink of sprite 27 to 36
+  set the type of sprite 27 to 1
+  set the loch of sprite 27 to the mouseh
+  set the locv of sprite 27 to the mousev
+  set the castnum of sprite 27 to the number of cast "sight"+dmb
+  
+  set the puppet of sprite 25 to true
+  set the visibility of sprite 25 to true
+  set the ink of sprite 25 to 36
+  set the type of sprite 25 to 1
+  set the locH of sprite 25 to 320
+  set the locV of sprite 25 to 30
+end
+
+=== miembro 141    (cast 279) ===
+on exitFrame
+  set the loch of sprite 27 to the mouseh
+  set the locv of sprite 27 to the mousev
+end
+
+=== miembro 142    (cast 282) ===
+on mouseUp
+  goFMov "start","chutnban:over.dir"
+end
+

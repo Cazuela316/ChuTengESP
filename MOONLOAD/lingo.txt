@@ -1,0 +1,648 @@
+=== miembro 209    (cast 6) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 99    (cast 18) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 102    (cast 70) ===
+on mouseUp
+  go to "eye02"
+end
+
+=== miembro 103    (cast 74) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 97    (cast 117) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 104    (cast 121) ===
+on mouseUp
+  go to "qtAB"
+end
+
+=== miembro 105    (cast 125) ===
+on mouseUp
+  go to "eyeZM"
+end
+
+=== miembro 106    (cast 128) ===
+on exitFrame
+  global dma
+  set dma=0
+  endThenGo "eyeLi"
+end
+
+=== miembro 98    (cast 131) ===
+on exitFrame
+  putMsg "text",2
+  play "eyeSPK"
+  go to "qtab"
+end
+
+=== miembro 107    (cast 149) ===
+on exitFrame
+  saveDisable
+  putMsg "text",1
+  set the TimeOutLength to 30*60
+  When timeout then go to "323"
+end
+
+=== miembro 108    (cast 153) ===
+on mouseUp
+  play done
+end
+
+=== miembro 109    (cast 156) ===
+on exitFrame
+  global dma
+  if the mouseDown then
+    when timeout then nothing
+    set dma=dma+1
+    if dma>2 then
+      go to "eyeRun"
+    else
+      putMsg "text", dma+2
+      play "eyeSPK"
+      go to "eyeLi"
+    end if
+  end if
+end
+
+=== miembro 110    (cast 159) ===
+on exitFrame
+  goFMov "start","chutnban:over.dir"
+end
+
+=== miembro 111    (cast 162) ===
+on exitFrame
+  when timeOut then nothing 
+  clrMsg
+end
+
+=== miembro 100    (cast 166) ===
+on exitFrame
+  
+end
+
+=== miembro 112    (cast 168) ===
+on exitFrame
+  go to "gameover"
+end
+
+=== miembro 113    (cast 169) ===
+on exitFrame
+  when timeout then nothing
+end
+
+=== miembro 114    (cast 175) ===
+on exitFrame
+  initScene "medamamon"
+  --  go to the frame
+  putGrp "tåéÇÃã{.dif",0
+  wait 180
+  clrmsg
+  go to "eye02"
+end
+
+=== miembro 115    (cast 176) ===
+on exitFrame
+  endThenGo "bf"
+end
+
+=== miembro 116    (cast 177) ===
+on exitFrame
+  initScene "hmb"
+  go to the frame
+end
+
+=== miembro 117    (cast 179) ===
+on exitFrame
+  endThenGo "gf"
+end
+
+=== miembro 118    (cast 180) ===
+on exitFrame
+  endThenGo "br"
+end
+
+=== miembro 119    (cast 183) ===
+on exitFrame
+  endThenGo "cf"
+end
+
+=== miembro 120    (cast 184) ===
+on exitFrame
+  endThenGo "bb"
+end
+
+=== miembro 121    (cast 190) ===
+on exitFrame
+  endThenGo "goCorridor"
+end
+
+=== miembro 122    (cast 202) ===
+on exitFrame
+  endThenGo "df"
+end
+
+=== miembro 123    (cast 203) ===
+on exitFrame
+  endThenGo "cb"
+end
+
+=== miembro 125    (cast 262) ===
+on exitFrame
+  endThenGo "db"
+end
+
+=== miembro 126    (cast 263) ===
+on exitFrame
+  endThenGo "ff"
+end
+
+=== miembro 127    (cast 266) ===
+on exitFrame
+  endThenGo "eb"
+end
+
+=== miembro 128    (cast 267) ===
+on exitFrame
+  initScene "hmg"
+  go to the frame
+end
+
+=== miembro 129    (cast 274) ===
+on exitFrame
+  initScene "hmc"
+  go to the frame
+end
+
+=== miembro 130    (cast 276) ===
+on exitFrame
+  initScene "hmd"
+  go to the frame
+end
+
+=== miembro 131    (cast 277) ===
+on exitFrame
+  initScene "hme"
+  go to the frame
+end
+
+=== miembro 132    (cast 278) ===
+on exitFrame
+  initScene "hmf"
+  go to the frame
+end
+
+=== miembro 198    (cast 294) ===
+on exitFrame
+  global dma
+  set dma=5
+end
+
+=== miembro 173    (cast 296) ===
+on mouseUp
+  go "qtDC"
+end
+
+=== miembro 101    (cast 297) ===
+on exitFrame
+  endThenGo "eye01"
+end
+
+=== miembro 133    (cast 300) ===
+on mouseUp
+  go to "bl"
+end
+
+=== miembro 134    (cast 301) ===
+on mouseUp
+  go to "br"
+end
+
+=== miembro 135    (cast 302) ===
+on mouseUp
+  go to "qtBC"
+end
+
+=== miembro 136    (cast 303) ===
+on mouseUp
+  go "bb"
+end
+
+=== miembro 137    (cast 304) ===
+on mouseUp
+  go "qtBG"
+end
+
+=== miembro 138    (cast 305) ===
+on mouseUp
+  go "bf"
+end
+
+=== miembro 139    (cast 306) ===
+on mouseUp
+  go "bf"
+end
+
+=== miembro 140    (cast 307) ===
+on mouseUp
+  go "bb"
+end
+
+=== miembro 141    (cast 308) ===
+on mouseUp
+  go "br"
+end
+
+=== miembro 142    (cast 309) ===
+on mouseUp
+  go "bl"
+end
+
+=== miembro 143    (cast 310) ===
+on mouseUp
+  go "qtBA"
+end
+
+=== miembro 144    (cast 311) ===
+on mouseUp
+  go "gl"
+end
+
+=== miembro 145    (cast 312) ===
+on mouseUp
+  go "gr"
+end
+
+=== miembro 146    (cast 313) ===
+on mouseUp
+  go "gb"
+end
+
+=== miembro 147    (cast 314) ===
+on mouseUp
+  go "gf"
+end
+
+=== miembro 148    (cast 315) ===
+on mouseUp
+  go "gf"
+end
+
+=== miembro 149    (cast 316) ===
+on mouseUp
+  go "gb"
+end
+
+=== miembro 150    (cast 317) ===
+on mouseUp
+  go "gr"
+end
+
+=== miembro 151    (cast 318) ===
+on mouseUp
+  go "gl"
+end
+
+=== miembro 152    (cast 319) ===
+on mouseUp
+  go "qtGB"
+end
+
+=== miembro 153    (cast 320) ===
+on mouseUp
+  go "cl"
+end
+
+=== miembro 154    (cast 345) ===
+on mouseUp
+  go "cr"
+end
+
+=== miembro 155    (cast 346) ===
+on mouseUp
+  go "qtCD"
+end
+
+=== miembro 156    (cast 347) ===
+on mouseUp
+  go "cb"
+end
+
+=== miembro 157    (cast 348) ===
+on mouseUp
+  go "cf"
+end
+
+=== miembro 158    (cast 349) ===
+on mouseUp
+  go "cf"
+end
+
+=== miembro 159    (cast 350) ===
+on mouseUp
+  go "cb"
+end
+
+=== miembro 160    (cast 351) ===
+on mouseUp
+  goFMov "","sango.dir"
+end
+
+=== miembro 161    (cast 352) ===
+on mouseUp
+  go "cr"
+end
+
+=== miembro 162    (cast 353) ===
+on mouseUp
+  go "cl"
+end
+
+=== miembro 163    (cast 354) ===
+on mouseUp
+  go "qtCB"
+end
+
+=== miembro 164    (cast 355) ===
+on mouseUp
+  go "dl"
+end
+
+=== miembro 165    (cast 356) ===
+on mouseUp
+  go "dr"
+end
+
+=== miembro 166    (cast 357) ===
+on mouseUp
+  go "qtDE"
+end
+
+=== miembro 167    (cast 358) ===
+on mouseUp
+  go "db"
+end
+
+=== miembro 168    (cast 359) ===
+on mouseUp
+  go "df"
+end
+
+=== miembro 169    (cast 360) ===
+on mouseUp
+  go "df"
+end
+
+=== miembro 170    (cast 361) ===
+on mouseUp
+  go "db"
+end
+
+=== miembro 124    (cast 362) ===
+on exitFrame
+  endThenGo "ef"
+end
+
+=== miembro 172    (cast 363) ===
+on mouseUp
+  go "dl"
+end
+
+=== miembro 171    (cast 364) ===
+on mouseUp
+  go "dr"
+end
+
+=== miembro 174    (cast 386) ===
+on mouseUp
+  go "el"
+end
+
+=== miembro 175    (cast 387) ===
+on mouseUp
+  go "er"
+end
+
+=== miembro 176    (cast 388) ===
+on mouseUp
+  go "qtEF"
+end
+
+=== miembro 177    (cast 389) ===
+on mouseUp
+  go "eb"
+end
+
+=== miembro 178    (cast 390) ===
+on mouseUp
+  go "ef"
+end
+
+=== miembro 179    (cast 391) ===
+on mouseUp
+  go "ef"
+end
+
+=== miembro 180    (cast 392) ===
+on mouseUp
+  go "eb"
+end
+
+=== miembro 181    (cast 393) ===
+on mouseUp
+  go "er"
+end
+
+=== miembro 182    (cast 394) ===
+on mouseUp
+  go "el"
+end
+
+=== miembro 183    (cast 395) ===
+on mouseUp
+  go "qtED"
+end
+
+=== miembro 184    (cast 396) ===
+on mouseUp
+  go "fl"
+end
+
+=== miembro 185    (cast 397) ===
+on mouseUp
+  go "fr"
+end
+
+=== miembro 186    (cast 398) ===
+on mouseUp
+  go "fb"
+end
+
+=== miembro 187    (cast 399) ===
+on mouseUp
+  go "ff"
+end
+
+=== miembro 188    (cast 400) ===
+on mouseUp
+  go "ff"
+end
+
+=== miembro 189    (cast 401) ===
+on mouseUp
+  go "fb"
+end
+
+=== miembro 190    (cast 402) ===
+on mouseUp
+  go "fr"
+end
+
+=== miembro 191    (cast 403) ===
+on mouseUp
+  go "fl"
+end
+
+=== miembro 192    (cast 404) ===
+on mouseUp
+  go "qtFE"
+end
+
+=== miembro 193    (cast 435) ===
+on startMovie
+  initMovie
+  saveEnable
+end
+
+=== miembro 194    (cast 440) ===
+on mouseUp
+  goFMov "","sango.dir"
+end
+
+=== miembro 195    (cast 445) ===
+on mouseUp
+  goFMov "","topin.dir"
+end
+
+=== miembro 196    (cast 459) ===
+on exitFrame
+  initScene "hmg"
+  clrCanUse
+  appendCanUse "ÉEÉTé®"
+  if not existCondition("gojyuev") then
+    appendCanUse "å‹èdìÉåÆ"
+    appendCanUse "åéñúî\åÆ"
+    appendCanUse "êØñúî\åÆ"
+    appendCanUse "ì˙ñúî\åÆ"
+    appendCanUse "å‹èdìÉåÆï°êª"
+    appendCanUse "åéñúî\åÆï°êª"
+    appendCanUse "êØñúî\åÆï°êª"
+    appendCanUse "ì˙ñúî\åÆï°êª"
+  end if
+  
+  putGrp "tå‹èdìÉ.dif",0
+  wait 180
+  clrMsg
+end
+
+=== miembro 197    (cast 461) ===
+on exitFrame
+  global usingItem
+  if usingItem="ÉEÉTé®" then 
+    go "gfs"
+  else if existCanUse(usingItem) then
+    deleteThisItem
+    appendCondition "gojyuev"
+    puppetsound "FX-02"
+    putWaitMsg "text",9
+    puppetsound 0
+  end if
+  clrUsingItem
+  go to the frame
+end
+
+=== miembro 199    (cast 462) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+  go to the frame
+end
+
+=== miembro 200    (cast 464) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>7 then
+    clrMsg
+    go "gf"
+  end if
+end
+
+=== miembro 205    (cast 513) ===
+on mouseUp
+  if doubleClick() then
+    getItem "êÖóã"
+    clrMsg
+    go "db"
+  end if
+end
+
+=== miembro 203    (cast 515) ===
+on exitFrame
+  initScene "hmd"
+  if not existItem("êÖóã") then go "dbx"
+end
+
+=== miembro 204    (cast 516) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 206    (cast 517) ===
+on exitFrame
+  initScene "hme"
+  if not existCondition("åéê}î’") then go "ebx"
+end
+
+=== miembro 207    (cast 518) ===
+on mouseUp
+  if doubleClick() then
+    getItemx "åéê}î’"
+    appendCondition "åéê}î’"
+    clrMsg
+    go "eb"
+  end if
+end
+
+=== miembro 202    (cast 548) ===
+on exitFrame
+  goFMov "tbShip","corridor:tyuload.dir"
+end
+
+=== miembro 201    (cast 550) ===
+on mouseUp
+  if existCondition("gojyuev") then
+    goFMov "","gojyu.dir"
+  else
+    putWaitMsg "text",8
+    clrMsg
+  end if
+end
+
+=== miembro 208    (cast 579) ===
+on exitFrame
+  clrMsg
+  saveEnable
+end
+

@@ -1,0 +1,71 @@
+{
+ "source": "L3EV.DIR",
+ "sounds": [
+  {
+   "file": "s0071_S01.09.wav",
+   "member": 71,
+   "name": "S01.09",
+   "cast_id": 20,
+   "snd_id": 371,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 149504
+  },
+  {
+   "file": "s0072_S01.08.wav",
+   "member": 72,
+   "name": "S01.08",
+   "cast_id": 213,
+   "snd_id": 318,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 71164
+  },
+  {
+   "file": "s0073_S01.07.wav",
+   "member": 73,
+   "name": "S01.07",
+   "cast_id": 285,
+   "snd_id": 272,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 63356
+  },
+  {
+   "file": "s0074_SE01.02.wav",
+   "member": 74,
+   "name": "SE01.02",
+   "cast_id": 293,
+   "snd_id": 294,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12032
+  },
+  {
+   "file": "s0117_M02.09.wav",
+   "member": 117,
+   "name": "M02.09",
+   "cast_id": 327,
+   "snd_id": 392,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 100919
+  },
+  {
+   "file": "s0118_18.wav",
+   "member": 118,
+   "name": "18",
+   "cast_id": 355,
+   "snd_id": 384,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 48248
+  }
+ ]
+}

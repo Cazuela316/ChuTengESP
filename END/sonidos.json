@@ -1,0 +1,71 @@
+{
+ "source": "END.DIR",
+ "sounds": [
+  {
+   "file": "s0097_end150.snd.wav",
+   "member": 97,
+   "name": "end150.snd",
+   "cast_id": 87,
+   "snd_id": 89,
+   "rate": 11127.27,
+   "channels": 1,
+   "bits": 8,
+   "frames": 1687548
+  },
+  {
+   "file": "s0098_end180.snd.wav",
+   "member": 98,
+   "name": "end180.snd",
+   "cast_id": 117,
+   "snd_id": 124,
+   "rate": 11127.27,
+   "channels": 1,
+   "bits": 8,
+   "frames": 2002940
+  },
+  {
+   "file": "s0099_end210.snd.wav",
+   "member": 99,
+   "name": "end210.snd",
+   "cast_id": 125,
+   "snd_id": 128,
+   "rate": 11127.27,
+   "channels": 1,
+   "bits": 8,
+   "frames": 2330620
+  },
+  {
+   "file": "s0093_end.snd_22.wav",
+   "member": 93,
+   "name": "end.snd(22)",
+   "cast_id": 256,
+   "snd_id": 331,
+   "rate": 22050.0,
+   "channels": 1,
+   "bits": 8,
+   "frames": 5301184
+  },
+  {
+   "file": "s0095_Null_Sound.wav",
+   "member": 95,
+   "name": "Null Sound",
+   "cast_id": 299,
+   "snd_id": 326,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0092_end.snd_11.wav",
+   "member": 92,
+   "name": "end.snd(11)",
+   "cast_id": 339,
+   "snd_id": 321,
+   "rate": 11127.27,
+   "channels": 1,
+   "bits": 8,
+   "frames": 2675177
+  }
+ ]
+}

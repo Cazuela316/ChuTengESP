@@ -1,0 +1,118 @@
+=== miembro 106    (cast 18) ===
+on exitFrame
+  initScene "AmaF"
+end
+
+=== miembro 88    (cast 36) ===
+on exitFrame
+  if soundBusy(1) then
+    go to marker(-1)
+  else
+    go to "sui05"
+  end if
+end
+
+=== miembro 105    (cast 41) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 89    (cast 54) ===
+on mouseUp
+  go "sui01"
+end
+
+=== miembro 99    (cast 64) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 100    (cast 69) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 90    (cast 83) ===
+on mouseUp
+  go "sui02"
+end
+
+=== miembro 101    (cast 119) ===
+on exitFrame
+  putMsg "text",3
+  go to marker(-1)
+end
+
+=== miembro 102    (cast 142) ===
+on mouseUp
+  retLMov "f4"
+end
+
+=== miembro 103    (cast 252) ===
+on mouseUp
+  retFMov "f1mov"
+end
+
+=== miembro 91    (cast 283) ===
+on mouseUp
+  go "sui03"
+end
+
+=== miembro 95    (cast 287) ===
+on exitFrame
+  getItem "êÖóã"
+  appendcondition "amasuirai"
+end
+
+=== miembro 92    (cast 298) ===
+on mouseUp
+  if doubleClick() then go to "sui04"
+end
+
+=== miembro 94    (cast 303) ===
+on mouseUp
+  go "sui05"
+end
+
+=== miembro 96    (cast 307) ===
+on exitFrame
+  retMov "f1n"
+end
+
+=== miembro 86    (cast 309) ===
+on exitFrame
+  putMsg "text",0
+  go to marker(-1)
+end
+
+=== miembro 85    (cast 310) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 97    (cast 311) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 93    (cast 317) ===
+on exitFrame
+  go "sui05"
+end
+
+=== miembro 104    (cast 337) ===
+on mouseUp
+  retRMov "f2"
+end
+
+=== miembro 98    (cast 343) ===
+on exitFrame
+  putMsg "text",2
+  go to marker(-1)
+end
+
+=== miembro 87    (cast 354) ===
+on exitFrame
+  putMsg "text",4
+end
+

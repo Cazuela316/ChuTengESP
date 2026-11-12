@@ -1,0 +1,16 @@
+{
+ "source": "RM0154.DIR",
+ "sounds": [
+  {
+   "file": "s0051_M05.06.wav",
+   "member": 51,
+   "name": "M05.06",
+   "cast_id": 162,
+   "snd_id": 209,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 97132
+  }
+ ]
+}

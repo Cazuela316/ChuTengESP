@@ -1,0 +1,403 @@
+=== miembro 18    (cast 7) ===
+on mouseUp
+  play "CTm"
+  movePosition 0,-1
+  go "Tf"
+end
+
+=== miembro 11    (cast 8) ===
+on exitFrame
+  endThenGo "CTmRet"
+end
+
+=== miembro 15    (cast 19) ===
+on mouseUp
+  play "TCm"
+  movePosition 0,1
+  go "Cb"
+end
+
+=== miembro 13    (cast 20) ===
+on exitFrame
+  play done
+end
+
+=== miembro 17    (cast 41) ===
+on mouseUp
+  play "TCm"
+  movePosition 1,0
+  go "Cr"
+end
+
+=== miembro 10    (cast 43) ===
+on exitFrame
+  endThenGo "TCmRet"
+end
+
+=== miembro 19    (cast 45) ===
+on mouseUp
+  play "CTm"
+  movePosition 0,1
+  go "Tb"
+end
+
+=== miembro 14    (cast 51) ===
+on mouseUp
+  play "TCm"
+  movePosition 0,-1
+  go "Cf"
+end
+
+=== miembro 16    (cast 52) ===
+on mouseUp
+  play "TCm"
+  movePosition -1,0
+  go "Cl"
+end
+
+=== miembro 9    (cast 53) ===
+on startMovie
+  global oldSound,xxdir
+  set oldSound=""
+  initMovie
+  saveEnable
+  changeBGM xxdir
+end
+
+on checkPosition
+  global sunx,suny
+  
+  if sunx mod 2=0 then
+    --Å@ècÅAÇ‹ÇΩÇÕíÜêSÇÃâ¬î\ê´
+    if sunx mod 2=0 then
+      --Å@èc
+      return 0
+    else
+      --Å@íÜêS
+      return 2
+    end if
+  else
+    --Å@â°
+    return 1
+  end if
+end
+
+on movePosition x,y
+  global sunx,suny
+  
+  set sunx=sunx+x
+  set suny=suny+y
+  if sunx<0 then set sunx=5
+  if sunx>5 then set sunx=0
+  if suny<0 then set suny=5
+  if suny>5 then set suny=0
+  put sunx,suny
+end
+
+on checkEvent dir
+  global sunx,suny,xxdir
+  global usingItem
+  set xxdir=dir
+  clrCanUse
+  appendCanUse "ÉJÉGÉãâH"
+  
+  --  put dir
+  
+  changeBGM dir
+  
+  pushPuppet
+  if dir=1 and sunx=4 and suny=0  then
+    goFMov "kurakabe","sunevent.dir"
+  else if dir=3 and sunx=0 and suny=0 then
+    goFMov "ext","sunevent.dir"
+  else if (dir=0 or dir=2) and sunx=2 and suny=0 and not existCondition("evsunkaeru") then
+    playFMov "kaeruApr","sunevent.dir"
+  else if (dir=1 or dir=3) and sunx=3 and suny=1 and not existCondition("evsuntai2") then
+    playFMov "taiyan02apr","sunevent.dir"
+  else if (dir=0 or dir=2) and sunx=0 and suny=2 and not existCondition("evsuntai3") then
+    playFMov "taiyan03apr","sunevent.dir"
+  else if (dir=0 or dir=2) and sunx=2 and suny=2 and not existCondition("evsunc3") then
+    playFMov "babebuapr","sunevent.dir"
+  else if (dir=1 or dir=3) and sunx=5 and suny=3 and not existCondition("evkurakey") then
+    playFMov "keykura","sunevent.dir"
+  else if (dir=0 or dir=2) and sunx=0 and suny=4 and not existCondition("evhikey") then
+    playFMov "keysun","sunevent.dir"
+  else if (dir=0 or dir=2) and sunx=2 and suny=4 and not existCondition("evsuntai1") then
+    playFMov "taiyan01apr","sunevent.dir"
+  else if (dir=1 or dir=3) and sunx=5 and suny=5 and not existCondition("evsuntai4") then
+    playFMov "taiyan04apr","sunevent.dir"
+  end if
+  
+  if usingItem="ÉJÉGÉãâH" then goFMov "hbShip","corridor:tyuload.dir"
+  clrUsingItem  
+  
+end
+
+on changeBGM dir
+  global sunx,suny
+  
+  if (sunx mod 2)=0 and (suny mod 2)=0 then
+    set dir=0
+  else if (sunx mod 2)=1 and (suny mod 2)=1 then
+    set dir=1
+  end if
+  
+  if dir=0 or dir=2 then
+    if sunx=0 then
+      changeSound "SM-27"
+    else if sunx=2 then
+      changeSound "SM-28"
+    else if sunx=4 then
+      changeSound "SM-29"
+    end  if
+  else
+    if suny=1 then
+      changeSound "SM-30"
+    else if suny=3 then
+      changeSound "SM-31"
+    else if suny=5 then
+      changeSound "SM-32"
+    end  if
+  end if
+end
+
+on changeSound name
+  global oldSound
+  
+  if not (oldSound=name) then
+    playSound name
+  end if
+  set oldSound=name
+end
+
+=== miembro 12    (cast 56) ===
+on exitFrame
+  endThenGo "Cret"
+end
+
+=== miembro 48    (cast 58) ===
+on exitFrame
+  checkEvent 0
+end
+
+=== miembro 20    (cast 59) ===
+on mouseUp
+  play "CTm"
+  movePosition -1,0
+  go "Yl"
+end
+
+=== miembro 21    (cast 60) ===
+on mouseUp
+  play "CTm"
+  movePosition 1,0
+  go "Yr"
+end
+
+=== miembro 22    (cast 61) ===
+on mouseUp
+  go "tl"
+end
+
+=== miembro 23    (cast 62) ===
+on mouseUp
+  go "tr"
+end
+
+=== miembro 24    (cast 63) ===
+on mouseUp
+  go "tb"
+end
+
+=== miembro 25    (cast 64) ===
+on mouseUp
+  go "tf"
+end
+
+=== miembro 26    (cast 65) ===
+on mouseUp
+  go "tf"
+end
+
+=== miembro 27    (cast 66) ===
+on mouseUp
+  go "tb"
+end
+
+=== miembro 28    (cast 67) ===
+on mouseUp
+  go "tr"
+end
+
+=== miembro 29    (cast 68) ===
+on mouseUp
+  go "tl"
+end
+
+=== miembro 30    (cast 69) ===
+on mouseUp
+  go "yb"
+end
+
+=== miembro 31    (cast 70) ===
+on mouseUp
+  go "yf"
+end
+
+=== miembro 32    (cast 71) ===
+on mouseUp
+  go "yl"
+end
+
+=== miembro 33    (cast 72) ===
+on mouseUp
+  go "yr"
+end
+
+=== miembro 34    (cast 73) ===
+on mouseUp
+  go "yr"
+end
+
+=== miembro 35    (cast 74) ===
+on mouseUp
+  go "yl"
+end
+
+=== miembro 36    (cast 75) ===
+on mouseUp
+ go "yf"
+end
+
+=== miembro 37    (cast 76) ===
+on mouseUp
+  go "yb"
+end
+
+=== miembro 53    (cast 108) ===
+on exitFrame
+  checkEvent 0
+end
+
+=== miembro 56    (cast 110) ===
+on exitFrame
+  checkEvent 0
+end
+
+=== miembro 55    (cast 111) ===
+on exitFrame
+  checkEvent 1
+end
+
+=== miembro 38    (cast 112) ===
+on mouseUp
+  play "CLm"
+  go "cl"
+end
+
+=== miembro 39    (cast 113) ===
+on mouseUp
+  play "CLm"
+  go "cb"
+end
+
+=== miembro 40    (cast 114) ===
+on mouseUp
+  play "CLm"
+  go "cf"
+end
+
+=== miembro 41    (cast 115) ===
+on mouseUp
+  play "CLm"
+  go "cr"
+end
+
+=== miembro 42    (cast 116) ===
+on mouseUp
+  play "CRm"
+  go "cr"
+end
+
+=== miembro 43    (cast 117) ===
+on mouseUp
+  play "CRm"
+  go "cf"
+end
+
+=== miembro 44    (cast 118) ===
+on mouseUp
+  play "CRm"
+  go "cb"
+end
+
+=== miembro 45    (cast 120) ===
+on mouseUp
+  play "CRm"
+  go "cl"
+end
+
+=== miembro 46    (cast 129) ===
+on exitFrame
+  clrCanUse
+  appendCanUse "ÉJÉGÉãâH"
+  global usingItem
+  if usingItem="ÉJÉGÉãâH" then goFMov "hbShip","corridor:tyuload.dir"
+  clrUsingItem  
+  go to the frame
+end
+
+=== miembro 58    (cast 136) ===
+on exitFrame
+  checkEvent 1
+end
+
+=== miembro 57    (cast 148) ===
+on exitFrame
+  checkEvent 3
+end
+
+=== miembro 50    (cast 151) ===
+on exitFrame
+  checkEvent 1
+end
+
+=== miembro 47    (cast 160) ===
+on exitFrame
+  global sunx,suny,xxdir
+  set sunx=2
+  set suny=0
+  set xxdir=2
+  
+  putGrp "tì˙ÇÃã{.dif",0
+  wait 180
+  clrMsg
+  
+  go "tb"
+end
+
+=== miembro 51    (cast 165) ===
+on exitFrame
+  checkEvent 2
+end
+
+=== miembro 49    (cast 166) ===
+on exitFrame
+  checkEvent 3
+end
+
+=== miembro 52    (cast 167) ===
+on exitFrame
+  checkEvent 3
+end
+
+=== miembro 54    (cast 169) ===
+on exitFrame
+  checkEvent 2
+end
+
+=== miembro 59    (cast 170) ===
+on exitFrame
+  checkEvent 2
+end
+

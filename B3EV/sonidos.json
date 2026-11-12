@@ -1,0 +1,16 @@
+{
+ "source": "B3EV.DIR",
+ "sounds": [
+  {
+   "file": "s0029_S01.03.wav",
+   "member": 29,
+   "name": "S01.03",
+   "cast_id": 118,
+   "snd_id": 184,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 73472
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+=== miembro 81    (cast 16) ===
+on exitFrame
+  initScene "rm0142"
+  appendCanUse "åıèe"
+  appendCanUse "åıÉAÉ~"
+  appendCanUse "åıñÓ"
+  if existCondition("rm0142ev") then
+    clrMsg
+    go to "noevent"
+  end if
+end
+
+=== miembro 82    (cast 27) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 80    (cast 54) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 83    (cast 57) ===
+on mouseUp
+  go to "die"
+end
+
+=== miembro 84    (cast 72) ===
+on exitFrame
+  goFMov "start","chutnban:over.dir"
+end
+
+=== miembro 85    (cast 77) ===
+on exitFrame
+  clrMsg
+end
+
+=== miembro 86    (cast 91) ===
+on exitFrame
+  initScene "rm0142"
+  go to the frame
+end
+
+=== miembro 87    (cast 99) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 88    (cast 100) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 89    (cast 101) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 90    (cast 103) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 91    (cast 104) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 92    (cast 117) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 93    (cast 121) ===
+on exitFrame
+  if IsUsingItem("åıÉAÉ~") then
+    clrMsg
+    go to "ami"
+  else if IsUsingItem("åıèe") then
+    clrMsg
+    deleteThisItem
+    clrUsingItem
+    go to "hikari"
+  else if IsUsingItem("åıñÓ") then
+    clrMsg
+    go to "ya"
+  end if
+  clrUsingItem
+end
+
+=== miembro 94    (cast 124) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ÉjÉZÉVÉìÉpÉI"
+    go to "noevent"
+  end if
+end
+
+=== miembro 96    (cast 168) ===
+on exitFrame
+  go to the frame
+  
+end
+
+=== miembro 97    (cast 169) ===
+on exitFrame
+  appendCondition "rm0142ev"
+end
+
+=== miembro 95    (cast 223) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 98    (cast 263) ===
+on exitFrame
+  go "die"
+end
+

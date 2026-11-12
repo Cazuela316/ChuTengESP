@@ -1,0 +1,16 @@
+{
+ "source": "RM0040.DIR",
+ "sounds": [
+  {
+   "file": "s0032_M05.98.wav",
+   "member": 32,
+   "name": "M05.98",
+   "cast_id": 64,
+   "snd_id": 135,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 97308
+  }
+ ]
+}

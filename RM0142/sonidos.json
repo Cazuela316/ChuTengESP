@@ -1,0 +1,38 @@
+{
+ "source": "RM0142.DIR",
+ "sounds": [
+  {
+   "file": "s0099_HIKARI_JYU.wav",
+   "member": 99,
+   "name": "HIKARI JYU",
+   "cast_id": 7,
+   "snd_id": 8,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 29509
+  },
+  {
+   "file": "s0100_NAGURU.wav",
+   "member": 100,
+   "name": "NAGURU",
+   "cast_id": 56,
+   "snd_id": 105,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 7239
+  },
+  {
+   "file": "s0079_SM.06.wav",
+   "member": 79,
+   "name": "SM.06",
+   "cast_id": 268,
+   "snd_id": 250,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 127613
+  }
+ ]
+}

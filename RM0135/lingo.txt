@@ -1,0 +1,156 @@
+=== miembro 66    (cast 57) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 77    (cast 104) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 74    (cast 105) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 81    (cast 142) ===
+on mouseUp
+  if doubleClick() then
+    getItem "ÉÑÉLÉgÉä"
+    go to "out"
+  end if
+end
+
+=== miembro 73    (cast 144) ===
+on exitFrame
+  global dma
+  initScene "rm0135"
+  putMsg "text",dma
+  
+  clrUsingItem
+  clrCanUse
+  appendCanUse("ê∂Ç´ÇΩÉgÉäÉJÉâ")
+  appendCanUse("éÄÇÒÇæÉgÉäÉJÉâ")
+end
+
+=== miembro 72    (cast 147) ===
+on mouseUp
+  go to "out"
+end
+
+=== miembro 71    (cast 150) ===
+on exitFrame
+  putMsg "text",8
+end
+
+=== miembro 78    (cast 201) ===
+on mouseUp
+  go to "D"
+end
+
+=== miembro 79    (cast 204) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 83    (cast 205) ===
+on mouseUp
+  go to "F"
+end
+
+=== miembro 80    (cast 206) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 82    (cast 211) ===
+on mouseUp
+  go to "E"
+end
+
+=== miembro 68    (cast 243) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 69    (cast 244) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 70    (cast 245) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+ if dma>2 then set dma=0 
+end
+
+=== miembro 67    (cast 254) ===
+on exitFrame
+  global dma
+  global usingItem
+  
+  putMsg "text",dma
+  
+  if IsUsingItem("ê∂Ç´ÇΩÉgÉäÉJÉâ") then
+    deleteThisItem
+    clrUsingItem
+    drawBag
+    go to "C"
+  else if IsUsingItem("éÄÇÒÇæÉgÉäÉJÉâ") then
+    deleteThisItem
+    clrUsingItem
+    drawBag
+    go to "B"
+  else if usingItem<>"" then 
+    go to "G"  
+  end if
+  clrUsingItem
+end
+
+=== miembro 75    (cast 255) ===
+on exitFrame
+   putMsg "text",7
+end
+
+=== miembro 76    (cast 256) ===
+on mouseUp
+  go to "out"
+end
+
+=== miembro 84    (cast 261) ===
+on exitFrame
+  initScene "rm0135"
+  go to the frame
+end
+
+=== miembro 85    (cast 262) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 86    (cast 263) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 87    (cast 264) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 88    (cast 265) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 89    (cast 266) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 90    (cast 267) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+

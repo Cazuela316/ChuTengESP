@@ -1,0 +1,16 @@
+{
+ "source": "SHARED.DIR",
+ "sounds": [
+  {
+   "file": "s0501_GETTING_AN_ITEM.wav",
+   "member": 501,
+   "name": "GETTING AN ITEM",
+   "cast_id": 302,
+   "snd_id": 60,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 79356
+  }
+ ]
+}

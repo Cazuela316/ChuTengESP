@@ -1,0 +1,75 @@
+=== miembro 29    (cast 7) ===
+on exitFrame
+  initScene "tyuuin"
+end
+
+=== miembro 30    (cast 13) ===
+on mouseUp
+  go "tyuSPK2"
+end
+
+=== miembro 27    (cast 31) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 32    (cast 66) ===
+on mouseUp
+  go "TyuSPK4"
+end
+
+=== miembro 28    (cast 83) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 31    (cast 96) ===
+on mouseUp
+  go "TyuSPK3"
+end
+
+=== miembro 34    (cast 99) ===
+on mouseUp
+  go "TyuSPK6"
+end
+
+=== miembro 35    (cast 100) ===
+on mouseUp
+  goFMov "af","topcastl.dir"
+end
+
+=== miembro 33    (cast 103) ===
+on mouseUp
+  go "TyuSPK5"
+end
+
+=== miembro 36    (cast 106) ===
+on exitFrame
+  putMsg "text",0
+end
+
+=== miembro 37    (cast 107) ===
+on exitFrame
+  putMsg "text",1
+end
+
+=== miembro 38    (cast 108) ===
+on exitFrame
+  putMsg "text",2
+end
+
+=== miembro 39    (cast 109) ===
+on exitFrame
+  putMsg "text",3
+end
+
+=== miembro 40    (cast 110) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 41    (cast 111) ===
+on exitFrame
+  putMsg "text",5
+end
+

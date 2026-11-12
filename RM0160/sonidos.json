@@ -1,0 +1,16 @@
+{
+ "source": "RM0160.DIR",
+ "sounds": [
+  {
+   "file": "s0010_SM.02.wav",
+   "member": 10,
+   "name": "SM.02",
+   "cast_id": 45,
+   "snd_id": 28,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 85592
+  }
+ ]
+}

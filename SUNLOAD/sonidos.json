@@ -1,0 +1,82 @@
+{
+ "source": "SUNLOAD.DIR",
+ "sounds": [
+  {
+   "file": "s0062_SM-29.wav",
+   "member": 62,
+   "name": "SM-29",
+   "cast_id": 155,
+   "snd_id": 205,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176344
+  },
+  {
+   "file": "s0067_Null_Sound.wav",
+   "member": 67,
+   "name": "Null Sound",
+   "cast_id": 175,
+   "snd_id": 157,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  },
+  {
+   "file": "s0065_SM-32.wav",
+   "member": 65,
+   "name": "SM-32",
+   "cast_id": 189,
+   "snd_id": 210,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176385
+  },
+  {
+   "file": "s0060_SM-27.wav",
+   "member": 60,
+   "name": "SM-27",
+   "cast_id": 201,
+   "snd_id": 202,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 175766
+  },
+  {
+   "file": "s0061_SM-28.wav",
+   "member": 61,
+   "name": "SM-28",
+   "cast_id": 203,
+   "snd_id": 204,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176419
+  },
+  {
+   "file": "s0063_SM-30.wav",
+   "member": 63,
+   "name": "SM-30",
+   "cast_id": 206,
+   "snd_id": 207,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 176390
+  },
+  {
+   "file": "s0064_SM-31.wav",
+   "member": 64,
+   "name": "SM-31",
+   "cast_id": 209,
+   "snd_id": 171,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 177075
+  }
+ ]
+}

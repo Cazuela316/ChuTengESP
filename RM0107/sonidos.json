@@ -1,0 +1,16 @@
+{
+ "source": "RM0107.DIR",
+ "sounds": [
+  {
+   "file": "s0012_S01.05.wav",
+   "member": 12,
+   "name": "S01.05",
+   "cast_id": 77,
+   "snd_id": 68,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 73468
+  }
+ ]
+}

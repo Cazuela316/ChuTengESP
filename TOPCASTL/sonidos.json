@@ -1,0 +1,236 @@
+{
+ "source": "TOPCASTL.DIR",
+ "sounds": [
+  {
+   "file": "s0238_M20.07.wav",
+   "member": 238,
+   "name": "M20.07",
+   "cast_id": 52,
+   "snd_id": 945,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117568
+  },
+  {
+   "file": "s0226_M21.02.wav",
+   "member": 226,
+   "name": "M21.02",
+   "cast_id": 136,
+   "snd_id": 920,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58796
+  },
+  {
+   "file": "s0241_OS-16.wav",
+   "member": 241,
+   "name": "OS-16*",
+   "cast_id": 185,
+   "snd_id": 996,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 65877
+  },
+  {
+   "file": "s0236_EF-12.wav",
+   "member": 236,
+   "name": "EF-12",
+   "cast_id": 253,
+   "snd_id": 889,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 24444
+  },
+  {
+   "file": "s0240_M13.06.wav",
+   "member": 240,
+   "name": "M13.06",
+   "cast_id": 534,
+   "snd_id": 948,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 217049
+  },
+  {
+   "file": "s0225_M21.01.wav",
+   "member": 225,
+   "name": "M21.01",
+   "cast_id": 688,
+   "snd_id": 877,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58823
+  },
+  {
+   "file": "s0235_M21.11.wav",
+   "member": 235,
+   "name": "M21.11",
+   "cast_id": 694,
+   "snd_id": 703,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58575
+  },
+  {
+   "file": "s0224_M05.12.wav",
+   "member": 224,
+   "name": "M05.12",
+   "cast_id": 783,
+   "snd_id": 163,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 194472
+  },
+  {
+   "file": "s0231_M21.07.wav",
+   "member": 231,
+   "name": "M21.07",
+   "cast_id": 790,
+   "snd_id": 713,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58783
+  },
+  {
+   "file": "s0234_M21.10.wav",
+   "member": 234,
+   "name": "M21.10",
+   "cast_id": 794,
+   "snd_id": 780,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58796
+  },
+  {
+   "file": "s0232_M21.08.wav",
+   "member": 232,
+   "name": "M21.08",
+   "cast_id": 795,
+   "snd_id": 922,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 235180
+  },
+  {
+   "file": "s0239_EF-11.wav",
+   "member": 239,
+   "name": "EF-11",
+   "cast_id": 940,
+   "snd_id": 942,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 76032
+  },
+  {
+   "file": "s0237_M20.12.wav",
+   "member": 237,
+   "name": "M20.12",
+   "cast_id": 946,
+   "snd_id": 941,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58853
+  },
+  {
+   "file": "s0243_M20.12.wav",
+   "member": 243,
+   "name": "M20.12",
+   "cast_id": 985,
+   "snd_id": 1019,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58853
+  },
+  {
+   "file": "s0242_M14.02.wav",
+   "member": 242,
+   "name": "M14.02",
+   "cast_id": 995,
+   "snd_id": 993,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 52920
+  },
+  {
+   "file": "s0244_FX-26.wav",
+   "member": 244,
+   "name": "FX-26",
+   "cast_id": 1039,
+   "snd_id": 1002,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 12732
+  },
+  {
+   "file": "s0228_M21.04.wav",
+   "member": 228,
+   "name": "M21.04",
+   "cast_id": 1041,
+   "snd_id": 55,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58830
+  },
+  {
+   "file": "s0230_M21.06.wav",
+   "member": 230,
+   "name": "M21.06",
+   "cast_id": 1094,
+   "snd_id": 630,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117589
+  },
+  {
+   "file": "s0233_M21.09.wav",
+   "member": 233,
+   "name": "M21.09",
+   "cast_id": 1173,
+   "snd_id": 931,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117573
+  },
+  {
+   "file": "s0227_M21.03.wav",
+   "member": 227,
+   "name": "M21.03",
+   "cast_id": 1186,
+   "snd_id": 19,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 117589
+  },
+  {
+   "file": "s0229_M21.05.wav",
+   "member": 229,
+   "name": "M21.05",
+   "cast_id": 1338,
+   "snd_id": 1443,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 58794
+  }
+ ]
+}

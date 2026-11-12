@@ -1,0 +1,329 @@
+=== miembro 178    (cast 125) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 182    (cast 143) ===
+on exitFrame
+  global dme
+  set dme=0
+  initTorikara
+  initNet
+end
+
+=== miembro 186    (cast 224) ===
+on exitFrame
+  appendCondition "winr"
+  if existCondition("winy") then
+    goFMov "start","battle:end.dir"
+  else
+    goFMov "ro","corridor:tyuload.dir"
+  end if
+end
+
+=== miembro 179    (cast 248) ===
+on exitFrame
+  go previous
+end
+
+=== miembro 183    (cast 275) ===
+on exitFrame
+  puppetSound 0
+  repeat with i=1 to 20
+    set the puppet of sprite i to FALSE
+  end repeat
+  pmsg 4
+end
+
+=== miembro 190    (cast 299) ===
+on mouseUp
+  goFMov "start","chutnban:over.dir"
+end
+
+=== miembro 189    (cast 393) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>3 then set dma=3
+end
+
+=== miembro 180    (cast 498) ===
+on exitFrame
+  movetorikara
+  moveNet
+end
+
+=== miembro 181    (cast 500) ===
+on startMovie
+  global toriX,toriY,toriZ
+  global toriVX,toriVY,toriVZ
+  global toriAX,toriAY,toriAZ
+  global toriCC
+  global nageFlag
+  global amiAnim
+  global netX,netY
+  global czone
+  global chCount
+  global tukamaeta
+  
+  initMovie
+  
+  set toriX=320
+  set toriY=200
+  set toriZ=0
+  set toriVX=0
+  set toriVY=0
+  set toriVZ=0
+  set toriCC=0
+  set toriAX=0
+  set toriAY=0
+  set toriAZ=0
+  set nageFlag=0
+  set amiAnim=0
+  set netX=the mouseH
+  set netY=the mouseV
+  set czone=7
+  set chCount=0
+  set tukamaeta=0
+  
+end
+
+on initTorikara
+  set the puppet of sprite 17 to true
+  set the type of sprite 17 to 1
+  set the ink of sprite 17 to 36
+  set the locH of sprite 17 to 320
+  set the locV of sprite 17 to 200
+  set the visibility of sprite 17 to true
+  
+  set the puppet of sprite 18 to true
+  set the type of sprite 18 to 1
+  set the ink of sprite 18 to 36
+  set the locH of sprite 18 to 320
+  set the locV of sprite 18 to 200
+  set the visibility of sprite 18 to true
+  
+  set the puppet of sprite 20 to true
+  set the type of sprite 20 to 1
+  set the ink of sprite 20 to 36
+  set the locH of sprite 20 to 320
+  set the locV of sprite 20 to 60
+  set the visibility of sprite 20 to true
+  set the castNum of sprite 20 to the number of cast "damage"
+end
+
+on moveTorikara
+  global toriX,toriY,toriZ
+  global toriVX,toriVY,toriVZ
+  global toriAX,toriAY,toriAZ
+  global toriCC
+  global lockC
+  global netX,netY
+  global chCount
+  global tAnim
+  global czone
+  
+  --Å@ãÛãCíÔçRÅHÇ…ÇÊÇÈå∏ë¨  
+  if toriVX>0 then 
+    set toriVX=toriVX-2  
+  else
+    set toriVX=toriVX+2
+  end if
+  
+  if toriVY>0 then 
+    set toriVY=toriVY-2  
+  else
+    set toriVY=toriVY+2
+  end if
+  
+  --Å@ëÅÇ≥Çâ¡ë¨ìxÇ≈ïœâªÇ≥ÇπÇÈ
+  set toriVX=toriVX+toriAX
+  set toriVY=toriVY+toriAY
+  
+  
+  --Å@í·ë¨Ç…Ç»Ç¡ÇΩÇÁÅAâ¡ë¨Ç∑ÇÈ
+  if abs(toriVX)<=5 then set toriAX=random(4)+4
+  if abs(toriVY)<=5 then set toriAY=random(4)+4
+  
+  
+  --Å@ïêäÌÇ…ïﬂë®Ç≥ÇÍÇªÇ§Ç…Ç»Ç¡ÇΩÇÁì¶Ç∞ÇÈ
+  if abs(netX-toriX)<64 and abs(netY-toriY)<64 then set lockC=lockC+50
+  if abs(netX-toriX)<128 and abs(netY-toriY)<128 then set lockC=lockC+20
+  
+  set lockC=lockC-1
+  if lockC<0 then set lockC=0
+  
+  set chCount=chCount-1
+  if chCount<0 then set chCount=0
+  
+  --Å@ãŸã}âÒî 
+  if lockC>60 and chCount=0 then
+    set chCount=10
+    set lockC=0
+    set toriAX=random(30)-15
+    set toriAY=random(30)-15
+    set toriAZ=random(30)-15
+  end if
+  
+  if lockC>50 and chCount=0 then
+    set chCount=10
+    set lockC=0
+    set toriAX=random(20)-10
+    set toriAY=random(20)-10
+    set toriAZ=random(20)-10
+  end if
+  
+  
+  if toriVX> 30 then set toriVX= 30
+  if toriVX<-30 then set toriVX=-30
+  if toriVY> 30 then set toriVY= 30
+  if toriVY<-30 then set toriVY=-30
+  
+  
+  set toriX=toriX+toriVX
+  set toriY=toriY+toriVY
+  set toriZ=toriZ+toriVZ
+  
+  
+  if toriX<100 and toriAX<0 then set toriAX=-toriAX
+  if toriX>550 and toriAX>0 then set toriAX=-toriAX
+  if toriY<100 and toriAY<0 then set toriAY=-toriAY
+  if toriY>250 and toriAY>0 then set toriAY=-toriAY
+  
+  --ÉgÉäÉJÉâÇÃÉAÉjÉÅÅ[ÉVÉáÉì
+  if toriCC>15 then
+    set toriCC=0
+  else
+    set toriCC=toriCC+1
+  end if
+  
+  if toriCC=8 and random(5)=1 then
+    set tAnim=1
+    set the locH of sprite 18 to toriX
+    set the locV of sprite 18 to toriY
+    set the visibility of sprite 18 to TRUE
+  end if
+  
+  
+  if toriCC>8 then
+    set the castNum of sprite 17 to the number of cast "cloop"+16-toriCC
+  else
+    set the castNum of sprite 17 to the number of cast "cloop"+toriCC
+  end if
+  
+  
+  set the locH of sprite 17 to toriX
+  set the locV of sprite 17 to toriY
+  
+  if not tAnim=0 then
+    if tAnim=8 then puppetsound "EF-06"
+    if tAnim>=8 then
+      set the castNum of sprite 18 to the number of cast "crushed amoeba"
+    else
+      set the castNum of sprite 18 to the number of cast "britt"+tAnim-1
+    end if
+    set tAnim=tAnim+1
+    
+    if tAnim=24 then
+      set the visibility of sprite 18 to FALSE
+      set tAnim=0
+      set czone=czone-1
+      if czone<0 then go "lose"
+    end if
+  end if
+end
+
+
+on initNet
+  set the puppet of sprite 19 to true
+  set the type of sprite 19 to 1
+  set the ink of sprite 19 to 36
+  set the castNum of sprite 19 to the number of cast "sight"
+  set the visibility of sprite 19 to true
+end
+
+on moveNet
+  global nageFlag
+  global amiAnim
+  global netX,netY
+  global toriX,toriY
+  global czone
+  global tukamaeta
+  global tAnim
+  global dme
+  global dmb
+  
+  if tukamaeta then
+  end if
+  
+  if dmb and amiAnim<0 then
+    if abs(the mouseH-toriX)<(64-dme) and abs(the mouseV-toriY)<(64-dme) then
+      set dme=dme+1
+      set amiAnim=16
+      puppetsound "EF-04"
+      set the castNum of sprite 20 to the number of cast "damage"+integer(dme/2)
+      set the ink of sprite 17 to 4
+      
+      if dme>16 then
+        repeat with i=17 to 20
+          set the visibility of sprite i to false
+        end repeat
+        go "winm"
+      end if
+    end if
+    set dmb=FALSE
+  end if
+  
+  set amiAnim=amiAnim-1
+  if amiAnim=10 then set the ink of sprite 17 to 36
+  set the locH of sprite 19 to the mouseH
+  set the locV of sprite 19 to the mouseV
+  set the castNum of sprite 19 to the number of cast "sight"+czone
+  
+  return FALSE
+end
+
+=== miembro 184    (cast 514) ===
+on exitFrame
+  endThenGo "koanFade"
+end
+
+=== miembro 185    (cast 515) ===
+on exitFrame
+  puppetSound 0
+  repeat with i=17 to 19
+    set the puppet of sprite i to false
+  end repeat
+  pmsg 5
+end
+
+=== miembro 187    (cast 516) ===
+on exitFrame
+  global dma,usingItem
+  pmsg dma
+  if dma=3 and usingItem="É`ÉìÉpÉI" then
+    --    deleteThisItem
+    clrUsingItem
+    set the visibility of sprite 45 to FALSE
+    clrMsg
+    eraseBag
+    go "battle"
+  end if
+  clrUsingItem
+end
+
+=== miembro 188    (cast 517) ===
+on exitFrame
+  global dma
+  set dma=0
+  clrCanUse
+  clrUsingItem
+  appendCanUse "É`ÉìÉpÉI"
+end
+
+=== miembro 191    (cast 520) ===
+on mouseUp
+  global dmb
+  set dmb=TRUE
+end
+

@@ -1,0 +1,399 @@
+=== miembro 109    (cast 24) ===
+on exitFrame
+  go to previous
+end
+
+=== miembro 110    (cast 52) ===
+on exitFrame
+  
+end
+
+=== miembro 131    (cast 79) ===
+on mouseUp
+  go to "A"
+end
+
+=== miembro 113    (cast 103) ===
+on mouseUp
+  set the cursor of sprite 2 to -1
+  go to "sangoEnt"
+end
+
+=== miembro 166    (cast 117) ===
+on startMovie
+  initMovie
+  saveEnable
+end
+
+=== miembro 138    (cast 120) ===
+on exitFrame
+  global dma
+  set dma=0
+end
+
+=== miembro 134    (cast 130) ===
+on mouseUp
+  if existCondition("ç∂óéâ∫") then
+    if doubleclick() and  (not existItem("êŒ")) then
+      getItem "êŒ"
+      clrMsg
+      go "abcx"
+    end if
+  else
+    appendCondition("ç∂óéâ∫")
+    go to "fallA"
+  end if
+end
+
+=== miembro 156    (cast 200) ===
+on mouseUp
+  go to "zoomB"
+end
+
+=== miembro 125    (cast 202) ===
+on mouseUp
+  go to "front"
+end
+
+=== miembro 142    (cast 249) ===
+on exitFrame
+  global dma
+  set dma=2
+end
+
+=== miembro 112    (cast 250) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 136    (cast 254) ===
+on exitFrame
+  endThenGo "Check"
+end
+
+=== miembro 154    (cast 255) ===
+on mouseUp
+  go to "A"
+end
+
+=== miembro 122    (cast 258) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 115    (cast 265) ===
+on exitFrame
+  endThenGo "GoCr"
+end
+
+=== miembro 116    (cast 266) ===
+on exitFrame
+  goFMov "Cr","moonload.dir"
+end
+
+=== miembro 127    (cast 268) ===
+on mouseUp
+  go to "back"
+end
+
+=== miembro 126    (cast 270) ===
+on mouseUp
+  go to "back"
+end
+
+=== miembro 129    (cast 278) ===
+on mouseUp
+  go to "right"
+end
+
+=== miembro 124    (cast 281) ===
+on exitFrame
+  endThenGo "ladderTop"
+end
+
+=== miembro 137    (cast 284) ===
+on exitFrame
+  if existCondition("óéâ∫ÇP") then
+    deleteCondition("óéâ∫ÇP")
+    appendCondition("óéâ∫ÇQ")
+    go to "sangoin2"
+  else if existCondition("óéâ∫ÇQ") then
+    go to "sangoin3"
+  else
+    appendCondition("óéâ∫ÇP")
+    go to "sangoin1"
+  end if
+  
+end
+
+=== miembro 133    (cast 285) ===
+on mouseUp
+  go to "C"
+end
+
+=== miembro 139    (cast 286) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 120    (cast 287) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 130    (cast 290) ===
+on mouseUp
+  go to "left"
+end
+
+=== miembro 118    (cast 291) ===
+on mouseUp
+  go to "left"
+end
+
+=== miembro 141    (cast 296) ===
+on exitFrame
+  endThenGo "front"
+end
+
+=== miembro 145    (cast 308) ===
+on mouseUp
+  if doubleclick() then
+    getItem "èóäØåÆ"
+    clrMsg
+    go to "up"  
+  end if
+end
+
+=== miembro 111    (cast 317) ===
+on exitFrame
+  endThenGo "ladderTopX"
+end
+
+=== miembro 146    (cast 319) ===
+on exitFrame
+  putMsg "text",4
+end
+
+=== miembro 171    (cast 321) ===
+on exitFrame
+  if existItem("Ç–Ç‡") then go "abcx"
+end
+
+=== miembro 150    (cast 323) ===
+on mouseUp
+  if existCondition("âEóéâ∫") then
+    if doubleclick() and  (not existItem("Ç–Ç‡")) then
+      getItem "Ç–Ç‡"
+      clrMsg
+      go "abcx"
+    end if
+  else
+    appendCondition("âEóéâ∫")
+    go to "fallC"
+  end if
+end
+
+=== miembro 140    (cast 326) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>=2 then 
+    clrMsg
+    go to "up"
+  end if
+  
+end
+
+=== miembro 151    (cast 327) ===
+on mouseUp
+  go to "A"
+end
+
+=== miembro 143    (cast 328) ===
+on exitFrame
+  global dma
+  putMsg "text",dma
+end
+
+=== miembro 114    (cast 329) ===
+on mouseUp
+  set the cursor of sprite 2 to -1
+  go to "downLadder"
+end
+
+=== miembro 119    (cast 335) ===
+on mouseUp
+  go to "right"
+end
+
+=== miembro 117    (cast 336) ===
+on exitFrame
+  endThenGo "front"
+end
+
+=== miembro 123    (cast 338) ===
+on mouseUp
+  go to "sangoExt"
+end
+
+=== miembro 121    (cast 341) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 128    (cast 343) ===
+on mouseUp
+  go to "front"
+end
+
+=== miembro 173    (cast 356) ===
+on exitFrame
+--    set the cursor of sprite 3 to [702,703]
+--    set the cursor of sprite 4 to [704,705]
+--    set the cursor of sprite 5 to [700,701]
+    set the cursor of sprite 2 to [706,707]
+  go to the frame
+end
+
+=== miembro 135    (cast 358) ===
+on exitFrame
+  initScene "sango"
+end
+
+=== miembro 132    (cast 359) ===
+on mouseUp
+  go to "B"
+end
+
+=== miembro 144    (cast 365) ===
+on mouseUp
+  global dma
+  set dma=dma+1
+  if dma>3 then
+    clrMsg
+    go to "jyokey"
+  end if
+end
+
+=== miembro 147    (cast 367) ===
+on exitFrame
+  putMsg "text",5
+end
+
+=== miembro 149    (cast 383) ===
+on mouseUp
+  go to "C"
+end
+
+=== miembro 148    (cast 384) ===
+on mouseUp
+  go to "B"
+end
+
+=== miembro 152    (cast 385) ===
+on mouseUp
+  go to "B"
+end
+
+=== miembro 153    (cast 386) ===
+on exitFrame
+  if (existCondition("óéâ∫ÇP") or existCondition("óéâ∫ÇQ")) and (not existItem("éµÇ¬ã Åiâ©Åj") and (not existItem("ÉÜÉCÉpÉI"))) then
+    go to "B"
+  else
+    go to "fallB"
+  end if
+end
+
+=== miembro 155    (cast 388) ===
+on mouseUp
+  go to "C"
+end
+
+=== miembro 157    (cast 389) ===
+on exitFrame
+  endThenGo "onB"
+end
+
+=== miembro 158    (cast 390) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 159    (cast 391) ===
+on mouseUp
+  go to "kai"
+end
+
+=== miembro 160    (cast 393) ===
+on exitFrame
+  putMsg "text",6
+end
+
+=== miembro 161    (cast 395) ===
+on exitFrame
+  putMsg "text",7
+end
+
+=== miembro 162    (cast 396) ===
+on exitFrame
+  set the puppet of sprite 6 to TRUE
+  set the ink of sprite 6 to 36
+  set the type of sprite 6 to 1
+  set the castNum of sprite 6 to 36
+  set the locH of sprite 6 to the mouseH
+  set the locV of sprite 6 to the mouseV
+end
+
+=== miembro 163    (cast 397) ===
+on exitFrame
+  set the locH of sprite 6 to the mouseH
+  set the locV of sprite 6 to the mouseV
+  go to the frame
+end
+
+=== miembro 165    (cast 399) ===
+on mouseUp
+  if doubleClick() then
+    getItem "éµÇ¬ã Åiâ©Åj"
+    clrMsg
+    go to "front"
+  end if
+  
+end
+
+=== miembro 164    (cast 404) ===
+on mouseUp
+  set the puppet of sprite 6 to FALSE
+  go to "kaiDown"
+end
+
+=== miembro 167    (cast 422) ===
+on mouseUp
+  clrMsg
+  go to "up"
+end
+
+=== miembro 170    (cast 453) ===
+on exitFrame
+  if existItem("êŒ") then go "abcx"
+end
+
+=== miembro 169    (cast 471) ===
+on exitFrame
+  go to the frame
+end
+
+=== miembro 172    (cast 488) ===
+on exitFrame
+  putGrp "tÉTÉìÉSÇÃã{.dif",0
+  wait 180
+  clrMsg
+end
+
+=== miembro 168    (cast 498) ===
+on mouseUp
+  go to "kaiMouse"
+end
+

@@ -1,0 +1,76 @@
+=== miembro 18    (cast 28) ===
+on exitFrame
+  initScene "rm0061"
+  go to the frame
+end
+
+=== miembro 17    (cast 39) ===
+on exitFrame
+  initScene "rm0061"
+end
+
+=== miembro 16    (cast 47) ===
+on exitFrame
+  go the frame
+end
+
+=== miembro 28    (cast 53) ===
+on startMovie
+  initMovie
+end
+
+=== miembro 19    (cast 61) ===
+on exitFrame
+  goFMov "retf","hosiloop"
+end
+
+=== miembro 20    (cast 62) ===
+on exitFrame
+  goFMov "retb","hosiloop"
+end
+
+=== miembro 21    (cast 63) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 22    (cast 64) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 23    (cast 65) ===
+on mouseUp
+  gohb
+end
+
+=== miembro 24    (cast 66) ===
+on mouseUp
+  gohf
+end
+
+=== miembro 25    (cast 67) ===
+on mouseUp
+  go to "paper"
+end
+
+=== miembro 26    (cast 68) ===
+on mouseUp
+  putMsg "text",0
+end
+
+=== miembro 27    (cast 82) ===
+on mouseUp
+  putMsg "text",0
+end
+
+=== miembro 30    (cast 95) ===
+on mouseUp
+  go to "gohosimiya"
+end
+
+=== miembro 29    (cast 97) ===
+on exitFrame
+  endThenGoFMov "hall2","hosimiya"
+end
+

@@ -1,0 +1,16 @@
+{
+ "source": "LNX.DIR",
+ "sounds": [
+  {
+   "file": "s0006_Null_Sound.wav",
+   "member": 6,
+   "name": "Null Sound",
+   "cast_id": 8,
+   "snd_id": 10,
+   "rate": 22254.55,
+   "channels": 1,
+   "bits": 8,
+   "frames": 22257
+  }
+ ]
+}
